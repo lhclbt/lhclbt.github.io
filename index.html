@@ -2,9 +2,11 @@
 <html lang="cn">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -13,14 +15,12 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-  <meta property="og:type" content="website">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Suche...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta property="og:type" content="website">
 <meta property="og:title" content="醭log">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="醭log">
@@ -28,75 +28,43 @@
 <meta property="article:author" content="罗醭坦">
 <meta name="twitter:card" content="summary">
 
+
 <link rel="canonical" href="http://example.com/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'cn'
-  };
-</script>
 
-  <title>醭log</title>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"cn","comments":"","permalink":"","path":"index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>醭log</title>
   
 
 
 
 
-
-
   <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-<!-- hexo injector head_end end --><link rel="alternate" href="/atom.xml" title="醭log" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="醭log" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
+  <main class="main">
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="تشغيل شريط التصفح">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+    <div class="toggle" aria-label="Navigationsleiste an/ausschalten" role="button">
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
+      <i class="logo-line"></i>
       <h1 class="site-title">醭log</h1>
-      <span class="logo-line-after"><i></i></span>
+      <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">欢迎来到醭坦的测试与发布空间</p>
   </div>
@@ -110,45 +78,92 @@
 
 
 
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>الأرشيفات</a>
-
-  </li>
-  </ul>
-</nav>
-
 
 
 
 </div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Inhaltsverzeichnis
+        </li>
+        <li class="sidebar-nav-overview">
+          Übersicht
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">罗醭坦</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">Artikel</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">Kategorien</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">schlagwörter</span>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
     
-  <div class="back-to-top">
+  <div class="back-to-top" role="button" aria-label="Back to top">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
 
-          <div class="content index posts-expand">
-            
-      
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="cn">
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/24/test1.1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -162,22 +177,23 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/10/24/test1.1/" class="post-title-link" itemprop="url">test1</a>
+          <a href="/2021/10/24/test1.1/" class="post-title-link" itemprop="url">test1</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">نُشر في</span>
-              
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Veröffentlicht am</span>
+      
 
-              <time title="أُنشأ: 2021-10-24 03:13:35 / عُدل: 06:22:12" itemprop="dateCreated datePublished" datetime="2021-10-24T03:13:35+08:00">2021-10-24</time>
-            </span>
+      <time title="Erstellt: 2021-10-24 03:13:35 / Geändert am: 06:22:12" itemprop="dateCreated datePublished" datetime="2021-10-24T03:13:35+08:00">2021-10-24</time>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -186,29 +202,37 @@
     
     
     <div class="post-body" itemprop="articleBody">
+          <p><span class="math display">\[ evidence_{i}=\sum_{j}W_{ij}x_{j}+b_{i} \]</span></p>
+<p><span class="math inline">\(x \times y\)</span></p>
+<p><span class="math display">\[
+x \times y
+\]</span></p>
 
-      
-          <script type="math/tex; mode=display">evidence_{i}=\sum_{j}W_{ij}x_{j}+b_{i}</script><p>$x \times y$</p>
-<script type="math/tex; mode=display">
-x \times y</script>
       
     </div>
 
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="cn">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/23/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -222,21 +246,22 @@ x \times y</script>
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/10/23/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+          <a href="/2021/10/23/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">نُشر في</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="أُنشأ: 2021-10-23 21:30:25" itemprop="dateCreated datePublished" datetime="2021-10-23T21:30:25+08:00">2021-10-23</time>
-            </span>
+      <time title="Erstellt: 2021-10-23 21:30:25" itemprop="dateCreated datePublished" datetime="2021-10-23T21:30:25+08:00">2021-10-23</time>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -245,16 +270,19 @@ x \times y</script>
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
@@ -263,18 +291,25 @@ x \times y</script>
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="cn">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2017/05/03/Lec%207/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -288,37 +323,38 @@ x \times y</script>
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/05/03/Lec%207/" class="post-title-link" itemprop="url">Testing Mathjax with Hexo</a>
+          <a href="/2017/05/03/Lec%207/" class="post-title-link" itemprop="url">Testing Mathjax with Hexo</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">نُشر في</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="أُنشأ: 2017-05-03 00:00:00" itemprop="dateCreated datePublished" datetime="2017-05-03T00:00:00+08:00">2017-05-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">عُدل في</span>
-                <time title="عُدل: 2021-10-24 04:51:01" itemprop="dateModified" datetime="2021-10-24T04:51:01+08:00">2021-10-24</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">في</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Uncategorized/" itemprop="url" rel="index"><span itemprop="name">Uncategorized</span></a>
-                </span>
-            </span>
+      <time title="Erstellt: 2017-05-03 00:00:00" itemprop="dateCreated datePublished" datetime="2017-05-03T00:00:00+08:00">2017-05-03</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Bearbeitet am</span>
+        <time title="Geändert am: 2021-10-24 04:51:01" itemprop="dateModified" datetime="2021-10-24T04:51:01+08:00">2021-10-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">in</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Uncategorized/" itemprop="url" rel="index"><span itemprop="name">Uncategorized</span></a>
+        </span>
+    </span>
 
-          
+  
+</div>
 
         </div>
       </header>
@@ -327,309 +363,362 @@ x \times y</script>
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Lec-7"><a href="#Lec-7" class="headerlink" title="Lec 7"></a>Lec 7</h1><p>[TOC]</p>
-<h2 id="Chapter-10-Comparison-of-k-population-means-ANOVA"><a href="#Chapter-10-Comparison-of-k-population-means-ANOVA" class="headerlink" title="Chapter 10 Comparison of $k$ population means: ANOVA"></a>Chapter 10 Comparison of $k$ population means: ANOVA</h2><h3 id="10-1-Introduction-ANOVA-Model-ANOVA-模型的介绍"><a href="#10-1-Introduction-ANOVA-Model-ANOVA-模型的介绍" class="headerlink" title="10.1 Introduction ANOVA Model    ANOVA 模型的介绍"></a>10.1 Introduction ANOVA Model    ANOVA 模型的介绍</h3><p>在本节中，我们将研究一种用于比较多个总体均值差异的统计工具，<strong>analysis of variance</strong>, or simply <strong>ANOVA</strong>.</p>
-<p>我们在第 $7$​​ 章学习了对双变量总体的均值检验，而在本章中我们将学习如何检验两个或者更多的总体均值是否存在差异，或者说</p>
-<script type="math/tex; mode=display">
-H_0:\mu_1 = \mu_2=\cdots=\mu_k\quad\text{versus}\quad H_1:\mu_i\text{ not all euqal}</script><p>我们可以通过 R 绘制箱型图用不太严谨的方式观察这 $k$ 个样本是否具有相同或者近似的均值，但正如上面所讲的，这种方法是不严谨的，因此我们希望可以找到一个更严谨的方式来进行假设性检验，而这个检验就叫做 ANOVA test（方差分析）。</p>
-<h3 id="10-2-ANOVA-Model"><a href="#10-2-ANOVA-Model" class="headerlink" title="10.2 ANOVA Model"></a>10.2 ANOVA Model</h3><h4 id="10-2-1-ANOVA-model"><a href="#10-2-1-ANOVA-model" class="headerlink" title="10.2.1 ANOVA model"></a>10.2.1 ANOVA model</h4><p>当进行数据分析时，我们总可以将数据写成两个部分的和，一部分是 over pattern, 一部分是 deviations from it。或者用公式来表达：</p>
-<script type="math/tex; mode=display">
-data = fit+residual</script><p>首先我们先定义一下我们的数据</p>
+          <h1 id="lec-7">Lec 7</h1>
+<p>[TOC]</p>
+<h2 id="chapter-10-comparison-of-k-population-means-anova">Chapter 10 Comparison of <span class="math inline">\(k\)</span> population means: ANOVA</h2>
+<h3 id="introduction-anova-model-anova-模型的介绍">10.1 Introduction ANOVA Model ANOVA 模型的介绍</h3>
+<p>在本节中，我们将研究一种用于比较多个总体均值差异的统计工具，<strong>analysis of variance</strong>, or simply <strong>ANOVA</strong>.</p>
+<p>我们在第 <span class="math inline">\(7\)</span>​​ 章学习了对双变量总体的均值检验，而在本章中我们将学习如何检验两个或者更多的总体均值是否存在差异，或者说 <span class="math display">\[
+H_0:\mu_1 = \mu_2=\cdots=\mu_k\quad\text{versus}\quad H_1:\mu_i\text{ not all euqal}
+\]</span> 我们可以通过 R 绘制箱型图用不太严谨的方式观察这 <span class="math inline">\(k\)</span> 个样本是否具有相同或者近似的均值，但正如上面所讲的，这种方法是不严谨的，因此我们希望可以找到一个更严谨的方式来进行假设性检验，而这个检验就叫做 ANOVA test（方差分析）。</p>
+<h3 id="anova-model">10.2 ANOVA Model</h3>
+<h4 id="anova-model-1">10.2.1 ANOVA model</h4>
+<p>当进行数据分析时，我们总可以将数据写成两个部分的和，一部分是 over pattern, 一部分是 deviations from it。或者用公式来表达： <span class="math display">\[
+data = fit+residual
+\]</span> 首先我们先定义一下我们的数据</p>
 <ul>
-<li><p>We have $k$​​​ <strong>independent</strong> samples, from different <strong>normally distributed</strong> populations.</p>
-</li>
-<li><p>Observations or response values are denoted in the following way:</p>
-<script type="math/tex; mode=display">
+<li><p>We have <span class="math inline">\(k\)</span>​​​ <strong>independent</strong> samples, from different <strong>normally distributed</strong> populations.</p></li>
+<li><p>Observations or response values are denoted in the following way: <span class="math display">\[
   \begin{align}
-  Group\ 1:&\quad Y_{11},Y_{12},\dots,Y_{1n_1}\\
-  Group\ 2:&\quad Y_{21},Y_{22},\dots,Y_{2n_2}\\
-  &\vdots\\
-  Group\ k:&\quad Y_{k1},Y_{k2},\dots,Y_{kn_k}\\
-  \end{align}</script></li>
-<li><p>We have $n_i$ observations from group $i$ for $i = 1,2,\dots,k$</p>
-</li>
-<li><p>We assume that</p>
-<script type="math/tex; mode=display">
-  Y_{ij}\sim N\left(u_i,\sigma^2\right)</script><p>  for parameters $\mu_1,\mu_2,\dots,\mu_k$ and $\sigma^2$</p>
-</li>
-<li><p>We hold the homoscedastic assumption (同方差假设)</p>
-</li>
+  Group\ 1:&amp;\quad Y_{11},Y_{12},\dots,Y_{1n_1}\\
+  Group\ 2:&amp;\quad Y_{21},Y_{22},\dots,Y_{2n_2}\\
+  &amp;\vdots\\
+  Group\ k:&amp;\quad Y_{k1},Y_{k2},\dots,Y_{kn_k}\\
+  \end{align}
+  \]</span></p></li>
+<li><p>We have <span class="math inline">\(n_i\)</span> observations from group <span class="math inline">\(i\)</span> for <span class="math inline">\(i = 1,2,\dots,k\)</span></p></li>
+<li><p>We assume that <span class="math display">\[
+  Y_{ij}\sim N\left(u_i,\sigma^2\right)
+  \]</span> for parameters <span class="math inline">\(\mu_1,\mu_2,\dots,\mu_k\)</span> and <span class="math inline">\(\sigma^2\)</span></p></li>
+<li><p>We hold the homoscedastic assumption (同方差假设)</p></li>
 </ul>
-<p>接下来我们就可以建立 a standard form of the <strong>ANOVA model</strong></p>
-<script type="math/tex; mode=display">
-Y_{ij} = \mu_i+\epsilon_{ij}\quad\text{for }i = 1,2,\dots,k \text{ and }j = 1,2,\dots,n_i</script><p>where $\mu_1,\mu_2,\dots,\mu_k$ are parameters and the $\epsilon_{ij}$ are <strong>independent</strong> random errors with $\epsilon_{ij}\sim N(0,\sigma^2)$ for each $i,j$.</p>
-<p>我们把这个模型称为 $means model$.</p>
-<p>或者也可以写成</p>
-<script type="math/tex; mode=display">
-Y_{ij} = \mu+\alpha_i+\epsilon_{ij}\quad\text{for }i = 1,2,\dots,k\text{ and }j = 1,2,\dots,n</script><p>where $\mu$ is the overall mean and $\alpha_i = \mu_i-\mu$.</p>
-<p>我们把这个模型称为 $effects model$.</p>
-<h4 id="10-2-2-Estimating-parameters-in-the-ANOVA-model-Least-Squares-estimation"><a href="#10-2-2-Estimating-parameters-in-the-ANOVA-model-Least-Squares-estimation" class="headerlink" title="10.2.2 Estimating parameters in the ANOVA model - Least Squares estimation"></a>10.2.2 Estimating parameters in the ANOVA model - Least Squares estimation</h4><p>我们的目的是为了比较 $\mu_i$​​ 是否是一致，而 $\mu_i$​ 是未知的，因此我们需要找到 $\mu_i$​ 的估计子 $\hat{\mu_i}$​。根据 $means model$​，参数 $\mu_i = Y_{ij}-\epsilon_{ij}$​​。综上，我们可以使用 Least Squares methods 去使误差平方和最小来找到 $\hat{\mu_i}$。首先 the sum of squared errors is</p>
-<script type="math/tex; mode=display">
-S = \sum^k_{i = 1}\sum^{n_i}_{j = 1}\epsilon^2_{ij} =  \sum^k_{i = 1}\sum^{n_i}_{j = 1}(y_{ij}-\mu_i)^2</script><p>根据微积分知识，当函数导数为零时存在区域最大/最小值，因此我们对 S 进行微分：</p>
-<script type="math/tex; mode=display">
-\frac{dS}{d\mu_i} = \sum^{n_i}_{j = 1}-2(y_{ij}-\mu_i)\quad\text{for all }i</script><p>Setting $dS/d\mu_i = 0$ gives</p>
-<script type="math/tex; mode=display">
+<p>接下来我们就可以建立 a standard form of the <strong>ANOVA model</strong> <span class="math display">\[
+Y_{ij} = \mu_i+\epsilon_{ij}\quad\text{for }i = 1,2,\dots,k \text{ and }j = 1,2,\dots,n_i
+\]</span> where <span class="math inline">\(\mu_1,\mu_2,\dots,\mu_k\)</span> are parameters and the <span class="math inline">\(\epsilon_{ij}\)</span> are <strong>independent</strong> random errors with <span class="math inline">\(\epsilon_{ij}\sim N(0,\sigma^2)\)</span> for each <span class="math inline">\(i,j\)</span>.</p>
+<p>我们把这个模型称为 <span class="math inline">\(means\ model\)</span>.</p>
+<p>或者也可以写成 <span class="math display">\[
+Y_{ij} = \mu+\alpha_i+\epsilon_{ij}\quad\text{for }i = 1,2,\dots,k\text{ and }j = 1,2,\dots,n
+\]</span> where <span class="math inline">\(\mu\)</span> is the overall mean and <span class="math inline">\(\alpha_i = \mu_i-\mu\)</span>.</p>
+<p>我们把这个模型称为 <span class="math inline">\(effects\ model\)</span>.</p>
+<h4 id="estimating-parameters-in-the-anova-model---least-squares-estimation">10.2.2 Estimating parameters in the ANOVA model - Least Squares estimation</h4>
+<p>我们的目的是为了比较 <span class="math inline">\(\mu_i\)</span>​​ 是否是一致，而 <span class="math inline">\(\mu_i\)</span>​ 是未知的，因此我们需要找到 <span class="math inline">\(\mu_i\)</span>​ 的估计子 <span class="math inline">\(\hat{\mu_i}\)</span>​。根据 <span class="math inline">\(means\ model\)</span>​，参数 <span class="math inline">\(\mu_i = Y_{ij}-\epsilon_{ij}\)</span>​​。综上，我们可以使用 Least Squares methods 去使误差平方和最小来找到 <span class="math inline">\(\hat{\mu_i}\)</span>。首先 the sum of squared errors is <span class="math display">\[
+S = \sum^k_{i = 1}\sum^{n_i}_{j = 1}\epsilon^2_{ij} =  \sum^k_{i = 1}\sum^{n_i}_{j = 1}(y_{ij}-\mu_i)^2
+\]</span> 根据微积分知识，当函数导数为零时存在区域最大/最小值，因此我们对 S 进行微分： <span class="math display">\[
+\frac{dS}{d\mu_i} = \sum^{n_i}_{j = 1}-2(y_{ij}-\mu_i)\quad\text{for all }i
+\]</span> Setting <span class="math inline">\(dS/d\mu_i = 0\)</span> gives <span class="math display">\[
 \begin{align}
-&\sum^{n_i}_{j = 1}(y_{ij-\mu_i}) = 0\quad\text{for all }i\\
-\Rightarrow & \left( \sum^{n_i}_{j = 1}y_{ij} \right)-n_i\mu_i = 0\\
-\Rightarrow & \widehat{\mu_i} = \ = \frac1 n\sum^{n_i}_{j = 1}y_{ij} = \overline {y_{i.}}
-\end{align}</script><p>总的来说，在 ANOVA test 中，我们将会使用下述公式来估计 $\mu_i$</p>
-<script type="math/tex; mode=display">
-\widehat{\mu_i} = \overline{y_{i.}} \quad\text{where }\overline{y_{i.}} = \sum^{n_i}_{j = 1}y_{ij}</script><p>除去组内均值 $\overline{y_{i.}}$，我们还需要总均值 over sample mean</p>
-<script type="math/tex; mode=display">
-\overline{y_{..} } = \frac1N\sum_{i = 1}^k\sum_{j = 1}^{n_i}y_{ij}</script><p>where $N = n_1+n_2+\cdots+n_k$ is the total sample size.</p>
-<h3 id="10-3-The-Theory-behind-ANOVA-Hypothesis-Test"><a href="#10-3-The-Theory-behind-ANOVA-Hypothesis-Test" class="headerlink" title="10.3 The Theory behind ANOVA Hypothesis Test"></a>10.3 The Theory behind ANOVA Hypothesis Test</h3><h4 id="10-3-0-Intro"><a href="#10-3-0-Intro" class="headerlink" title="10.3.0 Intro"></a>10.3.0 Intro</h4><p>虽然我们也可以直接介绍如何进行假设性检验，但是如果用理解的方式可能更方便我们使用 ANOVA假设性检验。</p>
-<p>上文我们讲了如何计算出 $\mu_i$ 的估计子 $\widehat{\mu_i}$，那么如何才能判断这 $k$​ 组的估计子是否存在差异呢？这时我们就需要计算组间差异与组间均方。</p>
+&amp;\sum^{n_i}_{j = 1}(y_{ij-\mu_i}) = 0\quad\text{for all }i\\
+\Rightarrow &amp; \left( \sum^{n_i}_{j = 1}y_{ij} \right)-n_i\mu_i = 0\\
+\Rightarrow &amp; \widehat{\mu_i} = \ = \frac1 n\sum^{n_i}_{j = 1}y_{ij} = \overline {y_{i.}}
+\end{align}
+\]</span> 总的来说，在 ANOVA test 中，我们将会使用下述公式来估计 <span class="math inline">\(\mu_i\)</span> <span class="math display">\[
+\widehat{\mu_i} = \overline{y_{i.}} \quad\text{where }\overline{y_{i.}} = \sum^{n_i}_{j = 1}y_{ij}
+\]</span> 除去组内均值 <span class="math inline">\(\overline{y_{i.}}\)</span>，我们还需要总均值 over sample mean <span class="math display">\[
+\overline{y_{..} } = \frac1N\sum_{i = 1}^k\sum_{j = 1}^{n_i}y_{ij}
+\]</span> where <span class="math inline">\(N = n_1+n_2+\cdots+n_k\)</span> is the total sample size.</p>
+<h3 id="the-theory-behind-anova-hypothesis-test">10.3 The Theory behind ANOVA Hypothesis Test</h3>
+<h4 id="intro">10.3.0 Intro</h4>
+<p>虽然我们也可以直接介绍如何进行假设性检验，但是如果用理解的方式可能更方便我们使用 ANOVA假设性检验。</p>
+<p>上文我们讲了如何计算出 <span class="math inline">\(\mu_i\)</span> 的估计子 <span class="math inline">\(\widehat{\mu_i}\)</span>，那么如何才能判断这 <span class="math inline">\(k\)</span>​ 组的估计子是否存在差异呢？这时我们就需要计算组间差异与组间均方。</p>
 <ul>
-<li><p>Between Groups Sum of Squares (组间平方和，或者组间差异)</p>
-<script type="math/tex; mode=display">
-  SSG = \sum^k_{i = 1}n_i(\overline{y_{i,}}-\overline{y_{..}})^2</script></li>
-<li><p>Between Groups Mean Square (组间均方，或者组间平均差异)</p>
-<script type="math/tex; mode=display">
-  MSG = \frac{SSG}{k-1}</script></li>
+<li><p>Between Groups Sum of Squares (组间平方和，或者组间差异) <span class="math display">\[
+  SSG = \sum^k_{i = 1}n_i(\overline{y_{i,}}-\overline{y_{..}})^2
+  \]</span></p></li>
+<li><p>Between Groups Mean Square (组间均方，或者组间平均差异) <span class="math display">\[
+  MSG = \frac{SSG}{k-1}
+  \]</span></p></li>
 </ul>
-<p>如果 MSG 足够大，或者说组间平均差异过大，我们就可以认为这 $k$ 组样本总量是存在差异的(or we say we can reject $H_0$)。但是在数学中，足够大是一种非常抽象的描述，在这里，当 $MSG&gt;\sigma^2$​ 时，我们就认为 MSG 是足够大的，那这又是为什么呢？ </p>
-<p>when $H_0:\mu_1 = \mu_2=\cdots=\mu_k$​​​ is true, then</p>
-<script type="math/tex; mode=display">
-\frac{SSG}{\sigma^2}\sim\chi^2_{k-1}</script><p>and we can get</p>
-<script type="math/tex; mode=display">
-E[MSG] = E\left[ \frac{\sigma^2}{\sigma^2}\cdot\frac{SSG}{k-1} \right] = \frac{\sigma^2}{k-1}E\left[ \frac{SSG}{\sigma^2} \right] = \frac{\sigma^2}{k-1}(k-1) = \sigma^2</script><p>我们发现当 $H_0$ 正确时，$MSG$ 是对 $\sigma^2$ 的一种正确估计，而当 $H_0$ 错误时，组间差异过大，$MSG$ 的值也会更大，即 $MSG&gt;\sigma^2$​。接下来，问题就变成了，如何得到 $\sigma^2$ 的值，或者其估计子呢？</p>
-<font color = purple>$\Delta$:当然如果 $SSG$ 过大也能 reject to $H_0$，但是判断 $SSG$ 跟谁比较是一件相对比较难的事情，因此我们更倾向比较 $MSG$​​​ 的大小。</font>
-
-<h4 id="10-3-1-Estimating-the-variance-sigma-2"><a href="#10-3-1-Estimating-the-variance-sigma-2" class="headerlink" title="10.3.1 Estimating the variance $\sigma^2$"></a>10.3.1 Estimating the variance $\sigma^2$</h4><p>同类比在第 $7$ 章学到的比较 two independent groups’ mean, 我们尝试使用 ‘pool’ 进行 $\sigma^2$ 的估计。、</p>
-<p>Review:</p>
-<script type="math/tex; mode=display">
-s^2_p = \frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}</script><p>那么我们假设这里的方差估计子为</p>
-<script type="math/tex; mode=display">
-\widehat{\sigma^2} = \frac{\sum_{i = 1}^k(n_i-1)s_i^2}{N-k}</script><p>据计算</p>
-<script type="math/tex; mode=display">
+<p>如果 MSG 足够大，或者说组间平均差异过大，我们就可以认为这 <span class="math inline">\(k\)</span> 组样本总量是存在差异的(or we say we can reject <span class="math inline">\(H_0\)</span>)。但是在数学中，足够大是一种非常抽象的描述，在这里，当 <span class="math inline">\(MSG&gt;\sigma^2\)</span>​ 时，我们就认为 MSG 是足够大的，那这又是为什么呢？</p>
+<p>when <span class="math inline">\(H_0:\mu_1 = \mu_2=\cdots=\mu_k\)</span>​​​ is true, then <span class="math display">\[
+\frac{SSG}{\sigma^2}\sim\chi^2_{k-1}
+\]</span> and we can get <span class="math display">\[
+E[MSG] = E\left[ \frac{\sigma^2}{\sigma^2}\cdot\frac{SSG}{k-1} \right] = \frac{\sigma^2}{k-1}E\left[ \frac{SSG}{\sigma^2} \right] = \frac{\sigma^2}{k-1}(k-1) = \sigma^2
+\]</span> 我们发现当 <span class="math inline">\(H_0\)</span> 正确时，<span class="math inline">\(MSG\)</span> 是对 <span class="math inline">\(\sigma^2\)</span> 的一种正确估计，而当 <span class="math inline">\(H_0\)</span> 错误时，组间差异过大，<span class="math inline">\(MSG\)</span> 的值也会更大，即 <span class="math inline">\(MSG&gt;\sigma^2\)</span>​。接下来，问题就变成了，如何得到 <span class="math inline">\(\sigma^2\)</span> 的值，或者其估计子呢？</p>
+<p><font color = purple><span class="math inline">\(\Delta\)</span>:当然如果 <span class="math inline">\(SSG\)</span> 过大也能 reject to <span class="math inline">\(H_0\)</span>，但是判断 <span class="math inline">\(SSG\)</span> 跟谁比较是一件相对比较难的事情，因此我们更倾向比较 <span class="math inline">\(MSG\)</span>​​​ 的大小。</font></p>
+<h4 id="estimating-the-variance-sigma2">10.3.1 Estimating the variance <span class="math inline">\(\sigma^2\)</span></h4>
+<p>同类比在第 <span class="math inline">\(7\)</span> 章学到的比较 two independent groups' mean, 我们尝试使用 'pool' 进行 <span class="math inline">\(\sigma^2\)</span> 的估计。、</p>
+<p>Review: <span class="math display">\[
+s^2_p = \frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}
+\]</span> 那么我们假设这里的方差估计子为 <span class="math display">\[
+\widehat{\sigma^2} = \frac{\sum_{i = 1}^k(n_i-1)s_i^2}{N-k}
+\]</span> 据计算 <span class="math display">\[
 \begin{align}
-E[\widehat{\sigma^2}] &= \frac{\sum_{i = 1}^k(n_i-1)E[s_i^2]}{N-k}\\
-&= \frac{\sum_{i = 1}^k(n_i-1)\sigma^2}{N-k}\\
-&= \sigma^2\frac{\sum_{i = 1}^k(n_i)-k}{N-k}\\
-&= \sigma^2
-\end{align}</script><p>That is, $\widehat{\sigma^2}$ is an <strong>unbiased</strong> estimator of $\sigma^2$​.</p>
+E[\widehat{\sigma^2}] &amp;= \frac{\sum_{i = 1}^k(n_i-1)E[s_i^2]}{N-k}\\
+&amp;= \frac{\sum_{i = 1}^k(n_i-1)\sigma^2}{N-k}\\
+&amp;= \sigma^2\frac{\sum_{i = 1}^k(n_i)-k}{N-k}\\
+&amp;= \sigma^2
+\end{align}
+\]</span> That is, <span class="math inline">\(\widehat{\sigma^2}\)</span> is an <strong>unbiased</strong> estimator of <span class="math inline">\(\sigma^2\)</span>​.</p>
 <p>刚刚我们讲到组间差异的定义，这里我们再讲一下组内差异的定义</p>
 <ul>
-<li><p>Error Sum of Squares (组内差异，或者组内方差)</p>
-<script type="math/tex; mode=display">
-  SSE =\sum^k_{i = 1}\sum_{j = 1}^{n_i}(y_{ij}-\overline{y_{i.}})^2</script></li>
-<li><p>Error Mean Square (组内平均差异)</p>
-<script type="math/tex; mode=display">
-  MSE = \frac{SSE}{N-k}</script><p>  仔细观察 $MSE$，我们发现实际上 $MSE = \widehat{\sigma^2}$</p>
-<script type="math/tex; mode=display">
+<li><p>Error Sum of Squares (组内差异，或者组内方差) <span class="math display">\[
+  SSE =\sum^k_{i = 1}\sum_{j = 1}^{n_i}(y_{ij}-\overline{y_{i.}})^2
+  \]</span></p></li>
+<li><p>Error Mean Square (组内平均差异) <span class="math display">\[
+  MSE = \frac{SSE}{N-k}
+  \]</span> 仔细观察 <span class="math inline">\(MSE\)</span>，我们发现实际上 <span class="math inline">\(MSE = \widehat{\sigma^2}\)</span> <span class="math display">\[
   \begin{align}
-  \widehat{\sigma^2} &= \frac{\sum_{i = 1}^k(n_i-1)s_i^2}{N-k}\\
-  &= \frac{\sum_{i = 1}^k\sum^{n_i}_{j = 1}(y_{ij}-\overline{y_{i.}})^2}{N-k}\\
-  &= MSE
-  \end{align}</script></li>
+  \widehat{\sigma^2} &amp;= \frac{\sum_{i = 1}^k(n_i-1)s_i^2}{N-k}\\
+  &amp;= \frac{\sum_{i = 1}^k\sum^{n_i}_{j = 1}(y_{ij}-\overline{y_{i.}})^2}{N-k}\\
+  &amp;= MSE
+  \end{align}
+  \]</span></p></li>
 </ul>
-<p>此外，我们还有 <strong>Total Sum of Squares</strong></p>
-<script type="math/tex; mode=display">
-SST = \sum^k_{i = 1}\sum_{j = 1}^{n_i}(y_{ij}-\overline{y_{..}})^2 = (N-1)s^2_T</script><p>且</p>
-<script type="math/tex; mode=display">
-SST = SSE+SSG</script><p>综上所述，我们最后其实就是比较组间均差 $MSG$​ 与 组内均差 $MSE$​ 的大小，如果 $MSG/MSE&gt;1$​，则 reject $H_0$​。那么为了判断 $MSG/MSE$​ 的大小，我们需要找到 $MSG/MSE$​ 的分布。</p>
-<h4 id="10-3-2-Distribution-of-MSG-MSE-​"><a href="#10-3-2-Distribution-of-MSG-MSE-​" class="headerlink" title="10.3.2 Distribution of $MSG/MSE$​"></a>10.3.2 Distribution of $MSG/MSE$​</h4><p>已知：</p>
-<script type="math/tex; mode=display">
-\frac{SSG}{\sigma^2}\sim\chi^2_{k-1}\quad\text{and}\quad\frac{SSE}{\sigma^2}\sim\chi^2_{N-k}</script><p>通过 $F-$distribution 的定义，我们可以知道</p>
-<script type="math/tex; mode=display">
+<p>此外，我们还有 <strong>Total Sum of Squares</strong> <span class="math display">\[
+SST = \sum^k_{i = 1}\sum_{j = 1}^{n_i}(y_{ij}-\overline{y_{..}})^2 = (N-1)s^2_T
+\]</span> 且 <span class="math display">\[
+SST = SSE+SSG
+\]</span> 综上所述，我们最后其实就是比较组间均差 <span class="math inline">\(MSG\)</span>​ 与 组内均差 <span class="math inline">\(MSE\)</span>​ 的大小，如果 <span class="math inline">\(MSG/MSE&gt;1\)</span>​，则 reject <span class="math inline">\(H_0\)</span>​。那么为了判断 <span class="math inline">\(MSG/MSE\)</span>​ 的大小，我们需要找到 <span class="math inline">\(MSG/MSE\)</span>​ 的分布。</p>
+<h4 id="distribution-of-msgmse">10.3.2 Distribution of <span class="math inline">\(MSG/MSE\)</span>​</h4>
+<p>已知： <span class="math display">\[
+\frac{SSG}{\sigma^2}\sim\chi^2_{k-1}\quad\text{and}\quad\frac{SSE}{\sigma^2}\sim\chi^2_{N-k}
+\]</span> 通过 <span class="math inline">\(F-\)</span>distribution 的定义，我们可以知道 <span class="math display">\[
 \begin{align}
 \frac{\frac{SSG}{\sigma^2}/(k-1)}{\frac{SSE}{\sigma^2}/(N-k)}\sim F_{k-1,N-k}\\
 \Rightarrow\frac{MSG}{MSE}\sim F_{k-1,N-k}
-\end{align}</script><p>那么到这里，我们就对 ANOVA test 的全部前置知识已经了解完成啦。</p>
-<h3 id="10-4-ANOVA-Hypothesis-Test"><a href="#10-4-ANOVA-Hypothesis-Test" class="headerlink" title="10.4 ANOVA Hypothesis Test"></a>10.4 ANOVA Hypothesis Test</h3><h4 id="10-4-1-ANOVA-table"><a href="#10-4-1-ANOVA-table" class="headerlink" title="10.4.1 ANOVA table"></a>10.4.1 ANOVA table</h4><p>通常我们在进行假设性检验前，我们通常会先绘制下述表格来方便进行计算。</p>
-<p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210814170405773.png" alt="image-20210814170405773"></p>
-<h4 id="10-4-2-ANOVA-hypothesis-test"><a href="#10-4-2-ANOVA-hypothesis-test" class="headerlink" title="10.4.2 ANOVA hypothesis test"></a>10.4.2 ANOVA hypothesis test</h4><ul>
+\end{align}
+\]</span> 那么到这里，我们就对 ANOVA test 的全部前置知识已经了解完成啦。</p>
+<h3 id="anova-hypothesis-test">10.4 ANOVA Hypothesis Test</h3>
+<h4 id="anova-table">10.4.1 ANOVA table</h4>
+<p>通常我们在进行假设性检验前，我们通常会先绘制下述表格来方便进行计算。</p>
+<figure>
+<img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210814170405773.png" alt="image-20210814170405773" /><figcaption aria-hidden="true">image-20210814170405773</figcaption>
+</figure>
+<h4 id="anova-hypothesis-test-1">10.4.2 ANOVA hypothesis test</h4>
+<ul>
 <li><p>Use: To test whether several population means are all equal or whether some population means are different.</p>
-<p>  用途：检验多个样本均值是否全部一致还是存在差异。</p>
-</li>
+<p>用途：检验多个样本均值是否全部一致还是存在差异。</p></li>
 <li><p>Assumptions: The groups are independent, responses of each group come from normally distributed populations and all groups have the common variance.</p>
-<p>  假设：组间独立；各组均符合正态分布；各组有着相同方差。</p>
-</li>
+<p>假设：组间独立；各组均符合正态分布；各组有着相同方差。</p></li>
 </ul>
 <p>To carry out the ANOVA test we use the following steps:</p>
-<ol>
-<li><p>State hypotheses, the null $H_0:\mu_1 = \mu_1 = \cdots = \mu_n$ versus $H_1:\mu_i$ not all equal.</p>
-</li>
-<li><p>Construct the ANOVA table and calculate the test statistic $F = MSG/MSE$</p>
-</li>
-<li><p>Compare the value of the test statistic with the critical value in the $F_{k-1,N-k}$. Note that the ANOVA test is a one-sided test.</p>
-</li>
-<li><p>Decide whether to reject $H_0$ or fail to reject $H_0$ at $\alpha$:</p>
-<p> If $F&gt;F_{k-1,N-k}(\alpha)$, then we reject $H_0$ at $\alpha$.</p>
-</li>
-<li><p>Interpret your conclusion practically in the context of the question.</p>
-</li>
+<ol type="1">
+<li><p>State hypotheses, the null <span class="math inline">\(H_0:\mu_1 = \mu_1 = \cdots = \mu_n\)</span> versus <span class="math inline">\(H_1:\mu_i\)</span> not all equal.</p></li>
+<li><p>Construct the ANOVA table and calculate the test statistic <span class="math inline">\(F = MSG/MSE\)</span></p></li>
+<li><p>Compare the value of the test statistic with the critical value in the <span class="math inline">\(F_{k-1,N-k}\)</span>. Note that the ANOVA test is a one-sided test.</p></li>
+<li><p>Decide whether to reject <span class="math inline">\(H_0\)</span> or fail to reject <span class="math inline">\(H_0\)</span> at <span class="math inline">\(\alpha\)</span>:</p>
+<p>If <span class="math inline">\(F&gt;F_{k-1,N-k}(\alpha)\)</span>, then we reject <span class="math inline">\(H_0\)</span> at <span class="math inline">\(\alpha\)</span>.</p></li>
+<li><p>Interpret your conclusion practically in the context of the question.</p></li>
 </ol>
-<h3 id="10-5-ANOVA-Examples-and-Terminology"><a href="#10-5-ANOVA-Examples-and-Terminology" class="headerlink" title="10.5 ANOVA Examples and Terminology"></a>10.5 ANOVA Examples and Terminology</h3><h4 id="10-5-1-ANOVA-Example-1"><a href="#10-5-1-ANOVA-Example-1" class="headerlink" title="10.5.1 ANOVA Example 1"></a>10.5.1 ANOVA Example 1</h4><p>We now solve the example from the beginning of this chapter about activity levels of rats on different doses of THC. We denote the mean activity level of placebo group, the mean activity level for groups with doses of $0.1 \mu g,0.5 \mu g,1 \mu g,2 \mu g,$ by $\mu_1,\mu_2.\mu_3,\mu_4,\mu_5$ respectively. So, we want to test that</p>
-<script type="math/tex; mode=display">
-H_0:\mu_1 = \mu_2 = \mu_3 = \mu_4 = \mu_5\quad\text{versus}\quad H_1:\mu_i\text{ not all equal}</script><p>There are $k = 5$ groups and we have the  following summary statistics for each group:</p>
+<h3 id="anova-examples-and-terminology">10.5 ANOVA Examples and Terminology</h3>
+<h4 id="anova-example-1">10.5.1 ANOVA Example 1</h4>
+<p>We now solve the example from the beginning of this chapter about activity levels of rats on different doses of THC. We denote the mean activity level of placebo group, the mean activity level for groups with doses of <span class="math inline">\(0.1\ \mu g,0.5\ \mu g,1\ \mu g,2\ \mu g,\)</span> by <span class="math inline">\(\mu_1,\mu_2.\mu_3,\mu_4,\mu_5\)</span> respectively. So, we want to test that <span class="math display">\[
+H_0:\mu_1 = \mu_2 = \mu_3 = \mu_4 = \mu_5\quad\text{versus}\quad H_1:\mu_i\text{ not all equal}
+\]</span> There are <span class="math inline">\(k = 5\)</span> groups and we have the following summary statistics for each group:</p>
 <p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815104919948.png" alt="image-20210815104919948" style="zoom: 80%;" /></p>
-<p>First we compute the overall sample mean $\overline{y_{..}} = 45.8444$</p>
-<p>then we compute $SSG$ and $SSE$.</p>
-<script type="math/tex; mode=display">
+<p>First we compute the overall sample mean <span class="math inline">\(\overline{y_{..}} = 45.8444\)</span></p>
+<p>then we compute <span class="math inline">\(SSG\)</span> and <span class="math inline">\(SSE\)</span>. <span class="math display">\[
 \begin{align}
-SSG &= \sum_{i = 1}^k(\overline{y_{i.}}-\overline{y_{..}})^2\\
-&=  10 × (34.0000 − 45.8444)^2 + 9 × (51.5556 − 45.8444)^2 + 9 × (60.3333 − 45.8444)^2\\
-&\quad\ +8 × (48.5000 − 45.8444)^2 + 9 × (36.4444 − 45.8444)^2\\
-&= 4437.4701
-\end{align}</script><p>the degrees of freedom for $SSG$ is $4$</p>
-<script type="math/tex; mode=display">
+SSG &amp;= \sum_{i = 1}^k(\overline{y_{i.}}-\overline{y_{..}})^2\\
+&amp;=  10 × (34.0000 − 45.8444)^2 + 9 × (51.5556 − 45.8444)^2 + 9 × (60.3333 − 45.8444)^2\\
+&amp;\quad\ +8 × (48.5000 − 45.8444)^2 + 9 × (36.4444 − 45.8444)^2\\
+&amp;= 4437.4701
+\end{align}
+\]</span> the degrees of freedom for <span class="math inline">\(SSG\)</span> is <span class="math inline">\(4\)</span> <span class="math display">\[
 \begin{align}
-SSE &= \sum^k_{i = 1}(n_i-1)s_i^2\\
-&= 9796.4514
-\end{align}</script><p>the degrees of freedom for $SSE$ is $40$</p>
-<p>then the ANOVA table is: </p>
+SSE &amp;= \sum^k_{i = 1}(n_i-1)s_i^2\\
+&amp;= 9796.4514
+\end{align}
+\]</span> the degrees of freedom for <span class="math inline">\(SSE\)</span> is <span class="math inline">\(40\)</span></p>
+<p>then the ANOVA table is:</p>
 <p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815110433740.png" alt="image-20210815110433740" style="zoom:80%;" /></p>
-<p>Since $F = 4.5297&gt;F_{4,40}(0.01) = 3.828$, we reject $H_0$ at the $1\%$ level.</p>
+<p>Since <span class="math inline">\(F = 4.5297&gt;F_{4,40}(0.01) = 3.828\)</span>, we reject <span class="math inline">\(H_0\)</span> at the <span class="math inline">\(1\%\)</span> level.</p>
 <p>There is a strong evidence of differences in activity levels of rats on different doses of THC.</p>
-<h4 id="10-5-2-Terminology-and-further-notes"><a href="#10-5-2-Terminology-and-further-notes" class="headerlink" title="10.5.2 Terminology and further notes"></a>10.5.2 Terminology and further notes</h4><ul>
+<h4 id="terminology-and-further-notes">10.5.2 Terminology and further notes</h4>
+<ul>
 <li>Factor: 我们所观察且需要分类的变量</li>
 <li>Level: factor具体的数值</li>
 <li>Response: 被 Factor 所影响的结果变量</li>
 <li>ANOVA 的目的是判断 whether <strong>Factors</strong> affect the <strong>Response</strong></li>
 <li>Balanced design: 组间样本容量相等的情况。若组间样本容量不同，则称之为 <strong>unbalanced</strong>。</li>
 </ul>
-<h3 id="10-6-ANOVA-Assumptions-and-How-to-Check-Them"><a href="#10-6-ANOVA-Assumptions-and-How-to-Check-Them" class="headerlink" title="10.6 ANOVA Assumptions and How to Check Them"></a>10.6 ANOVA Assumptions and How to Check Them</h3><p>本节将会讨论 ANOVA test 的假设以及如何去判断这些假设的正确性</p>
-<h4 id="10-6-1-Assumption-of-equality-of-variances-假设方差相等"><a href="#10-6-1-Assumption-of-equality-of-variances-假设方差相等" class="headerlink" title="10.6.1 Assumption of equality of variances 假设方差相等"></a>10.6.1 Assumption of equality of variances 假设方差相等</h4><p>首先有一种相对不太正式的检验方式：</p>
-<p>若组间最大标准差小于组间最小标准差的 $2$ 倍，那么我们就认为 假设是正确的，即</p>
-<script type="math/tex; mode=display">
-\max\{s_1,s_2,\dots,s_n\}<2\times\min\{s_1,s_2,\dots,s_n\}</script><p>当然我们还有两种正式的检验方法：</p>
+<h3 id="anova-assumptions-and-how-to-check-them">10.6 ANOVA Assumptions and How to Check Them</h3>
+<p>本节将会讨论 ANOVA test 的假设以及如何去判断这些假设的正确性</p>
+<h4 id="assumption-of-equality-of-variances-假设方差相等">10.6.1 Assumption of equality of variances 假设方差相等</h4>
+<p>首先有一种相对不太正式的检验方式：</p>
+<p>若组间最大标准差小于组间最小标准差的 <span class="math inline">\(2\)</span> 倍，那么我们就认为 假设是正确的，即 <span class="math display">\[
+\max\{s_1,s_2,\dots,s_n\}&lt;2\times\min\{s_1,s_2,\dots,s_n\}
+\]</span> 当然我们还有两种正式的检验方法：</p>
 <ul>
 <li><strong>Barlett’s test</strong> assumes that the data are normally distributed.</li>
 <li><strong>Levene’s test</strong> does not require normality.</li>
 </ul>
 <p>但我们不会去具体研究这两种检验方式，而是会在下节课的内容学习如何使用 R 去进行检验。</p>
-<h4 id="10-6-2-Assumption-of-normality"><a href="#10-6-2-Assumption-of-normality" class="headerlink" title="10.6.2 Assumption of normality"></a>10.6.2 Assumption of normality</h4><p>我们仍可以使用 normal probability plot 以及 normality test 对每组进行分别检验。</p>
+<h4 id="assumption-of-normality">10.6.2 Assumption of normality</h4>
+<p>我们仍可以使用 normal probability plot 以及 normality test 对每组进行分别检验。</p>
 <p>此外，我们还可以使用 normal probability plot of residuals 进行检验。（具体使用 R 进行检验）</p>
-<h4 id="10-6-3-Robustness-of-the-ANOVA-F-test"><a href="#10-6-3-Robustness-of-the-ANOVA-F-test" class="headerlink" title="10.6.3 Robustness of the ANOVA $F-$test"></a>10.6.3 Robustness of the ANOVA $F-$test</h4><p>当对 normality or equal variances 的假设都不正确时， ANOVA $F-$test 仍能给出相对正确的结果。</p>
+<h4 id="robustness-of-the-anova-f-test">10.6.3 Robustness of the ANOVA <span class="math inline">\(F-\)</span>test</h4>
+<p>当对 normality or equal variances 的假设都不正确时， ANOVA <span class="math inline">\(F-\)</span>test 仍能给出相对正确的结果。</p>
 <ul>
-<li>The ANOVA $F$​-test is very robust against non-normality.<ul>
+<li>The ANOVA <span class="math inline">\(F\)</span>​-test is very robust against non-normality.
+<ul>
 <li>样本容量更大——根据中心极限定理</li>
 <li>Most robust for a balanced design</li>
-</ul>
-</li>
-<li>The ANOVA $F$-test is very robust against heterogeneity of variances (variances not all equal).<ul>
+</ul></li>
+<li>The ANOVA <span class="math inline">\(F\)</span>-test is very robust against heterogeneity of variances (variances not all equal).
+<ul>
 <li>Most robust for a balanced design</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="Chapter-11-Post-Hoc-Tests"><a href="#Chapter-11-Post-Hoc-Tests" class="headerlink" title="Chapter 11 Post Hoc Tests"></a>Chapter 11 Post Hoc Tests</h2><p>ANOVA test 仅能让我们知道这些组之间是否存在均值差异，但却不能告诉我们差异出在哪里。如果我们想要具体知道是哪些组之间产生了差异，我们就需要使用其他的检验方式。</p>
+<h2 id="chapter-11-post-hoc-tests">Chapter 11 Post Hoc Tests</h2>
+<p>ANOVA test 仅能让我们知道这些组之间是否存在均值差异，但却不能告诉我们差异出在哪里。如果我们想要具体知道是哪些组之间产生了差异，我们就需要使用其他的检验方式。</p>
 <p>首先我们可以通过绘制箱型图来以不太严谨的方式进行检验。</p>
 <p>但同时我们也有着 formal statistical tests of differences between groups，这个方法我们称为 <strong>post-hoc tests</strong>.</p>
-<h3 id="11-1-Fisher’s-Least-Significant-Differences"><a href="#11-1-Fisher’s-Least-Significant-Differences" class="headerlink" title="11.1 Fisher’s Least Significant Differences"></a>11.1 Fisher’s Least Significant Differences</h3><p>我们对在 Chapter $10$​​ 中出现的数据进行分析，首先我们先绘制出其箱型图：</p>
+<h3 id="fishers-least-significant-differences">11.1 Fisher's Least Significant Differences</h3>
+<p>我们对在 Chapter <span class="math inline">\(10\)</span>​​ 中出现的数据进行分析，首先我们先绘制出其箱型图：</p>
 <p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815141732650.png" alt="image-20210815141732650" style="zoom:80%;" /></p>
-<p>同时计算出三个样本组的 $\overline {y_{1.}} = 13,\overline {y_{2.}} = 15,\overline {y_{3.}} = 10$，我们得到</p>
-<script type="math/tex; mode=display">
-\overline {y_{1.}}-\overline {y_{2.}} = -2,\overline {y_{1.}}-\overline {y_{3.}} = 3,\overline {y_{2.}}-\overline {y_{3.}} = 5,</script><p>在正常的独立双样本均值检验中，我们使用 $s_p$​​​​ 去作为 standard deviation’ estimator。而在这里我们使用 $\sqrt{MSE}$​  estimated standard deviation as $\sqrt{MSE} = \sqrt{6.6667} = 2.582$。</p>
-<p>因为 $SSE/\sigma^2\sim\chi^2_{N-k}$，我们使用 t-statistic</p>
-<script type="math/tex; mode=display">
-T = \frac{\overline{y_{i.}}-\overline{y_{j.}}}{\sqrt{MSE}\sqrt{\frac1{n_i}+\frac1{n_{j}}}}</script><p>which follows $t$-distribution with $N-k$ degrees of freedom.</p>
-<p>The test statistics for the Energy Consumption data are</p>
-<script type="math/tex; mode=display">
+<p>同时计算出三个样本组的 <span class="math inline">\(\overline {y_{1.}} = 13,\overline {y_{2.}} = 15,\overline {y_{3.}} = 10\)</span>，我们得到 <span class="math display">\[
+\overline {y_{1.}}-\overline {y_{2.}} = -2,\overline {y_{1.}}-\overline {y_{3.}} = 3,\overline {y_{2.}}-\overline {y_{3.}} = 5,
+\]</span> 在正常的独立双样本均值检验中，我们使用 <span class="math inline">\(s_p\)</span>​​​​ 去作为 standard deviation' estimator。而在这里我们使用 <span class="math inline">\(\sqrt{MSE}\)</span>​ estimated standard deviation as <span class="math inline">\(\sqrt{MSE} = \sqrt{6.6667} = 2.582\)</span>。</p>
+<p>因为 <span class="math inline">\(SSE/\sigma^2\sim\chi^2_{N-k}\)</span>，我们使用 t-statistic <span class="math display">\[
+T = \frac{\overline{y_{i.}}-\overline{y_{j.}}}{\sqrt{MSE}\sqrt{\frac1{n_i}+\frac1{n_{j}}}}
+\]</span> which follows <span class="math inline">\(t\)</span>-distribution with <span class="math inline">\(N-k\)</span> degrees of freedom.</p>
+<p>The test statistics for the Energy Consumption data are <span class="math display">\[
 \begin{align}
 T_{12} = \frac{-2}{2.582\sqrt{1/2}} = -1.095\\
 T_{13} = \frac{3}{2.582\sqrt{1/2}} = 1.643\\
 T_{23} = \frac{5}{2.582\sqrt{1/2}} = 2.739
-\end{align}</script><p>且 $t_9(0.05) = 1.833,t_9(0.025) = 2.262, t_9(0.01) = 2.281$，将临界值与上述检验统计量进行比较，我们发现：</p>
+\end{align}
+\]</span> 且 <span class="math inline">\(t_9(0.05) = 1.833,t_9(0.025) = 2.262, t_9(0.01) = 2.281\)</span>，将临界值与上述检验统计量进行比较，我们发现：</p>
 <ul>
-<li>the difference between group $1$ and $2$ is not significant even at $10\%$</li>
-<li>the difference between group $1$​ and $3$​ is not significant even at $10\%$​</li>
-<li>the difference between group $2$​​​ and $3$​​​ is significant even at $5\%$, but not at $2\%$​​​</li>
+<li>the difference between group <span class="math inline">\(1\)</span> and <span class="math inline">\(2\)</span> is not significant even at <span class="math inline">\(10\%\)</span></li>
+<li>the difference between group <span class="math inline">\(1\)</span>​ and <span class="math inline">\(3\)</span>​ is not significant even at <span class="math inline">\(10\%\)</span>​</li>
+<li>the difference between group <span class="math inline">\(2\)</span>​​​ and <span class="math inline">\(3\)</span>​​​ is significant even at <span class="math inline">\(5\%\)</span>, but not at <span class="math inline">\(2\%\)</span>​​​</li>
 </ul>
 <p>需要注意的是因为我们是 two-sided test。</p>
-<p>The post-hoc test test performed above is called <strong>Fisher’s Least Significant Differences(LSD)</strong>.</p>
-<h3 id="11-2-Multiple-tests"><a href="#11-2-Multiple-tests" class="headerlink" title="11.2 Multiple tests"></a>11.2 Multiple tests</h3><p>但需要注意的是，当我们进行这种多重检验时一定要考虑检验次数，因为检验次数越多，犯第一类错误的概率就越大。</p>
-<p>如果我们进行 $K$ 次独立样本检验，每次显著性水平为 $\alpha$，那么没有拒绝 $H_0$ 的概率为</p>
-<script type="math/tex; mode=display">
-(1-\alpha)^K</script><p>此时犯第一类错误的概率为</p>
-<script type="math/tex; mode=display">
-a_K = 1-(1-\alpha)^K</script><p>根据上述公式我们发现随着 K 增加犯第一类错误的概率呈指数增加。</p>
+<p>The post-hoc test test performed above is called <strong>Fisher's Least Significant Differences(LSD)</strong>.</p>
+<h3 id="multiple-tests">11.2 Multiple tests</h3>
+<p>但需要注意的是，当我们进行这种多重检验时一定要考虑检验次数，因为检验次数越多，犯第一类错误的概率就越大。</p>
+<p>如果我们进行 <span class="math inline">\(K\)</span> 次独立样本检验，每次显著性水平为 <span class="math inline">\(\alpha\)</span>，那么没有拒绝 <span class="math inline">\(H_0\)</span> 的概率为 <span class="math display">\[
+(1-\alpha)^K
+\]</span> 此时犯第一类错误的概率为 <span class="math display">\[
+a_K = 1-(1-\alpha)^K
+\]</span> 根据上述公式我们发现随着 K 增加犯第一类错误的概率呈指数增加。</p>
 <p>那么为了减少“弃真”(第一类错误)的概率，我们就需要对显著性水平进行“矫正”，通常我们有三种矫正方法：</p>
 <ul>
 <li>Bonferroni correction</li>
-<li>Tukey’s HSD (Honestly Significance Difference) test</li>
-<li>Scheffe’s test</li>
+<li>Tukey's HSD (Honestly Significance Difference) test</li>
+<li>Scheffe's test</li>
 </ul>
 <p>我们将在本章中讲述前两种矫正方法。</p>
-<h3 id="11-3-Bonferroni-correction-邦费罗尼矫正"><a href="#11-3-Bonferroni-correction-邦费罗尼矫正" class="headerlink" title="11.3 Bonferroni correction 邦费罗尼矫正"></a>11.3 Bonferroni correction 邦费罗尼矫正</h3><p>我们将每个独立检验的显著性水平设为</p>
-<script type="math/tex; mode=display">
-\alpha^* = \frac{\alpha}K</script><p>那么</p>
-<script type="math/tex; mode=display">
+<h3 id="bonferroni-correction-邦费罗尼矫正">11.3 Bonferroni correction 邦费罗尼矫正</h3>
+<p>我们将每个独立检验的显著性水平设为 <span class="math display">\[
+\alpha^* = \frac{\alpha}K
+\]</span> 那么 <span class="math display">\[
 \begin{align}
-\Pr(\text{Type I error for all K tests})&\leq \sum^K_{i = 1}\Pr(\text{Type I error for one test}) \\
-&= \sum_{i = 1}^k\alpha^* = \alpha
-\end{align}</script><h3 id="11-4-Tukey’s-HSD-图基HSD检验法"><a href="#11-4-Tukey’s-HSD-图基HSD检验法" class="headerlink" title="11.4 Tukey’s HSD    图基HSD检验法"></a>11.4 Tukey’s HSD    图基HSD检验法</h3><p>我们将会在 R 上使用该方法进行检验，通过计算出每两组的 p-value 进行矫正判断。</p>
-<h2 id="Tut"><a href="#Tut" class="headerlink" title="Tut"></a>Tut</h2><h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815163431533.png" alt="image-20210815163431533"></p>
+\Pr(\text{Type I error for all K tests})&amp;\leq \sum^K_{i = 1}\Pr(\text{Type I error for one test}) \\
+&amp;= \sum_{i = 1}^k\alpha^* = \alpha
+\end{align}
+\]</span></p>
+<h3 id="tukeys-hsd-图基hsd检验法">11.4 Tukey's HSD 图基HSD检验法</h3>
+<p>我们将会在 R 上使用该方法进行检验，通过计算出每两组的 p-value 进行矫正判断。</p>
+<h2 id="tut">Tut</h2>
+<h3 id="section">1.</h3>
+<figure>
+<img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815163431533.png" alt="image-20210815163431533" /><figcaption aria-hidden="true">image-20210815163431533</figcaption>
+</figure>
 <p><strong>SOL:</strong></p>
-<p>(a) Assume that the mean of Lubricant X, Y, Z are $\mu_1,\mu_2,\mu_3$, then </p>
-<p>​      the null $H_0:\mu_1 = \mu_2 = \mu_3$ versus the hypothesis $H_1:\mu_i$ are not all equal.</p>
-<p>(b)</p>
-<p>It is easy to calculate that $N = 27$, the overall sample mean $\overline{y_{..}} = 8.111$</p>
-<p>Groups Sum of Squares:</p>
-<script type="math/tex; mode=display">
-SSG = \sum_{i = 1}^3n_i(\overline{y_{i.}}-\overline{y_{..}})^2 = 81.758</script><p>Errors Sum of Squares:</p>
-<script type="math/tex; mode=display">
-SSE = \sum_{i = 1}^3(n_i-1)s_i^2 = 88.910</script><p>ANOVA table:</p>
+<ol type="a">
+<li>Assume that the mean of Lubricant X, Y, Z are <span class="math inline">\(\mu_1,\mu_2,\mu_3\)</span>, then</li>
+</ol>
+<p>​ the null <span class="math inline">\(H_0:\mu_1 = \mu_2 = \mu_3\)</span> versus the hypothesis <span class="math inline">\(H_1:\mu_i\)</span> are not all equal.</p>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<p>It is easy to calculate that <span class="math inline">\(N = 27\)</span>, the overall sample mean <span class="math inline">\(\overline{y_{..}} = 8.111\)</span></p>
+<p>Groups Sum of Squares: <span class="math display">\[
+SSG = \sum_{i = 1}^3n_i(\overline{y_{i.}}-\overline{y_{..}})^2 = 81.758
+\]</span> Errors Sum of Squares: <span class="math display">\[
+SSE = \sum_{i = 1}^3(n_i-1)s_i^2 = 88.910
+\]</span> ANOVA table:</p>
 <p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815163933732.png" alt="image-20210815163933732" style="zoom: 67%;" /></p>
-<p>Since $F = 11.035&gt;F_{2,24}(0.01) = 5.614$​, so we have strong evidence to show that three lubricants do not give the same mean weight loss.</p>
- <p align = 'right'><font color = #5460B1>Q.E.D.</font></p>
-
-<p>(c) Assumptions:</p>
+<p>Since <span class="math inline">\(F = 11.035&gt;F_{2,24}(0.01) = 5.614\)</span>​, so we have strong evidence to show that three lubricants do not give the same mean weight loss.</p>
+<p align="right">
+<font color = #5460B1>Q.E.D.</font>
+</p>
+<ol start="3" type="a">
+<li>Assumptions:</li>
+</ol>
 <ul>
 <li>Three observations are independent from each other.</li>
 <li>Three observations are normally distributed.</li>
 <li>Three observation have the same variance.</li>
 </ul>
-<h3 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h3><p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815164511763.png" alt="image-20210815164511763"></p>
+<h3 id="section-1">2.</h3>
+<figure>
+<img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815164511763.png" alt="image-20210815164511763" /><figcaption aria-hidden="true">image-20210815164511763</figcaption>
+</figure>
 <p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815164528221.png" alt="image-20210815164528221" style="zoom:90%;" /></p>
-<p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815164541442.png" alt="image-20210815164541442"></p>
+<figure>
+<img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815164541442.png" alt="image-20210815164541442" /><figcaption aria-hidden="true">image-20210815164541442</figcaption>
+</figure>
 <p><strong>SOL:</strong></p>
-<p>(a)</p>
-<p>Sample standard deviations are $s_1 = 15.657,s_2 = 15.588,s_3 = 15.921$</p>
-<p>Ratio between the largest and the smallest standard deviation is $15.921/15.588 = 1.021&lt;2$, so the assumption of equal variances seems justfied.</p>
-<p>(b) </p>
+<ol type="a">
+<li></li>
+</ol>
+<p>Sample standard deviations are <span class="math inline">\(s_1 = 15.657,s_2 = 15.588,s_3 = 15.921\)</span></p>
+<p>Ratio between the largest and the smallest standard deviation is <span class="math inline">\(15.921/15.588 = 1.021&lt;2\)</span>, so the assumption of equal variances seems justfied.</p>
+<ol start="2" type="a">
+<li></li>
+</ol>
 <ul>
 <li>The histogram of residuals does not seem to be strongly positively or negatively skewed.</li>
 <li>The points on the normal probability plot seem to be a straight line.</li>
-<li>The $p-$value is $p = 0.4437&gt;0.1$ suggests that there is no evidence against normality.</li>
+<li>The <span class="math inline">\(p-\)</span>value is <span class="math inline">\(p = 0.4437&gt;0.1\)</span> suggests that there is no evidence against normality.</li>
 <li>Therefore, the assumption of normality seems justified.</li>
 </ul>
-<p>(c)</p>
-<p>Since the $0.005&lt;p = 0.00918&lt;0.01$​​​, we can reject $H_0$​​​​ at $1\%$​​​ level but not at $0.1\%$​. That is, there is a strong evidence that the different kinds of instruction received by the mothers had different effects upon their children’s reading ability and comprehension.</p>
-<h3 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h3><p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815171213272.png" alt="image-20210815171213272"></p>
+<ol start="3" type="a">
+<li></li>
+</ol>
+<p>Since the <span class="math inline">\(0.005&lt;p = 0.00918&lt;0.01\)</span>​​​, we can reject <span class="math inline">\(H_0\)</span>​​​​ at <span class="math inline">\(1\%\)</span>​​​ level but not at <span class="math inline">\(0.1\%\)</span>​. That is, there is a strong evidence that the different kinds of instruction received by the mothers had different effects upon their children’s reading ability and comprehension.</p>
+<h3 id="section-2">3.</h3>
+<figure>
+<img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815171213272.png" alt="image-20210815171213272" /><figcaption aria-hidden="true">image-20210815171213272</figcaption>
+</figure>
 <p><strong>SOL:</strong></p>
-<p>(a)</p>
-<script type="math/tex; mode=display">
-SSE = \sum_{i = 1}^3(n_i-1)s_i^2 = 9349.612</script><script type="math/tex; mode=display">
-\overline{y_{..}} = 122.8652</script><script type="math/tex; mode=display">
-SSG = \sum_{i = 1}^3n_i(\overline{y_{i.}}-\overline{y_{..}})^2 = 6432.816</script><p>ANOVA table:</p>
+<ol type="a">
+<li><span class="math display">\[
+SSE = \sum_{i = 1}^3(n_i-1)s_i^2 = 9349.612
+\]</span></li>
+</ol>
+<p><span class="math display">\[
+\overline{y_{..}} = 122.8652
+\]</span></p>
+<p><span class="math display">\[
+SSG = \sum_{i = 1}^3n_i(\overline{y_{i.}}-\overline{y_{..}})^2 = 6432.816
+\]</span></p>
+<p>ANOVA table:</p>
 <p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20210815171449289.png" alt="image-20210815171449289" style="zoom: 67%;" /></p>
-<p>and $F = 7.912&gt;F_{2,23}(0.01) = 5.664$.</p>
-<p>So we can reject the null $H_0$ at the $1\%$​ level. Hence there is strong evidence of difference in mean yield of tomatoes.</p>
-<p>(b)</p>
-<p>Three test statistics are</p>
-<script type="math/tex; mode=display">
+<p>and <span class="math inline">\(F = 7.912&gt;F_{2,23}(0.01) = 5.664\)</span>.</p>
+<p>So we can reject the null <span class="math inline">\(H_0\)</span> at the <span class="math inline">\(1\%\)</span>​ level. Hence there is strong evidence of difference in mean yield of tomatoes.</p>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<p>Three test statistics are <span class="math display">\[
 \begin{align}
-T_{12} &= \frac{|\bar X_1-\bar X_2|}{\sqrt{MSE}\sqrt{1/n_1+1/n_2}}\\
-&= 3.893
-\end{align}</script><script type="math/tex; mode=display">
+T_{12} &amp;= \frac{|\bar X_1-\bar X_2|}{\sqrt{MSE}\sqrt{1/n_1+1/n_2}}\\
+&amp;= 3.893
+\end{align}
+\]</span></p>
+<p><span class="math display">\[
 \begin{align}
-T_{13} &= \frac{|\bar X_1-\bar X_3|}{\sqrt{MSE}\sqrt{1/n_1+1/n_3}}\\
-&= 1.151
-\end{align}</script><script type="math/tex; mode=display">
+T_{13} &amp;= \frac{|\bar X_1-\bar X_3|}{\sqrt{MSE}\sqrt{1/n_1+1/n_3}}\\
+&amp;= 1.151
+\end{align}
+\]</span></p>
+<p><span class="math display">\[
 \begin{align}
-T_{23} &= \frac{|\bar X_2-\bar X_3|}{\sqrt{MSE}\sqrt{1/n_2+1/n_3}}\\
-&= 2.452
-\end{align}</script><p>By the effect of two-sided test and Bonferroni correction, each significance level should multiply $6$</p>
-<script type="math/tex; mode=display">
-T_{12} = 3.893>3.768 = t_{23}(0.0005)</script><p>It shows that the difference is significant at $0.3\%$ level. There is a strong evidence to suggest Type $1$ and Type $2$ are different.</p>
-<script type="math/tex; mode=display">
-T_{13} = 1.151<t_{23}(0.05) = 1.714</script><p>It shows that the difference is not significant at $30\%$​​ level. There is no evidence to suggest Type $1$​​ and Type $3$​​ are different.</p>
-<script type="math/tex; mode=display">
-t_{23}(0.025) = 2.069<T_{23}<t_{23}(0.01) = 2.500</script><p>It shows that the difference is significant at $6\%$ level, but not at $15\%$ level. There is a weak evidence to suggest Type $2$ and Type $3$ are different.</p>
+T_{23} &amp;= \frac{|\bar X_2-\bar X_3|}{\sqrt{MSE}\sqrt{1/n_2+1/n_3}}\\
+&amp;= 2.452
+\end{align}
+\]</span></p>
+<p>By the effect of two-sided test and Bonferroni correction, each significance level should multiply <span class="math inline">\(6\)</span> <span class="math display">\[
+T_{12} = 3.893&gt;3.768 = t_{23}(0.0005)
+\]</span> It shows that the difference is significant at <span class="math inline">\(0.3\%\)</span> level. There is a strong evidence to suggest Type <span class="math inline">\(1\)</span> and Type <span class="math inline">\(2\)</span> are different. <span class="math display">\[
+T_{13} = 1.151&lt;t_{23}(0.05) = 1.714
+\]</span> It shows that the difference is not significant at <span class="math inline">\(30\%\)</span>​​ level. There is no evidence to suggest Type <span class="math inline">\(1\)</span>​​ and Type <span class="math inline">\(3\)</span>​​ are different. <span class="math display">\[
+t_{23}(0.025) = 2.069&lt;T_{23}&lt;t_{23}(0.01) = 2.500
+\]</span> It shows that the difference is significant at <span class="math inline">\(6\%\)</span> level, but not at <span class="math inline">\(15\%\)</span> level. There is a weak evidence to suggest Type <span class="math inline">\(2\)</span> and Type <span class="math inline">\(3\)</span> are different.</p>
 
       
     </div>
@@ -637,115 +726,26 @@ t_{23}(0.025) = 2.069<T_{23}<t_{23}(0.01) = 2.500</script><p>It shows that the d
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
-  
-  
-  
-
-
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          المحتويات
-        </li>
-        <li class="sidebar-nav-overview">
-          عام
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">罗醭坦</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">المقالات</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">التصنيفات</span>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">الوسوم</span>
-      </div>
-  </nav>
 </div>
 
 
 
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
 
 
-      </div>
-    </main>
+</div>
+  </main>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        
+  <footer class="footer">
+    <div class="footer-inner">
 
-        
 
 <div class="copyright">
-  
   &copy; 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
@@ -753,36 +753,18 @@ t_{23}(0.025) = 2.069<T_{23}<t_{23}(0.01) = 2.500</script><p>It shows that the d
   </span>
   <span class="author" itemprop="copyrightHolder">罗醭坦</span>
 </div>
-  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
-<script src="/js/utils.js"></script>
+  
 
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
 
 
 
@@ -792,75 +774,12 @@ t_{23}(0.025) = 2.069<T_{23}<t_{23}(0.01) = 2.500</script><p>It shows that the d
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   
 
-  
-      
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '[object Object]';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
 
-    
-
-  
 
 </body>
 </html>
