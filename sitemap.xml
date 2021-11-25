@@ -4,7 +4,7 @@
   <url>
     <loc>http://example.com/2021/11/22/COMP207/</loc>
     
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-25</lastmod>
     
   </url>
   
@@ -88,7 +88,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -98,42 +98,42 @@
   
   <url>
     <loc>http://example.com/categories/ELEC270/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/EEE109/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/EEE112/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/minds/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/MP/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/COMP207/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

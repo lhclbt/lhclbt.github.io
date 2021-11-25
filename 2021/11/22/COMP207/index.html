@@ -27,10 +27,20 @@
 <meta property="og:site_name" content="醭log">
 <meta property="og:description" content="数据库 笔记">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211124085959730.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125044659244.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125090152706.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125090106025.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125090339313.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125090735993.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125090125907.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125090523872.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125091647771.png">
 <meta property="article:published_time" content="2021-11-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-23T03:42:48.288Z">
+<meta property="article:modified_time" content="2021-11-25T04:57:38.782Z">
 <meta property="article:author" content="罗醭坦">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/11/22/COMP207/image-20211124085959730.png">
 
 
 <link rel="canonical" href="http://example.com/2021/11/22/COMP207/">
@@ -121,7 +131,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#sql-basics"><span class="nav-number">1.</span> <span class="nav-text">SQL Basics</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#transactions"><span class="nav-number"></span> <span class="nav-text">transactions</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#acid"><span class="nav-number">0.1.</span> <span class="nav-text">ACID</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#serializable-%E4%B8%B2%E8%A1%8C%E5%8C%96"><span class="nav-number">0.2.</span> <span class="nav-text">serializable 串行化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lock-%E9%94%81"><span class="nav-number">0.3.</span> <span class="nav-text">Lock 锁</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#sql-basics"><span class="nav-number">1.</span> <span class="nav-text">SQL Basics</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#transactions"><span class="nav-number">2.</span> <span class="nav-text">transactions</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#acid"><span class="nav-number">2.1.</span> <span class="nav-text">ACID</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#serializable-%E4%B8%B2%E8%A1%8C%E5%8C%96"><span class="nav-number">2.2.</span> <span class="nav-text">serializable 串行化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lock-%E9%94%81"><span class="nav-number">2.3.</span> <span class="nav-text">Lock 锁</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB"><span class="nav-number">2.3.1.</span> <span class="nav-text">锁的种类</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#log-%E6%97%A5%E5%BF%97"><span class="nav-number">2.4.</span> <span class="nav-text">log 日志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#recoverable-%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7"><span class="nav-number">2.5.</span> <span class="nav-text">Recoverable 可恢复性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#timestamps-%E6%97%B6%E9%97%B4%E6%88%B3"><span class="nav-number">2.5.1.</span> <span class="nav-text">Timestamps 时间戳</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sql-query"><span class="nav-number">3.</span> <span class="nav-text">SQL query</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#b-tree"><span class="nav-number">3.1.</span> <span class="nav-text">B+ Tree</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -209,7 +219,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-23 11:42:48" itemprop="dateModified" datetime="2021-11-23T11:42:48+08:00">2021-11-23</time>
+        <time title="修改时间：2021-11-25 12:57:38" itemprop="dateModified" datetime="2021-11-25T12:57:38+08:00">2021-11-25</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -265,7 +275,7 @@
 <p>alter table &#x8868;&#x540D; modify &#x5217;&#x540D;1 &#x6570;&#x636E;&#x7C7B;&#x578B;2; &#x6539;&#x53D8;&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
 <p>DML&#xFF1A;</p>
 <p>insert into</p>
-<h2 id="transactions">transactions</h2>
+<h3 id="transactions">transactions</h3>
 <p><strong>start transaction&#xFF1B;</strong></p>
 <p>SQL statements (select...update...balabala...)</p>
 <p><strong>commit; / rollback;</strong></p>
@@ -303,6 +313,21 @@
 <li>&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x53D8;&#x91CF;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x628A;&#x4E8C;&#x8005;&#x4E0D;&#x5C5E;&#x4E8E;&#x7EDF;&#x4E00;&#x64CD;&#x4F5C;&#x7684; read&#x2014;&gt;write, write&#x2014;&gt;read, write&#x2014;&gt;write&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6240;&#x6709;&#x7684;&#x51B2;&#x7A81;&#x64CD;&#x4F5C;&#x4ECE;&#x524D;&#x6307;&#x540E;&#x8FDE;&#x8D77;&#x6765;&#x3002;</li>
 <li>&#x6839;&#x636E; 1 &#x4E2D;&#x64CD;&#x4F5C;&#xFF0C;&#x5728;&#x64CD;&#x4F5C;&#xFF08;T1,T2,T3...&#xFF09;&#x4E4B;&#x95F4;&#x8FDE;&#x7EBF;&#xFF0C;&#x65E0;&#x73AF;&#x91CF;&#x5219;Conflict-Serializable.</li>
 </ol>
+<p><strong>abort &#x7EC8;&#x6B62;</strong></p>
+<p><em>UNDER THE DBMS CONTROL</em></p>
+<p>Errors while executing transactions</p>
+<ul>
+<li>Violation of integrity constraints, other run-time errors</li>
+</ul>
+<p>Deadlocks - E.g., when using two-phase locking - Concurrency control requests to abort transactions</p>
+<p>Explicit request - I.e. ROLLBACK;</p>
+<p><em>BEYOND THE DBMS&#x2019;S CONTROL</em> Media failures</p>
+<ul>
+<li>The medium holding the database becomes partially or completely unreadable</li>
+<li>Example: changes of bits, head crashes</li>
+</ul>
+<p>Catastrophic events - The medium holding the database is destroyed - Examples: explosions, fires, etc.</p>
+<p>System failures - Information about the active transaction&#x2019;s state is lost - Examples: power failures, software errors</p>
 <h4 id="lock-&#x9501;">Lock &#x9501;</h4>
 <p>Simple Locks &#x548C;&#x9501;&#x7684;&#x4F5C;&#x7528;</p>
 <ol type="1">
@@ -316,7 +341,7 @@
 <p><strong>&#x9636;&#x6BB5;1 Phase 1: </strong>request locks</p>
 <p><strong>&#x9636;&#x6BB5;2 Phase 2: </strong>unlock</p>
 <p>&#x4F7F;&#x7528;2PL&#x9501;&#x5F97;&#x5230;&#x7684;&#x8C03;&#x5EA6;&#x4E0D;&#x5B58;&#x5728;&#x73AF;&#x3002;</p>
-<p><strong><em>&#x9501;&#x7684;&#x79CD;&#x7C7B;</em></strong></p>
+<h5 id="&#x9501;&#x7684;&#x79CD;&#x7C7B;"><strong><em>&#x9501;&#x7684;&#x79CD;&#x7C7B;</em></strong></h5>
 <p>sli(X) Shared Locks &#x8BFB;&#x9501;: &#x7528;&#x4E8E;&#x9501;&#x4F4F;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x3002;&#x56E0;&#x4E3A;&#x53EA;&#x8BFB;&#x6240;&#x4EE5;&#x975E;&#x72EC;&#x5360;&#x3002;</p>
 <p>xli(X) Exclusive Locks &#x5199;&#x9501;: &#x7528;&#x4E8E;&#x9501;&#x4F4F;&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x3002;&#x56E0;&#x4E3A;&#x8981;&#x5199;&#x6240;&#x4EE5;&#x72EC;&#x5360;&#x3002;</p>
 <p>uli(X) Update Locks &#x66F4;&#x65B0;&#x9501;: &#x4E00;&#x5F00;&#x59CB;&#x7528;&#x4E8E;&#x9501;&#x4F4F;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x5347;&#x7EA7;&#x6210;Exclusive Lock&#x3002;&#x6240;&#x4EE5;&#x53EF;&#x83B7;&#x5F97;&#x5DF2;&#x88AB;Shared Locks &#x9501;&#x4F4F;&#x7684;&#x4E8B;&#x7269;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x5E26;&#x6709;&#x5206;&#x4EAB;&#x6027;&#x3002;</p>
@@ -358,7 +383,153 @@
 <p>too fine &#x592A;&#x7EC6;&#xFF0C;&#x867D;&#x7136;&#x5E76;&#x884C;&#x7A0B;&#x5EA6;&#x9AD8;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x5360;&#x7528;&#x5185;&#x5B58;&#x5927;&#x5927;&#x589E;&#x52A0;&#x4E86;&#x3002;</p>
 <p>&#x540C;&#x65F6;&#x8FD8;&#x8981;&#x907F;&#x514D;&#x4E00;&#x4E9B;&#x53EF;&#x80FD;&#x4F1A;&#x4EA7;&#x751F;&#x4E32;&#x884C;&#x5316;&#x95EE;&#x9898;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;transaction&#x6301;&#x6709;&#x67D0;&#x4E2A;tuple&#x7684;shared lock&#xFF0C;&#x7ED3;&#x679C;&#x53E6;&#x4E00;&#x4E2A;transaction&#x53C8;&#x6301;&#x6709;&#x8FD9;&#x4E2A;tuple&#x6240;&#x5728;relation&#x7684;exclusive lock...</p>
 <p>&#x4E3A;&#x4E86;&#x9AD8;&#x6548;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5C31;&#x6709;&#x4E86;intention locks</p>
-<p><strong>intention locks &#x610F;&#x5411;&#x9501;:</strong></p>
+<p><strong>intention locks &#x610F;&#x5411;&#x9501;: &#x6709;&#x5173;Granularity&#x7684;&#x9501;</strong></p>
+<p>&#x7B97;&#x662F;&#x4E00;&#x79CD;&#x4FEE;&#x9970;&#xFF0C;&#x6BD5;&#x7ADF;&#x9897;&#x7C92;&#x5EA6;&#x662F;&#x989D;&#x5916;&#x7684;&#x6027;&#x8D28;&#x3002;</p>
+<p>IS: Intention to request a shared lock on a sub-item IX: Intention to request an exclusive lock on a sub-item</p>
+<p>&#x610F;&#x5411;&#x9501;&#x987E;&#x540D;&#x601D;&#x4E49;,&#x4EE3;&#x8868;&#x4E86;&#x4E00;&#x4E2A;&#x610F;&#x5411;&#x3002;&#x5982;&#x679C;&#x6211;&#x8981;&#x5BF9;&#x67D0;&#x8868;&#x91CC;&#x9762;&#x7684;&#x67D0;&#x884C;&#x52A8;&#x624B;&#x52A8;&#x811A;&#xFF0C;&#x5C31;&#x8981;&#x548C;&#x8868;&#x8868;&#x8FBE;&#x4E00;&#x4E2A;&#xFF0C;&#x554A;&#xFF0C;&#x201C;&#x6211;&#x8981;&#x8FDB;&#x6765;&#x4E86;&#xFF01;&#x201D;&#x7684;&#x610F;&#x5411;&#x3002;&#x4E8E;&#x662F;&#x5C31;&#x641E;&#x4E00;&#x4E2A;&#x610F;&#x5411;&#x9501;&#x51FA;&#x6765;&#x3002;&#x8FD9;&#x6837;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x4E86;&#x5927;&#x9501;&#x548C;&#x5C0F;&#x9501;&#x7684;&#x51B2;&#x7A81;&#xFF0C;&#x7CFB;&#x7EDF;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x6574;&#x4E2A;&#x8868;&#x91CC;&#x4E00;&#x884C;&#x884C;&#x641C;&#x7D22;&#x6709;&#x6CA1;&#x6709;&#x884C;&#x9501;&#xFF0C;&#x76F4;&#x63A5;&#x770B;&#x6709;&#x6CA1;&#x6709;&#x610F;&#x5411;&#x9501;&#x5C31;&#x5B8C;&#x4E8B;&#x4E86;&#x3002;</p>
+<table>
+<thead>
+<tr class="header">
+<th>&#x5DF2;&#x6709;</th>
+<th>S Shared</th>
+<th>X Exclusive</th>
+<th>IS</th>
+<th>IX</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S Shared</td>
+<td>YES</td>
+<td>NO</td>
+<td>YES</td>
+<td>NO</td>
+</tr>
+<tr class="even">
+<td>X Exclusive</td>
+<td>NO</td>
+<td>NO</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr class="odd">
+<td>IS</td>
+<td>YES</td>
+<td>NO</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr class="even">
+<td>IX</td>
+<td>NO</td>
+<td>NO</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+<h4 id="log-&#x65E5;&#x5FD7;">log &#x65E5;&#x5FD7;</h4>
+<p>&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#xFF1A;&#x201C;&lt;...&gt; &#x4EE3;&#x8868;&#x65E5;&#x5FD7;&#x7684;&#x8BB0;&#x5F55;&#x5185;&#x5BB9;&#x201D;</p>
+<p><strong>undo log &#x56DE;&#x6EDA;&#x65E5;&#x5FD7;</strong></p>
+<p>&#x56DE;&#x6EDA;&#x65E5;&#x5FD7;&#x4FDD;&#x8BC1;&#x4E86;&#x539F;&#x5B50;&#x6027;&#xFF0C;&#x56E0;&#x4E3A;&#x505A;&#x5230;&#x4E00;&#x534A;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x4E86;&#x9519;&#x8BEF;&#x5C31;&#x7ED9;&#x4F60;&#x6EDA;&#x56DE;&#x53BB;&#x4E86;&#x3002;</p>
+<p><START t>: Transaction T has started. <COMMIT t>: Transaction T has committed.*&#x5F53;T&#x63D0;&#x4EA4;&#xFF0C;&#x6240;&#x6709;&#x53D8;&#x5316;&#x90FD;&#x5DF2;&#x8BB0;&#x5F55;&#xFF0C;&#x5219;&#x8981;commit <ABORT t>: Transaction T was aborted. &lt;T, X, v&gt;: Transaction T has updated the value of database item X, and the old value of X was v. &#x7528;&#x4E8E;&#x6062;&#x590D;&#x3002;</ABORT></COMMIT></START></p>
+<p>flush_log&#xFF1A;&#x5C06;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x5199;&#x5165;&#x78C1;&#x76D8;</p>
+<p><img src="/2021/11/22/COMP207/image-20211124085959730.png" alt="image-20211124085959730" style="zoom: 67%;"></p>
+<p><strong>redo log &#x91CD;&#x505A;&#x65E5;&#x5FD7;</strong></p>
+<p>New meaning of &lt;T, X, v&gt;: &#x201C;Transaction T has updated the value of database item X &amp; the new value of X is v.&#x201D; &#x7528;&#x4E8E;&#x91CD;&#x505A;committed transactions</p>
+<p><strong>Undo/Redo Logging</strong></p>
+<p>&lt;T, X, v, w&gt;: &#x201C;Transaction T has updated the value of database item X, and the old/new value of X is v/w.&#x201D;</p>
+<p><strong><em>Ensuring atomicity and durability</em></strong></p>
+<p>Undo essentially ensures Atomicity&#xFF0C;Can ensure durability using Force</p>
+<ul>
+<li>Force&#xFF1A;writing of updates to disk before commit</li>
+</ul>
+<p>Redo essentially ensures Durability&#xFF0C;Can ensure atomicity using No Steal</p>
+<ul>
+<li>No Steal means that uncommitted data may not overwrite committed data on disk</li>
+</ul>
+<p><strong>Checkpoints</strong></p>
+<p><em>for undo&#xFF1A;</em></p>
+<p>&#x5DF2;&#x7ECF;&#x5168;&#x90E8;&#x63D0;&#x4EA4;&#x5230;&#x78C1;&#x76D8;&#x4E86; &lt;- <strong>Checkpoint</strong> -&gt; &#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x9519;undo</p>
+<p><em>ARIES Checkpoints</em>&#xFF08;for Undo/Redo logging&#xFF09;</p>
+<p><start t1></start></p>
+<p>*uncommited transactions</p>
+<p>&lt;Checkpoint(T1,T2...)&gt;</p>
+<p>*committed transactions</p>
+<p><END checkpoint>*&#x6CA1;&#x6709;&#x8FD9;&#x884C;&#x76F8;&#x5F53;&#x4E8E;&#x6CA1;&#x6709;CHECKPOINT</END></p>
+<h4 id="recoverable-&#x53EF;&#x6062;&#x590D;&#x6027;">Recoverable &#x53EF;&#x6062;&#x590D;&#x6027;</h4>
+<p>commit &#x4E0D;&#x80FD;&#x4E71;c&#xFF0C;&#x53EF;&#x80FD;&#x51FA;&#x5927;&#x95EE;&#x9898; &#xFF08;durability and so on...</p>
+<p><strong>Recoverable schedules:</strong> T commits only if all Ts that T has read from have committed</p>
+<p><strong>Cascadeless Schedules&#xFF1A;</strong>Read committed</p>
+<ul>
+<li>Cascadeless schedules are <strong>in general not serialisable.</strong></li>
+</ul>
+<p><strong>Strict Schedules: </strong>Reads and writes committed</p>
+<p><strong>Strict Two-Phase Locking (Strict 2PL): </strong>A transaction T must not release any lock (that allows T to write data) until: T has committed or aborted, and the commit/abort log record has been written to disk.</p>
+<ul>
+<li>Strict 2PL is conflict-serialisable and strict.</li>
+<li>Risk of Deadlocks &#x6B7B;&#x9501;&#x4F9D;&#x65E7;</li>
+<li>Detect deadlocks &amp; fix them &#xFF08;such as timestamp</li>
+<li>Enforce deadlock-free schedules</li>
+</ul>
+<p><img src="/2021/11/22/COMP207/image-20211125044659244.png" alt="image-20211125044659244" style="zoom: 67%;"></p>
+<p><em>&#x89E3;&#x51B3;deadlock</em></p>
+<p>Timeouts&#xFF0C;Wait-for graphs&#xFF08;&#x597D;&#x50CF;&#x6CA1;&#x4EC0;&#x4E48;&#x7528;&#xFF0C;&#x53EA;&#x662F;&#x80FD;&#x770B;&#x73AF;&#xFF09;,Timestamps.</p>
+<h5 id="timestamps-&#x65F6;&#x95F4;&#x6233;"><strong><em>Timestamps &#x65F6;&#x95F4;&#x6233;</em></strong></h5>
+<p>Each transaction T is assigned a unique integer TS(T) upon arrival.(&#x65F6;&#x95F4;&#x6233;)</p>
+<p>If T1 arrived earlier than T2, we require TS(T1) &lt; TS(T2) *&#x8D8A;&#x5C0F;&#x8D8A;&#x65E9;</p>
+<ol type="1">
+<li><strong>Wait-Die</strong> Scheme&#xFF1A;older transactions always wait for unlocks
+<ul>
+<li>T1 wait&#xFF0C;T2 roll back (die.</li>
+</ul></li>
+<li><strong>Wound-Wait </strong>Scheme&#xFF1A;older transactions never wait for unlocks
+<ul>
+<li>T1 do&#xFF0C;T2 wait for T1</li>
+</ul></li>
+</ol>
+<p><strong>Read Time of X: RT(X)</strong> Timestamp of youngest transaction that read X *&#x8BFB;&#x53D6;X&#x7684;T&#x7684;&#x6700;&#x5927;(&#x6700;&#x8FDF;)&#x65F6;&#x95F4;&#x6233;</p>
+<p><strong>Write Time of X: WT(X)</strong> Timestamp of youngest transaction that wrote X *&#x5199;&#x5165;X&#x7684;T&#x7684;&#x6700;&#x5927;(&#x6700;&#x8FDF;)&#x65F6;&#x95F4;&#x6233;</p>
+<p><strong><em>Requests&#xFF1A;</em></strong></p>
+<ol type="1">
+<li><p>If T1 requests to <strong>read X</strong>: Abort &amp; restart T1 if <strong>WT(X) &gt; TS(T1)</strong> *&#x8BF4;&#x660E;&#x6709;&#x5C0F;&#x8F88;&#x63D0;&#x524D;&#x5199;&#x8FC7;&#x4E86;&#xFF0C;&#x503C;&#x53D8;&#x4E86;&#xFF0C;&#x8981;&#x574F;&#x4E8B;&#x3002;</p></li>
+<li><p>If T1 requests to <strong>write X</strong>: Abort &amp; restart T1 if <strong>RT(X) or WT(X) &gt; TS(T1)</strong> *&#x8BF4;&#x660E;&#x6709;&#x5C0F;&#x8F88;&#x63D0;&#x524D;&#x8BFB;/&#x5199;&#x8FC7;&#x4E86;&#xFF0C;&#x8981;&#x574F;&#x4E8B;&#x3002;</p></li>
+</ol>
+<p>Timestamp-based Scheduling</p>
+<p>Nice properties: &#x25E6; Enforces conflict-serialisable schedules &#x25E6; Deadlocks don&#x2019;t occur</p>
+<p>Bad properties: &#x25E6; Cascading rollbacks &#x25E6; <strong>Starvation</strong> can occur (cyclic aborts &amp; restarts of transactions)</p>
+<p><strong>MVCC Multiversion concurrency control&#xFF1A;</strong></p>
+<p>&#x5199;&#x5165;&#x4E0D;&#x8986;&#x76D6;&#xFF0C;&#x800C;&#x662F;&#x521B;&#x5EFA;&#x65B0;&#x7248;&#x672C;&#x3002;&#x8BFB;&#x53D6;&#x6700;&#x65B0;&#x7248;&#x672C;&#x3002;</p>
+<p>&#x200B; For writes: Abort &amp; restart T1 if RT(X) &gt; TS(T1) and otherwise, grant request &#x200B; For reads: Always granted</p>
+<h3 id="sql-query">SQL query</h3>
+<p>Basic relational algebra:</p>
+<p>Selection (&#x1D70E;) &#x1D70E;condition(R): &#x5C06;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x884C;&#x4ECE;R&#x4E2D;&#x9009;&#x51FA;</p>
+<p><img src="/2021/11/22/COMP207/image-20211125090152706.png" alt="image-20211125090152706" style="zoom:50%;"></p>
+<p>Projection (&#x1D70B;) &#x1D70B;xx(R): &#x5C06;R&#x4E2D;&#x7684;xx&#x4F5C;&#x4E3A;&#x5217;&#x9009;&#x51FA;</p>
+<p><img src="/2021/11/22/COMP207/image-20211125090106025.png" alt="image-20211125090106025" style="zoom: 50%;"></p>
+<p>Cartesian product (&#xD7;) &#x4E24;&#x8FB9;&#x4E92;&#x589E;&#x7684;&#x5408;&#x5E76;&#xFF08;&#x4E0D;&#x76F8;&#x5173;&#x5C31;&#x662F;&#x5217;&#x6570;&#x76F8;&#x4E58;&#xFF0C;1&#x5BF9;n&#xFF09;</p>
+<p><img src="/2021/11/22/COMP207/image-20211125090339313.png" alt="image-20211125090339313" style="zoom:50%;"></p>
+<p>Union (&#x222A;) &#x591A;&#x6B21;&#x64CD;&#x4F5C;&#x7ED3;&#x679C;&#x53E0;&#x653E;</p>
+<p><img src="/2021/11/22/COMP207/image-20211125090735993.png" alt="image-20211125090735993" style="zoom:50%;"></p>
+<p>Renaming (&#x1D70C;) &#x1D70C;xx-&gt;yy(R): &#x5C06;R&#x4E2D;&#x7684;xx&#x91CD;&#x547D;&#x540D;&#x4E3A;yy</p>
+<p><img src="/2021/11/22/COMP207/image-20211125090125907.png" alt="image-20211125090125907" style="zoom:50%;"></p>
+<p>Natural join (&#x22C8;) &#x9009;&#x51FA;&#x6709;&#x76F8;&#x540C;&#x516C;&#x5171;&#x5C5E;&#x6027;&#x7684;&#x884C;&#x5408;&#x5E76;(&#x4F1A;&#x53D7;&#x1D70C;&#x5F71;&#x54CD;)</p>
+<p><img src="/2021/11/22/COMP207/image-20211125090523872.png" alt="image-20211125090523872" style="zoom:50%;"></p>
+<p>Semijoin (&#x22C9;) Natural join&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x8FD4;&#x56DE;&#x5DE6;&#x8FB9;&#x8868;&#x7684;&#x503C;&#x3002;</p>
+<p><img src="/2021/11/22/COMP207/image-20211125091647771.png" alt="image-20211125091647771" style="zoom: 60%;"></p>
+<p>&#x4ECE;&#x53F6;&#x5B50;&#x671D;&#x5411;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x7EBF;&#x6027;&#x626B;&#x63CF;&#x4E4B;&#x7C7B;&#x7684;&#x2026;&#x2026;&#x6309;&#x7167;&#x76F4;&#x89C9;&#x6765;&#x5C31;&#x5B8C;&#x4E8B;&#x4E86;</p>
+<p><strong><em>index</em></strong></p>
+<p>Forms of Indexes&#xFF1A;</p>
+<p><strong>B+ Trees</strong></p>
+<ul>
+<li>Good if selection condition specifies a range Most widely used</li>
+</ul>
+<p><strong>Hash tables</strong></p>
+<ul>
+<li>Good if selection involvesequality only</li>
+</ul>
+<h4 id="b-tree">B+ Tree</h4>
+<p>&#x5220;&#x9664;&#x65F6;&#x9ED8;&#x8BA4;&#x4E0D;&#x52A8;&#x6570;&#x91CF;&#x5417;&#xFF1F;</p>
 
     </div>
 
