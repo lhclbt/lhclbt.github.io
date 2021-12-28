@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="Z变换：熟悉的陌生人">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ELEC270 W10-11">
+<meta property="og:url" content="http://example.com/2021/12/27/ELEC270%20W10/index.html">
+<meta property="og:site_name" content="醭log">
+<meta property="og:description" content="Z变换：熟悉的陌生人">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/12/27/ELEC270%20W10/image-20211031042102808.png">
+<meta property="og:image" content="http://example.com/2021/12/27/ELEC270%20W10/image-20211227104055875.png">
+<meta property="og:image" content="http://example.com/2021/12/27/ELEC270%20W10/image-20211228083709669.png">
+<meta property="og:image" content="http://example.com/2021/12/27/ELEC270%20W10/image-20211228082701834.png">
+<meta property="og:image" content="http://example.com/2021/12/27/ELEC270%20W10/image-20211228093241939.png">
+<meta property="article:published_time" content="2021-12-26T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-12-28T22:47:29.677Z">
+<meta property="article:author" content="罗醭坦">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/12/27/ELEC270%20W10/image-20211031042102808.png">
+
+
+<link rel="canonical" href="http://example.com/2021/12/27/ELEC270%20W10/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2021/12/27/ELEC270%20W10/","path":"2021/12/27/ELEC270 W10/","title":"ELEC270 W10-11"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>ELEC270 W10-11 | 醭log</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="醭log" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">醭log</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">醭言乱语</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#elec270-week10-11"><span class="nav-number">1.</span> <span class="nav-text">ELEC270 WEEK10-11</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.0.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#x.0-z-transform-z%E5%8F%98%E6%8D%A2"><span class="nav-number">1.0.2.</span> <span class="nav-text">X.0 z Transform z变换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#x.1-%E9%87%8D%E8%A6%81%E6%80%A7%E8%B4%A8"><span class="nav-number">1.0.3.</span> <span class="nav-text">X.1 重要性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#x.2-%E7%86%9F%E6%82%89%E7%9A%84%E9%99%8C%E7%94%9F%E4%BA%BA"><span class="nav-number">1.0.4.</span> <span class="nav-text">X.2 熟悉的陌生人</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#x.2.5-%E7%AC%94%E8%AE%B0%E8%83%8C%E5%90%8E%E7%9A%84%E6%95%85%E4%BA%8B"><span class="nav-number">1.0.5.</span> <span class="nav-text">X.2.5 笔记背后的故事</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E6%9B%B2"><span class="nav-number">1.0.5.1.</span> <span class="nav-text">插曲</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#x.3-roc-region-of-convergence-%E6%94%B6%E6%95%9B%E5%9F%9F"><span class="nav-number">1.0.6.</span> <span class="nav-text">X.3 ROC region of convergence 收敛域</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">罗醭坦</p>
+  <div class="site-description" itemprop="description">欢迎来到醭坦的测试与发布空间</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/27/ELEC270%20W10/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="罗醭坦">
+      <meta itemprop="description" content="欢迎来到醭坦的测试与发布空间">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醭log">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ELEC270 W10-11
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-12-27 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-27T00:00:00+08:00">2021-12-27</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-12-29 06:47:29" itemprop="dateModified" datetime="2021-12-29T06:47:29+08:00">2021-12-29</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ELEC270/" itemprop="url" rel="index"><span itemprop="name">ELEC270</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description">Z变换：熟悉的陌生人</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="elec270-week10-11">ELEC270 WEEK10-11</h1>
+<h3 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h3>
+<p>&#x5723;&#x8BDE;&#x8282;&#xFF1A;&#x723D;&#x5B8C;&#x6587;&#x660E;6&#x3002;</p>
+<p>&#x5723;&#x8BDE;&#x8282;&#x540E;&#xFF1A;&#x5BC4;&#x3002;</p>
+<p><strong><em>&#x5982;&#x6709;&#x7591;&#x60D1;/&#x9519;&#x6F0F;/&#x5EFA;&#x8BAE; &#x8FD8;&#x8BF7;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x533F;&#x540D;&#x63D0;&#x95EE;&#x7BB1;&#xFF0C;&#x6211;&#x4F1A;&#x4E00;&#x4E00;&#x56DE;&#x590D;&#x3002;</em></strong></p>
+<p>https://www.tapechat.net/uu/5r0pL8/ZV9H0543</p>
+<p><img src="/2021/12/27/ELEC270%20W10/image-20211031042102808.png" alt="image-20211031042102808" style="zoom: 30%;"></p>
+<p>&#x5FEB;&#x5199;&#x5B8C;&#x4E86;&#x53D1;&#x73B0;&#x5176;&#x5B9E;&#x6211;&#x63A2;&#x7D22;&#x7684;&#x5F88;&#x591A;&#x4E1C;&#x897F;&#x5728;&#x5965;&#x672C;&#x6D77;&#x59C6;&#x90A3;&#x4E2A;&#x7248;&#x672C;&#x4FE1;&#x53F7;&#x4E0E;&#x7CFB;&#x7EDF;&#x91CC;&#x90FD;&#x6709;&#x8FC7;&#x7CFB;&#x7EDF;&#x7684;&#x8BB2;&#x89E3;&#xFF0C;&#x611F;&#x89C9;&#x81EA;&#x5DF1;&#x50CF;&#x4E2A;&#x50BB;&#x903C;&#x3002;&#x5982;&#x679C;&#x5965;&#x672C;&#x6D77;&#x59C6;&#x90A3;&#x8FB9;&#x5B66;&#x5230;&#x4EC0;&#x4E48;&#x65B0;&#x4E1C;&#x897F;&#xFF0C;&#x4E5F;&#x4F1A;&#x52A0;&#x5230;&#x524D;&#x9762;&#x7684;&#x7B14;&#x8BB0;&#x91CC;&#x3002;</p>
+<h3 id="x.0-z-transform-z&#x53D8;&#x6362;">X.0 z Transform z&#x53D8;&#x6362;</h3>
+<p>z&#x53D8;&#x6362;&#x662F;&#x4E00;&#x4E2A;&#x6E05;&#x6670;&#x7B80;&#x5355;&#x7684;&#x5F0F;&#x5B50;&#xFF1A; <span class="math display">\[
+\mathcal{Z}\{x[n]\}=X(z)=\sum^{\infty}_{n=0}x[n]z^{-n}
+\]</span></p>
+<p>&#x4EE5;&#x53CA;&#x9006;z&#x53D8;&#x6362;&#xFF1A; <span class="math display">\[
+\mathcal{Z}^{-1}[X(z)]=x[n]=\frac{1}{2\pi i}\oint_{C}X(z)z^{n-1}dz
+\]</span> &#x4E0D;&#x8FC7;&#xFF0C;&#x5982;&#x679C;&#x628A;&#x8FD9;&#x53D8;&#x5316;&#x770B;&#x4F5C;&#x662F;&#x62C9;&#x666E;&#x62C9;&#x65AF;&#x53D8;&#x6362;&#x7684;&#x4E00;&#x4E2A;&#x5EF6;&#x4F38;&#xFF0C;&#x90A3;&#x8FD8;&#x86EE;&#x6076;&#x5FC3;&#x7684;&#x3002;&#x56E0;&#x4E3A;<span class="math inline">\(z=e^{sT}\)</span>(&#x4E3A;&#x4EC0;&#x4E48;&#x662F; T &#x4E0D;&#x662F; t ? &#x56E0;&#x4E3A;z&#x53D8;&#x6362;&#x7684;&#x539F;&#x51FD;&#x6570;&#x662F;&#x79BB;&#x6563;&#x7684;&#x3002;)</p>
+<h3 id="x.1-&#x91CD;&#x8981;&#x6027;&#x8D28;">X.1 &#x91CD;&#x8981;&#x6027;&#x8D28;</h3>
+<p>&#x5FEB;&#x901F;&#x53C2;&#x8003;&#xFF1A;<a target="_blank" rel="noopener" href="http://pfister.ee.duke.edu/courses/ece485/z_trans_table.pdf">z&#x53D8;&#x6362;&#x5BF9;&#x8868;&#x683C;&#x4E0E;&#x6027;&#x8D28;&#x6C47;&#x603B;</a></p>
+<p>&#x552F;&#x4E00;&#x6307;&#x5B9A;&#x91CD;&#x8981;&#x6027;&#x8D28;&#xFF1A; Time Delay <span class="math display">\[
+\mathcal{Z}\{x[n-a]\}=z^{-a}X(z)
+\]</span> &#x4E3A;&#x4EC0;&#x4E48;&#x8BE5;&#x6027;&#x8D28;&#x91CD;&#x8981;&#xFF1F;&#x56E0;&#x4E3A;&#x79BB;&#x6563;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x62C6;&#x6210;&#x4E00;&#x5806; time delay &#x4E86;&#x7684; <span class="math inline">\(\delta[n]\)</span> , &#x7ED3;&#x5408; <span class="math inline">\(\mathcal{Z}\{\delta[n]\}=1\)</span> , &#x4F60;&#x54EA;&#x6015;<strong>&#x4E0D;&#x77E5;&#x9053;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x7684;z&#x53D8;&#x6362;&#x90FD;&#x53EF;&#x4EE5;&#x55EF;&#x51D1;</strong>&#xFF01;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x62FF;&#x5B83;&#x5F53;&#x9A8C;&#x7B97;&#xFF0C;&#x7B97;&#x8D77;&#x6765;&#x7B80;&#x5355;&#x65B9;&#x4FBF;&#x8FD8;&#x9519;&#x4E0D;&#x4E86;&#x2026;&#x2026;</p>
+<h3 id="x.2-&#x719F;&#x6089;&#x7684;&#x964C;&#x751F;&#x4EBA;">X.2 &#x719F;&#x6089;&#x7684;&#x964C;&#x751F;&#x4EBA;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x770B;&#x4E86;&#x6211;&#x4E0A;&#x4E00;&#x5468;&#x7684;&#x7B14;&#x8BB0;&#x5173;&#x4E8E;&#x62C9;&#x666E;&#x62C9;&#x65AF;&#x53D8;&#x6362;&#x548C;&#x5E42;&#x7EA7;&#x6570;&#x89C6;&#x89D2;&#x8F6C;&#x6362;&#x7684;&#x8BA8;&#x8BBA;&#xFF0C;&#x76F8;&#x4FE1;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x4F60;&#x80AF;&#x5B9A;&#x4E00;&#x70B9;&#x5C31;&#x901A;&#x2014;&#x2014;&#x6216;&#x8005;&#x4E0D;&#x7528;&#x70B9;&#x4F60;&#x81EA;&#x5DF1;&#x5C31;&#x53D1;&#x73B0;&#x4E86;&#x3002;&#x800C;&#x4E14;&#x8FD9;&#x662F;&#x4E00;&#x4EF6;&#x5F88;&#x6709;&#x8DA3;&#x7684;&#x4E8B;&#xFF0C;&#x56E0;&#x4E3A;&#x5F53;&#x660E;&#x767D;&#x4E86;&#x6211;&#x8981;&#x8BF4;&#x7684;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x4ED6;&#x5C31;&#x662F;&#x4E00;&#x53E5;&#x5E9F;&#x8BDD;&#xFF0C;&#x4ED6;*&#x5C31;&#x662F;*&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x3002;&#x4F46;&#x5982;&#x679C;&#x6CA1;&#x770B;&#x7834;&#x6CA1;&#x8BF4;&#x7834;&#xFF0C;&#x53EF;&#x80FD;&#x8D34;&#x5728;&#x4F60;&#x8138;&#x4E0A;&#x4F60;&#x81EA;&#x5DF1;&#x90FD;&#x6CA1;&#x53D1;&#x73B0;&#x3002;</p>
+<p>&#x5148;&#x8BF4;&#x7ED3;&#x8BBA;&#xFF1A;<span class="math inline">\(x[n]\)</span> &#x5C31;&#x662F; <span class="math inline">\(X(z)\)</span> &#x6D1B;&#x6717;&#x5C55;&#x5F00;&#x5F97;&#x5230;&#x7684;&#x6D1B;&#x6717;&#x7EA7;&#x6570;&#x7684;<strong>&#x8D1F;&#x5E42;&#x90E8;&#x5206;&#x7684;&#x7CFB;&#x6570;</strong>&#x5E8F;&#x5217;&#x3002;<em>(&#x56E0;&#x4E3A;&#x6CF0;&#x52D2;&#x4E0D;&#x5305;&#x542B;&#x8D1F;&#x5E42;&#xFF0C;&#x6240;&#x4EE5;&#x63A5;&#x4E0B;&#x6765;&#x65E0;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x8BE5;&#x8D1F;&#x5E42;&#x90E8;&#x5206;&#x76F4;&#x63A5;&#x7528;&#x6D1B;&#x6717;<strong>&#x7EA7;&#x6570;</strong>&#x6307;&#x4EE3;&#x3002;)</em></p>
+<p>&#x4F8B;&#xFF1A;<span class="math inline">\(z/(z-1)^2\)</span> &#x5C55;&#x5F00;&#x5F97; <span class="math inline">\(z/(z-1)^2=\sum^\infty_{n=0}nz^{-n}\)</span> ,&#x800C; <span class="math inline">\(n\cdot u[n]\)</span> &#x5BF9;&#x5E94;&#x7684; <span class="math inline">\(X(z)=z/(z-1)^2\)</span></p>
+<p>&#x76F8;&#x5F53;&#x4E8E;<span class="math inline">\(\sum^\infty_{-\infty}z^{-n}\)</span> &#x7684;&#x7CFB;&#x6570;&#x5E8F;&#x5217;&#x4E58;&#x4E0A;&#x4E86;<span class="math inline">\(n\cdot u[n]\)</span></p>
+<p>&#x4E8E;&#x662F;&#x6240;&#x8C13;Z&#x53D8;&#x6362;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#x590D;&#x53D8;&#x51FD;&#x6570;&#x6D1B;&#x6717;&#x5C55;&#x5F00;&#x7684;&#x4F20;&#x7EDF;&#x6570;&#x5B66;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x7528;&#x8FD9;&#x4E2A;&#x89C6;&#x89D2;&#x770B;&#x9006;z&#x53D8;&#x6362;&#x5C31;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x597D;&#x7406;&#x89E3;&#x4E86;&#xFF1A;&#x56F4;&#x9053;&#x79EF;&#x5206;&#x53EA;&#x80FD;&#x6C42;&#x51FA;&#x6D1B;&#x6717;&#x7EA7;&#x6570;<span class="math inline">\(z^{-1}\)</span>&#x65F6;&#x7684;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x7ED9;&#x51FD;&#x6570;&#x4E58;&#x4E0A; <span class="math inline">\(z^{n-1}\)</span> &#x6C42;&#x51FA;&#x6BCF;&#x4E00;&#x7EA7;&#x5F97;&#x5230;&#x6D1B;&#x6717;&#x7EA7;&#x6570;&#x5E8F;&#x5217;&#x2014;&#x2014;&#x901A;&#x7528;&#x7684;&#x5C55;&#x5F00;&#x65B9;&#x6CD5;&#x7F62;&#x4E86;&#x3002;</p>
+<p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x53D8;&#x5316;&#x662F;&#x6709;&#x610F;&#x4E49;&#x7684;&#xFF1A;</p>
+<p><span class="math inline">\(x[n]\)</span> &#x7684;&#x4FE1;&#x53F7;&#x662F;&#x6709;<strong>&#x65F6;&#x95F4;&#x987A;&#x5E8F;</strong>&#x7684;&#x3002;</p>
+<p><span class="math inline">\(\xleftarrow{\ \ \ \ \ \ \ \ \ \ \ past\ \ \ \ \ \ \ \ \ \ }now\xrightarrow{\ \ \ \ \ \ \ \ \ \ future\ \ \ \ \ \ \ \ \ \ }\)</span></p>
+<p><span class="math inline">\(\cdots \ \ z^{3}\ \ z^{2}\ \ z^{1}\ \ z^{0}\ \ z^{-1}\ \ z^{-2}\ \ z^{-3}\ \ \cdots\)</span></p>
+<p><span class="math inline">\(\xleftarrow{\ \ \ \ \ \ \ \ \ \ \ &#x6CF0;&#x52D2;\ \ \ \ \ \ \ \ \ \ }&#x5C55;&#x5F00;\xrightarrow{\ \ \ \ \ \ \ \ \ \ \ &#x6D1B;&#x6717;\ \ \ \ \ \ \ \ \ \ \ \ \ }\)</span></p>
+<p>&#x8003;&#x8651;&#x5230;&#x8BFE;&#x4E0A;&#x6211;&#x4EEC;&#x63A5;&#x89E6;&#x5230;&#x6240;&#x6709;&#x7684;z&#x53D8;&#x6362;&#x90FD;&#x662F;causal&#x7684;&#xFF0C;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x53EA;&#x4F1A;&#x9047;&#x5230;&#x8DDF;&#x6D1B;&#x6717;&#x7EA7;&#x6570;&#x76F8;&#x5173;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x4E0D;&#x4EE3;&#x8868;z&#x53D8;&#x6362;&#x5C31;&#x4E0D;&#x5B58;&#x5728;&#x4F7F;&#x7528;&#x6CF0;&#x52D2;&#x5C55;&#x5F00;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6BD5;&#x7ADF;&#x4E25;&#x683C;&#x6765;&#x8BF4;&#xFF0C;&#x6CF0;&#x52D2;&#x5C55;&#x5F00;&#x662F;&#x6D1B;&#x6717;&#x5C55;&#x5F00;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x96C6;&#x3002;&#x4F46;&#xFF08;&#x6B63;&#x5E42;&#xFF09;&#x6CF0;&#x52D2;&#x5C55;&#x5F00;&#x5C31;&#x610F;&#x5473;&#x7740;&#x975E;causal&#x7684; <span class="math inline">\(x[n]\)</span> &#xFF0C;ROC&#x4E5F;&#x4F1A;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002; <em>&#x53C2;&#x89C1; X.3</em></p>
+<h3 id="x.2.5-&#x7B14;&#x8BB0;&#x80CC;&#x540E;&#x7684;&#x6545;&#x4E8B;">X.2.5 &#x7B14;&#x8BB0;&#x80CC;&#x540E;&#x7684;&#x6545;&#x4E8B;</h3>
+<p><em>&#x60A8;&#x82E5;&#x5BF9;&#x6B64;&#x6CA1;&#x6709;&#x5174;&#x8DA3;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x535A;&#x5BA2;&#x4FA7;&#x8FB9;&#x76EE;&#x5F55;&#x8DF3;&#x8F6C;&#x5230; X.3</em></p>
+<p>&#x5F53;&#x65F6;&#x6211;&#x5728;&#x505A;Z&#x53D8;&#x6362;problem sheet&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5BF9;&#x4E8E;&#x5176;&#x4E2D;&#x4E00;&#x9053;&#x9898;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x4F5C;&#x7B54;&#xFF0C;&#x53D1;&#x73B0;&#x4ED6;&#x4EEC;&#x51FA;&#x73B0;&#x4E86;&#x77DB;&#x76FE;&#x3002;&#x8BFE;&#x4E0A;&#x8BE2;&#x95EE;&#x8001;&#x5E08;&#xFF0C;&#x8001;&#x5E08;&#x8868;&#x793A;&#x4ED6;&#x4E5F;&#x4E0D;&#x77E5;&#x9053;&#x3002;&#x8BA9;&#x6211;po&#x5728;discussion board &#x4E0A;&#x3002;&#x4E8E;&#x662F;&#x6211;&#x5199;&#x4E86;&#xFF0C;&#x7ED3;&#x679C;&#x4ED6;&#x4E0D;&#x7406;&#x6211;( `&#x434;&#xB4;) &#x6211;&#x53EA;&#x80FD;&#x81EA;&#x5DF1;&#x57CB;&#x5934;&#x82E6;&#x60F3;&#xFF0C;&#x8FD8;&#x628A;&#x5E94;&#x6570;&#x597D;&#x5144;&#x5F1F;&#x7ED5;&#x8FDB;&#x4E86;&#x6D51;&#x6C34;&#x6C9F;&#x91CC;&#x2026;&#x2026;</p>
+<p>&#x6211;&#x5728;discussion board &#x4E0A;&#x7684;&#x63D0;&#x95EE;&#x2193; &#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5148;&#x522B;&#x6025;&#x7740;&#x5F80;&#x4E0B;&#x62C9;&#xFF0C;&#x8DDF;&#x7740;&#x60F3;&#x60F3;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x88AB;&#x6211;&#x7ED5;&#x8FDB;&#x6C9F;&#x91CC;&#xFF0C;&#x90A3;&#x8BF4;&#x660E;&#x4F60;&#x5DF2;&#x7ECF;&#x660E;&#x767D;X.2&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p><img src="/2021/12/27/ELEC270%20W10/image-20211227104055875.png" alt="image-20211227104055875" style="zoom: 67%;"></p>
+<p>OK. But first, I need to clarify to you&#x2026; this question is a little bit tricky. It&apos;s a special case in this situation.</p>
+<p>&#x597D;&#x5427;&#xFF0C;&#x4E0A;&#x9762;&#x90A3;&#x53E5;&#x82F1;&#x6587;&#x662F;&#x9632;&#x6B62;&#x4F60;&#x4F59;&#x5149;&#x4E00;&#x4E0D;&#x5C0F;&#x5FC3;&#x7784;&#x5230;&#x7B54;&#x6848;&#x3002;&#x6211;&#x60F3;&#x8BF4;&#xFF0C;&#x8FD9;&#x4EC5;&#x4EC5;&#x662F;&#x9488;&#x5BF9;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x7279;&#x4F8B;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;<span class="math inline">\(u[n]\)</span>&#x7684;&#x53D6;&#x503C;&#x5E76;&#x4E0D;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x6F14;&#x800C;&#x53D8;&#x5316;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x76F8;&#x51CF;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x80FD;&#x7528;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x7136;&#x800C;&#x4E8B;&#x5B9E;&#x4E0A;&#x53EA;&#x6709;&#x6D1B;&#x6717;&#x624D;&#x662F;&#x901A;&#x7528;&#x7684;&#x3002;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#xFF0C;&#x6CF0;&#x52D2;&#x7EA7;&#x6570;&#x548C;&#x6D1B;&#x6717;&#x7EA7;&#x6570;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x5C06;&#x4F1A;&#x4E0D;&#x540C;&#x3002;</p>
+<h4 id="&#x63D2;&#x66F2;">&#x63D2;&#x66F2;</h4>
+<p>&#x4F60;&#x6240;&#x89C1;&#x5230;&#x7684;&#x601D;&#x8DEF;&#x662F;&#x6211;&#x6574;&#x7406;&#x8FC7;&#x540E;&#x7684;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x6211;&#x662F;&#x5148;&#x9047;&#x5230;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x518D;&#x5B66;&#x4F1A;&#x62C9;&#x666E;&#x62C9;&#x65AF;&#x53D8;&#x6362;&#x548C;&#x5E42;&#x7EA7;&#x6570;&#x89C6;&#x89D2;&#x8F6C;&#x6362;&#x7684;&#x3002;&#x90A3;&#x771F;&#x662F;&#x4E00;&#x6BB5;&#x6076;&#x5FC3;&#x7684;&#x5BFB;&#x627E;&#x4E4B;&#x65C5;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x61C2;&#x7684;&#x2026;&#x2026;z&#x53D8;&#x6362;&#x5C31;&#x662F;&#x6D1B;&#x6717;&#x5C55;&#x5F00;&#x672C;&#x8EAB;&#xFF0C;&#x7B54;&#x6848;&#x5C31;&#x5728;&#x6211;&#x773C;&#x76AE;&#x5B50;&#x5E95;&#x4E0B;&#x3002;&#x6211;&#x4E0D;&#x53EF;&#x80FD;&#x627E;&#x5230;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#xFF0C;&#x6709;&#x5173;&#x4E8E;z&#x53D8;&#x6362;&#x67D0;&#x79CD;&#x5E94;&#x7528;/&#x6027;&#x8D28;/&#x8054;&#x7CFB;&#x7684;&#x89E3;&#x91CA;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5C31;&#x662F;&#x5B83;&#x81EA;&#x5DF1;&#x3002;</p>
+<p>&#x6709;&#x8DA3;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x662F;&#x5728;&#x7761;&#x68A6;&#x4E2D;&#x5F97;&#x5230;&#x7684;&#x7B54;&#x6848;&#x3002;</p>
+<p><img src="/2021/12/27/ELEC270%20W10/image-20211228083709669.png" alt="image-20211228083709669" style="zoom:50%;"></p>
+<center>
+<em>&#x543E;&#x597D;&#x68A6;&#x4E2D;&#x505A;&#x9898;</em>
+<center>
+<p>&#x51E0;&#x5929;&#x540E;&#xFF0C;&#x8001;&#x5E08;&#xFF1A;*&#x54E6;&#x54A9;&#x8DCC;&#x591A;*</p>
+<p><img src="/2021/12/27/ELEC270%20W10/image-20211228082701834.png" alt="image-20211228082701834" style="zoom: 67%;"></p>
+<h3 id="x.3-roc-region-of-convergence-&#x6536;&#x655B;&#x57DF;">X.3 ROC region of convergence &#x6536;&#x655B;&#x57DF;</h3>
+<p><strong>1. region of convergence&#xFF0C;&#x663E;&#x7136;&#x4E0D;&#x4F1A;&#x5305;&#x542B;&#x5947;&#x70B9;&#x5728;&#x5185;&#x3002;&#x6240;&#x6709;ROC&#x4E0D;&#x542B;&#x5947;&#x70B9;</strong> <strong>2. &#x5E42;&#x7EA7;&#x6570;&#x7684;&#x6536;&#x655B;&#x4E0E;&#x5426;&#x53EA;&#x548C;|z|&#x76F8;&#x5173;&#xFF0C;&#x6240;&#x4EE5;&#x6536;&#x655B;&#x57DF;&#x662F;&#x4E00;&#x4E2A;&#x5706;&#x76D8;/&#x5706;&#x73AF;</strong></p>
+<p>&#x82E5;<span class="math inline">\(x[n]\)</span>&#x53EA;&#x6709;&#x6709;&#x9650;&#x4E2A;&#xFF0C;&#x5B83;&#x5C31;&#x53EA;&#x662F;&#x4E00;&#x5806;&#x5E42;&#x51FD;&#x6570;&#x7684;&#x548C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5E42;&#x51FD;&#x6570;&#x903C;&#x8FD1;&#x67D0;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x6781;&#x9650;&#xFF0C;&#x9664;&#x4E86;0&#x548C;&#x65E0;&#x7A77;&#x8FDC;&#x5904;&#xFF0C;&#x8FD9;&#x4E2A;&#x548C;&#x90FD;&#x662F;&#x6709;&#x9650;&#x7684;&#x3002;</p>
+<p>&#x5F15;&#x51FA;&#x6027;&#x8D28;&#xFF1A;</p>
+<p><strong>3. &#x82E5; <span class="math inline">\(x[n]\)</span> &#x4E3A;&#x6709;&#x9650;&#x957F;&#x5E8F;&#x5217;&#xFF0C;ROC&#x4E3A;&#x6574;&#x4E2A;&#x590D;&#x5E73;&#x9762;(&#x53EF;&#x80FD;&#x53BB;&#x9664;z=0/&#x65E0;&#x7A77;&#x8FDC;&#x70B9;)</strong></p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x8BBE; <span class="math inline">\(X(z)\)</span> , &#x6709;&#x591A;&#x4E2A;&#x5947;&#x70B9;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;causal&#x7684; <span class="math inline">\(x[n]\)</span> ,&#x4E5F;&#x5C31;&#x662F;&#x7EAF;&#x8D1F;&#x5E42;&#x6D1B;&#x6717;&#x7EA7;&#x6570;&#xFF0C;&#x5B83;&#x5C06;&#x4E0D;&#x542B;&#x4EFB;&#x4F55;&#x6B63;&#x5E42;&#x7684;&#x6CF0;&#x52D2;&#x90E8;&#x5206;&#xFF0C;&#x56E0;&#x6B64;&#x5FC5;&#x7136;&#x5305;&#x542B;&#x65E0;&#x7A77;&#x8FDC;&#x70B9;&#x3002;</p>
+<p>&#x5B83;&#x7684;ROC&#x5E94;&#x8BE5;&#x662F;&#x8FD9;&#x4E2A;&#x6837;&#x3002;</p>
+<p><img src="/2021/12/27/ELEC270%20W10/image-20211228093241939.png" alt="image-20211228093241939" style="zoom: 33%;"></p>
+<p>&#x5F15;&#x51FA;&#x6027;&#x8D28;&#xFF1A;</p>
+<p><strong>4. &#x5BF9;&#x4E8E;causal&#x7684; <span class="math inline">\(x[n]\)</span>&#xFF0C;&#x8BBE;&#x6700;&#x5916;&#x56F4;&#x7684;&#x6781;&#x70B9;<span class="math inline">\(|z_0|=r_0\)</span>,&#x5219;&#x6240;&#x6709;<span class="math inline">\(|z|&gt;r_0\)</span>&#x90FD;&#x5728;ROC&#x5185;</strong></p>
+<p>&#x53CD;&#x4E4B;&#xFF0C;</p>
+<p><strong>5. &#x5BF9;&#x4E8E;&#x53EA;&#x6709;n&lt;=0&#x9879;&#x7684; <span class="math inline">\(x[n]\)</span><em>&#xFF08;&#x5DE6;&#x8FB9;&#x5E8F;&#x5217;&#xFF09;</em>&#xFF0C;&#x8BBE;&#x6700;&#x5185;&#x90E8;&#x7684;&#x6781;&#x70B9;<span class="math inline">\(|z_0|=r_0\)</span>,&#x5219;&#x6240;&#x6709;<span class="math inline">\(|z|&lt;r_0\)</span>&#x90FD;&#x5728;ROC&#x5185;(&#x6781;&#x70B9;&#x5168;&#x5728;&#x5916;&#x5934;&#x7684;&#x5B9E;&#x5FC3;&#x5706;&#x76D8;)</strong></p>
+<p>&#x518D;&#x6DF7;&#x5408;&#xFF0C;</p>
+<p><strong>6. &#x5BF9;&#x4E8E;&#x4E24;&#x8FB9;&#x90FD;&#x6709;&#x7684;&#xFF0C;&#x628A;&#x5B83;&#x62C6;&#x6210;&#x4E0A;&#x8FF0;&#x4E24;&#x79CD;&#x5E8F;&#x5217;&#xFF0C;ROC&#x53D6;&#x4EA4;&#x96C6;&#x3002;</strong></p>
+<p>&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#x53EF;&#x80FD;</p>
+<ul>
+<li>&#x4EA4;&#x96C6;&#x662F;&#x5706;&#x73AF;&#xFF0C;&#x90A3;&#x4E48;ROC&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5706;&#x73AF;&#x3002;</li>
+<li>&#x4EA4;&#x96C6;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x65E0;ROC&#xFF0C;<span class="math inline">\(X(z)\)</span> &#x4E0D;&#x5B58;&#x5728;&#x3002;</li>
+</ul>
+<p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5F53;<span class="math inline">\(|z|=1\)</span>, <span class="math inline">\(z=e^{i\omega}\)</span>, <strong>z&#x53D8;&#x6362;&#x9000;&#x5316;&#x6210;&#x5085;&#x91CC;&#x53F6;&#x53D8;&#x6362;</strong>, &#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x6839;&#x636E;ROC&#x662F;&#x5426;&#x5305;&#x542B;&#x5355;&#x4F4D;&#x5706;&#x6765;&#x5224;&#x65AD;<span class="math inline">\(x[n]\)</span>&#x7684;&#x5085;&#x91CC;&#x53F6;&#x53D8;&#x6362;&#x662F;&#x5426;&#x6536;&#x655B;&#x3002;</p>
+<p>&#x800C;&#x8003;&#x8651;&#x5230;&#x5BF9;&#x4E8E;&#x4EFB;&#x610F;&#x590D;&#x6570;<span class="math inline">\(z=r\cdot e^{i\omega}\)</span></p>
+<p><span class="math inline">\(X(z)=X(r\cdot e^{i\omega})=\mathcal{F}\{x[n]\cdot r^{-n}\}\)</span></p>
+<p>&#x8FD9;&#x4E2A;&#x4E5F;&#x6709;&#x7528;&#x5904;&#xFF0C;&#x4E0D;&#x8FC7;&#x53CD;&#x6B63;&#x54B1;&#x4EEC;&#x7528;&#x4E0D;&#x7740;&#x2026;&#x2026;&#x4F46;&#x6709;&#x65F6;&#x5019;&#x7528;&#x8FD9;&#x4E2A;&#x89C6;&#x89D2;&#x53BB;&#x770B;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#x53EF;&#x80FD;&#x4F1A;&#x5E26;&#x6765;&#x65B0;&#x7684;&#x601D;&#x8DEF;&#x3002;</p>
+</center></center>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/12/24/ELEC270%20W9/" rel="prev" title="ELEC270 W9">
+                  <i class="fa fa-chevron-left"></i> ELEC270 W9
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">罗醭坦</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
