@@ -2,23 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2021/12/27/ELEC270%20W10/</loc>
+    <loc>http://example.com/2021/11/08/ELEC270%20W3-6/</loc>
     
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2022-01-08</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2021/12/24/ELEC270%20W9/</loc>
+    <loc>http://example.com/2021/11/22/COMP201/</loc>
     
-    <lastmod>2021-12-27</lastmod>
+    <lastmod>2022-01-08</lastmod>
     
   </url>
   
   <url>
     <loc>http://example.com/2021/11/22/COMP207/</loc>
     
-    <lastmod>2021-12-07</lastmod>
+    <lastmod>2022-01-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/12/24/ELEC270%20W9/</loc>
+    
+    <lastmod>2022-01-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/12/27/ELEC270%20W10/</loc>
+    
+    <lastmod>2021-12-28</lastmod>
     
   </url>
   
@@ -79,13 +93,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2021/11/08/ELEC270%20W3-6/</loc>
-    
-    <lastmod>2021-11-14</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2021/11/06/EEE112%E7%AC%94%E8%AE%B0%E8%A1%A5%E6%A1%A3(PDF)/</loc>
     
     <lastmod>2021-11-05</lastmod>
@@ -116,7 +123,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2022-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -126,42 +133,49 @@
   
   <url>
     <loc>http://example.com/categories/ELEC270/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2022-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/EEE109/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2022-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/EEE112/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2022-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/minds/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2022-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/MP/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2022-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/COMP207/</loc>
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2022-01-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/COMP201/</loc>
+    <lastmod>2022-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

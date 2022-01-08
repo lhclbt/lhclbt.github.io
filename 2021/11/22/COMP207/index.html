@@ -36,8 +36,13 @@
 <meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125090125907.png">
 <meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125090523872.png">
 <meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20211125091647771.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20220106092537712.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20220108003752287.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20220108004226906.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20220108052224581.png">
+<meta property="og:image" content="http://example.com/2021/11/22/COMP207/image-20220108052210509.png">
 <meta property="article:published_time" content="2021-11-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-12-07T01:53:40.261Z">
+<meta property="article:modified_time" content="2022-01-07T21:23:21.103Z">
 <meta property="article:author" content="罗醭坦">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/11/22/COMP207/image-20211124085959730.png">
@@ -131,7 +136,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#sql-basics"><span class="nav-number">1.</span> <span class="nav-text">SQL Basics</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#transactions"><span class="nav-number">2.</span> <span class="nav-text">transactions</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#acid"><span class="nav-number">2.1.</span> <span class="nav-text">ACID</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#serializable-%E4%B8%B2%E8%A1%8C%E5%8C%96"><span class="nav-number">2.2.</span> <span class="nav-text">serializable 串行化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lock-%E9%94%81"><span class="nav-number">2.3.</span> <span class="nav-text">Lock 锁</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB"><span class="nav-number">2.3.1.</span> <span class="nav-text">锁的种类</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#log-%E6%97%A5%E5%BF%97"><span class="nav-number">2.4.</span> <span class="nav-text">log 日志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#recoverable-%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7"><span class="nav-number">2.5.</span> <span class="nav-text">Recoverable 可恢复性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#timestamps-%E6%97%B6%E9%97%B4%E6%88%B3"><span class="nav-number">2.5.1.</span> <span class="nav-text">Timestamps 时间戳</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sql-query"><span class="nav-number">3.</span> <span class="nav-text">SQL query</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#b-tree"><span class="nav-number">3.1.</span> <span class="nav-text">B+ Tree</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#data-%E6%95%B0%E6%8D%AE"><span class="nav-number">4.</span> <span class="nav-text">data 数据</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#structuredsemi-structuredunstructured-data"><span class="nav-number">4.1.</span> <span class="nav-text">structured，semi-structured，unstructured data、</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#xml"><span class="nav-number">4.2.</span> <span class="nav-text">XML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#xquary"><span class="nav-number">4.3.</span> <span class="nav-text">XQuary</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#data-analysis"><span class="nav-number">4.4.</span> <span class="nav-text">Data analysis</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#market-basket-model-%E8%B4%AD%E7%89%A9%E7%AF%AE%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.4.1.</span> <span class="nav-text">market-basket model 购物篮模型</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#sql-basics"><span class="nav-number">1.</span> <span class="nav-text">SQL Basics</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#transactions"><span class="nav-number">2.</span> <span class="nav-text">transactions</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#acid"><span class="nav-number">2.1.</span> <span class="nav-text">ACID</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#serializable-%E4%B8%B2%E8%A1%8C%E5%8C%96"><span class="nav-number">2.2.</span> <span class="nav-text">serializable 串行化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lock-%E9%94%81"><span class="nav-number">2.3.</span> <span class="nav-text">Lock 锁</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB"><span class="nav-number">2.3.1.</span> <span class="nav-text">锁的种类</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#log-%E6%97%A5%E5%BF%97"><span class="nav-number">2.4.</span> <span class="nav-text">log 日志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#recoverable-%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7"><span class="nav-number">2.5.</span> <span class="nav-text">Recoverable 可恢复性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#timestamps-%E6%97%B6%E9%97%B4%E6%88%B3"><span class="nav-number">2.5.1.</span> <span class="nav-text">Timestamps 时间戳</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sql-query"><span class="nav-number">3.</span> <span class="nav-text">SQL query</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#b-tree"><span class="nav-number">3.1.</span> <span class="nav-text">B+ Tree</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#data-%E6%95%B0%E6%8D%AE"><span class="nav-number">4.</span> <span class="nav-text">data 数据</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#structuredsemi-structuredunstructured-data"><span class="nav-number">4.1.</span> <span class="nav-text">structured，semi-structured，unstructured data、</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#xml-extensible-markup-language-%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80"><span class="nav-number">4.2.</span> <span class="nav-text">XML Extensible MarkUp Language 可扩展标记语言</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#dtd-document-type-definitions"><span class="nav-number">4.2.1.</span> <span class="nav-text">DTD: Document Type Definitions</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#xml-schema"><span class="nav-number">4.2.2.</span> <span class="nav-text">XML Schema</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#xpath"><span class="nav-number">4.3.</span> <span class="nav-text">XPath</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#more-advanced"><span class="nav-number">4.3.1.</span> <span class="nav-text">More advanced</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#xquary-%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B"><span class="nav-number">4.4.</span> <span class="nav-text">XQuary 菜鸟教程</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#more-advanced-1"><span class="nav-number">4.4.1.</span> <span class="nav-text">More advanced</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#data-analysis"><span class="nav-number">4.5.</span> <span class="nav-text">Data analysis</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#market-basket-model-%E8%B4%AD%E7%89%A9%E7%AF%AE%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.5.1.</span> <span class="nav-text">market-basket model 购物篮模型</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -144,12 +149,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span>
       </div>
   </nav>
@@ -219,7 +224,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-12-07 09:53:40" itemprop="dateModified" datetime="2021-12-07T09:53:40+08:00">2021-12-07</time>
+        <time title="修改时间：2022-01-08 05:23:21" itemprop="dateModified" datetime="2022-01-08T05:23:21+08:00">2022-01-08</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -556,7 +561,7 @@
 <li><strong>root</strong>&#xFF1A;No incoming edges&#xFF1B;Each node reachable from the root</li>
 </ul>
 <p>&#x4F8B;&#x5B50;&#xFF1A;XML, JSON,Graphs...</p>
-<h4 id="xml">XML</h4>
+<h4 id="xml-extensible-markup-language-&#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;">XML Extensible MarkUp Language &#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;</h4>
 <p><a target="_blank" rel="noopener" href="https://www.runoob.com/xml/xml-intro.html">&#x7F51;&#x4E0A;&#x6559;&#x7A0B;&#xFF0C;&#x53EF;&#x505A;&#x53C2;&#x8003;</a></p>
 <p>XML&#x8BED;&#x6CD5;&#xFF1A;</p>
 <p>&#x6811;&#xFF1A;</p>
@@ -574,9 +579,79 @@
 <li>&#x5934;&#x90E8;&#x58F0;&#x660E;&#xFF1A;<code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot; ?&gt;</code></li>
 </ul>
 <p>XML&#x7ED3;&#x6784;&#xFF1A;</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot; ?&gt;</span><br><span class="line">&lt;root&gt;</span><br><span class="line">  &lt;child Attributes&gt;</span><br><span class="line">    &lt;subchild Attributes&gt;.....&lt;/subchild&gt;</span><br><span class="line">  &lt;/child&gt;</span><br><span class="line">&lt;/root&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot; ?&gt;</span><br><span class="line">&lt;root&gt; </span><br><span class="line">  &lt;child Attributes&gt;</span><br><span class="line">    &lt;subchild Attributes&gt;.....&lt;/subchild&gt;</span><br><span class="line">  &lt;/child&gt;</span><br><span class="line">&lt;/root&gt;</span><br></pre></td></tr></table></figure>
 <p>XML&#x904D;&#x5386;&#xFF1A;&#x5E73;&#x9762;&#x8FF7;&#x5BAB;&#xFF0C;&#x9006;&#x65F6;&#x9488;&#x7ED5;&#x4E00;&#x5708;&#x56DE;&#x5230;root</p>
-<h4 id="xquary">XQuary</h4>
+<p>&#x5B9E;&#x73B0;xml&#x7ED3;&#x6784;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;(&#x89C4;&#x8303;)&#xFF0C;DTD &#x548C; XML Schema</p>
+<h5 id="dtd-document-type-definitions">DTD: Document Type Definitions</h5>
+<p>&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE root tag name [</span><br><span class="line">The DTD is included here</span><br><span class="line">]&gt;</span><br></pre></td></tr></table></figure>
+<p>&#x4F8B;&#x5B50;&#xFF1A;(#PCDATA=Parsed Character Data &#x53EF;&#x89E3;&#x6790;&#x6587;&#x672C;&#xFF0C;&#x4E0D;&#x542B;&#x6709;&#x5B50;&#x5143;&#x7D20;) <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;gb2312&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">bookinfo</span> [</span></span><br><span class="line"><span class="meta"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">bookinfo</span> (<span class="meta-keyword">title</span>,<span class="meta-keyword">author</span>,<span class="meta-keyword">publish</span>,<span class="meta-keyword">price</span>)&gt;</span></span></span><br><span class="line"><span class="meta"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">title</span> (<span class="meta-keyword">#PCDATA</span>)&gt;</span></span></span><br><span class="line"><span class="meta"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">author</span> (<span class="meta-keyword">#PCDATA</span>)&gt;</span></span></span><br><span class="line"><span class="meta"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">publish</span> (<span class="meta-keyword">publisher</span>,<span class="meta-keyword">ISBN</span>,<span class="meta-keyword">pubdate</span>)&gt;</span></span></span><br><span class="line"><span class="meta"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">publisher</span> (<span class="meta-keyword">#PCDATA</span>)&gt;</span></span></span><br><span class="line"><span class="meta"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">ISBN</span> (<span class="meta-keyword">#PCDATA</span>)&gt;</span></span></span><br><span class="line"><span class="meta"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">pubdate</span> (<span class="meta-keyword">#PCDATA</span>)&gt;</span></span></span><br><span class="line"><span class="meta"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">price</span> (<span class="meta-keyword">#PCDATA</span>)&gt;</span></span></span><br><span class="line"><span class="meta">]&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bookinfo</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span>&#x8BA1;&#x7B97;&#x673A;&#x5BFC;&#x8BBA;<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">author</span>&gt;</span>&#x4E01;&#x8DC3;&#x6F6E;&#x7B49;<span class="tag">&lt;/<span class="name">author</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">publish</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">publisher</span>&gt;</span>&#x9AD8;&#x7B49;&#x6559;&#x80B2;&#x51FA;&#x7248;&#x793E;<span class="tag">&lt;/<span class="name">publisher</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">ISBN</span>&gt;</span>7-04-014768-8<span class="tag">&lt;/<span class="name">ISBN</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">pubdate</span>&gt;</span>2004.6<span class="tag">&lt;/<span class="name">pubdate</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">publish</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">price</span>&gt;</span>19.7<span class="tag">&lt;/<span class="name">price</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bookinfo</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>&#x53EF;&#x89C1;&#xFF0C;DTD&#x662F;&#x5199;&#x5728;xml&#x4E3B;&#x4F53;&#x524D;&#x7684;&#x4E00;&#x79CD;&#x7C7B;&#x4F3C;&#x4E8E;&#x5934;&#x6587;&#x4EF6;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x8BFB;&#x53D6;DTD&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x77E5;&#x9053;&#x5E95;&#x4E0B;&#x90A3;&#x4E2A;XML&#x7ED3;&#x6784;&#x91CC;&#x9762;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x4E9B;&#x5565;&#x4E86;&#x3002;</p>
+<p>&#x4E00;&#x4E9B;&#x6570;&#x91CF;&#x89C4;&#x5219;&#x8868;&#x793A; (name, phone?, email?, teaches*, ... ) &#x8FD9;&#x79CD; <strong>*</strong>: indicates zero or more occurrences for an element; &#x51FA;&#x73B0;0~n&#x6B21; <strong>+</strong>: indicates one or more occurrences for an element; &#x51FA;&#x73B0;1~n&#x6B21; <strong>?</strong>: indicates either zero occurrences or exactly one occurrence for an element. &#x51FA;&#x73B0;0~1&#x6B21;</p>
+<p><strong>Attribute Data types</strong> &#x6570;&#x636E;&#x7C7B;&#x578B;</p>
+<p>CDATA: character data, containing any text.</p>
+<p>ID: used to identify individual elements in document</p>
+<ul>
+<li>You can not define what type you are pointing at exactly, but just that it is some ID for some object</li>
+</ul>
+<p>List of names: values that attribute can hold (enumerated type)</p>
+<ul>
+<li>Format: (en1|en2|...) meaning the value can be either en1 or en2 or ...</li>
+</ul>
+<p>IDREF/IDREFS: must correspond to value of ID attribute(s) for some element in document</p>
+<p><strong>About ID and IDREF/IDREFS</strong></p>
+<p>&#x5C31;&#x50CF;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x7684; primary key &#x548C; foreign key.</p>
+<p><img src="/2021/11/22/COMP207/image-20220106092537712.png" alt="image-20220106092537712" style="zoom:67%;"></p>
+<p><strong>Two levels of document processing</strong></p>
+<p>well-formed and valid. &#x683C;&#x5F0F;&#x826F;&#x597D;&#x548C;&#x6709;&#x6548;&#x7684;</p>
+<p>Non-validating processor &#x53EA;&#x4F1A;&#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x6EE1;&#x8DB3; XML document &#x683C;&#x5F0F;&#x7684;&#x8981;&#x6C42;&#xFF0C;&#x6BD4;&#x5982;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x5728;&#x4E00;&#x4E2A;&#x6839;&#x5143;&#x7D20;&#x91CC;&#x3002;&#x8FD9;&#x662F; well-formed</p>
+<p>Validating processor &#x8FD8;&#x4F1A;&#x68C0;&#x67E5;DTD/XML Schema, &#x786E;&#x4FDD;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x80FD;&#x7528;&#x2014;&#x2014;valid.</p>
+<h5 id="xml-schema">XML Schema</h5>
+<p>&#x8003;&#x8BD5;&#x4E0D;&#x4F5C;&#x8981;&#x6C42;&#xFF0C;&#x5F85;&#x4F1A;&#x513F;&#x518D;&#x770B;&#x3002;</p>
+<h4 id="xpath">XPath</h4>
+<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;xml&#x6587;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;/&#x5C5E;&#x6027;&#x90FD;&#x6709;&#x5176;&#x5730;&#x5740;&#x7528;&#x4E8E;&#x67E5;&#x627E;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x50CF;windows&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#x7684;&#x5730;&#x5740;&#x4E00;&#x6837;&#x4F5C;&#x8868;&#x793A;&#x3002;</p>
+<p>Attributes: replace the last tag name by <span class="citation" data-cites="Attribute">@Attribute</span> name</p>
+<p>&#x8003;&#x8651;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;XML&#xFF1A;</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">lecturers</span>&gt;</span>									XPath:</span><br><span class="line">    <span class="tag">&lt;<span class="name">lecturer</span> <span class="attr">id</span>=<span class="string">&quot;123&quot;</span>&gt;</span>						/lecturers/lecturer/@id</span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>J.Fearnley<span class="tag">&lt;/<span class="name">name</span>&gt;</span>				/lecturers/lecturer/name</span><br><span class="line">        <span class="tag">&lt;<span class="name">phone</span>&gt;</span>7954&#xB7;&#xB7;&#xB7;<span class="tag">&lt;/<span class="name">phone</span>&gt;</span>				/lecturers/lecturer/phone</span><br><span class="line">        <span class="tag">&lt;<span class="name">memberOf</span>&gt;</span>Economics...<span class="tag">&lt;/<span class="name">memberOf</span>&gt;</span>	/lecturers/lecturer/memberOf</span><br><span class="line">        <span class="tag">&lt;<span class="name">teaches</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">code</span>&gt;</span>COMP105<span class="tag">&lt;/<span class="name">code</span>&gt;</span>			/lecturers/lecturer/teaches/code</span><br><span class="line">        	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Progr. Paradigms<span class="tag">&lt;/<span class="name">title</span>&gt;</span>	/lecturers/lecturer/teaches/title</span><br><span class="line">        <span class="tag">&lt;/<span class="name">teaches</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">lecturer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">lecturer</span> <span class="attr">tall</span>=<span class="string">&quot;180&quot;</span>&gt;</span>					/lecturers/lecturer/@tall</span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>M. Gairing<span class="tag">&lt;/<span class="name">name</span>&gt;</span>				/lecturers/lecturer/name</span><br><span class="line">        <span class="tag">&lt;<span class="name">email</span> <span class="attr">type</span>=<span class="string">&quot;work&quot;</span>&gt;</span>					/lecturers/lecturer/email/@type</span><br><span class="line">            gairing@...						/lecturers/lecturer/email</span><br><span class="line">        <span class="tag">&lt;/<span class="name">email</span>&gt;</span>	</span><br><span class="line">        <span class="tag">&lt;<span class="name">teaches</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">code</span>&gt;</span>COMP211<span class="tag">&lt;/<span class="name">code</span>&gt;</span>			/lecturers/lecturer/teaches/code</span><br><span class="line">        	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Internet...<span class="tag">&lt;/<span class="name">title</span>&gt;</span>		/lecturers/lecturer/teaches/title</span><br><span class="line">            <span class="tag">&lt;<span class="name">year</span>&gt;</span>2<span class="tag">&lt;/<span class="name">year</span>&gt;</span>					/lecturers/lecturer/teaches/year</span><br><span class="line">        <span class="tag">&lt;/<span class="name">teaches</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">lecturer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">lecturers</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>Wildcards &#x901A;&#x914D;&#x7B26;</strong></p>
+<p>A wildcard (*****) can be used to stand for any <strong>tag</strong> name or <strong>attribute</strong> name</p>
+<p>&#x4EE5;&#x4E0A;&#x8FF0;XML&#x4E3A;&#x4F8B;&#xFF0C;</p>
+<p>/lecturers/lecturer/<span class="citation" data-cites="*">@*</span> returns &#x201D;123&#x201D;, &#x201C;180&#x201D;</p>
+<p>/lecturers/lecturer/* return all elements <strong>directly below </strong>lecturer elements</p>
+<h5 id="more-advanced">More advanced</h5>
+<p>&#x5BF9;&#x4E8E;&#x4EFB;&#x610F;&#x7684;XPath&#xFF0C;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#xFF1A;</p>
+<p>/axis1::E1/axis2::E2/axis3::E3/.../axisn::En</p>
+<p>&quot; axis i :: &quot; : &#x7C7B;&#x578B;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x4F8B;&#x5982;E2&#x662F;&#x4E00;&#x4E2A;Attribute, &#x5219; &#x201C;axis2::&#x201D; = &#x201C;@&#x201D;</p>
+<figure>
+<img src="/2021/11/22/COMP207/image-20220108003752287.png" alt="image-20220108003752287"><figcaption aria-hidden="true">image-20220108003752287</figcaption>
+</figure>
+<p><img src="/2021/11/22/COMP207/image-20220108004226906.png" alt="image-20220108004226906" style="zoom: 67%;"></p>
+<p><strong>Conditions &#x6761;&#x4EF6;</strong></p>
+<p>/axis1::E1[C1]/axis2::E2[C2]/axis3::E3[C3]/.../axisn::En[Cn]</p>
+<p><strong>example</strong> : //book[category=&#x201C;CS&#x201D;]/title</p>
+<p>All titles of books in category &#x201C;CS&#x201D;</p>
+<p>...<strong>E[i]</strong>: true if current node is the i-th E-child of its parent</p>
+<p>//*[category=&quot;CS&quot; or category=&quot;Scifi&quot;][1]</p>
+<p>//*[category=&quot;CS&quot; or category=&quot;Scifi&quot;][last()]</p>
+<p>...<strong>E[string]</strong>: true iff string is not &#x201D;&#x201D; //book<span class="citation" data-cites="price/data">[@price/data()]</span> returns the books with a non-empty price attribute</p>
+<p>...<strong>E<a href="#xpath">xpath</a></strong>: true iff the xpath gives a non-empty node-set //book[category]/title returns the titles of all books that has a category //book<span class="citation" data-cites="price">[@price]</span> returns a book if it has a price attribute</p>
+<h4 id="xquary-&#x83DC;&#x9E1F;&#x6559;&#x7A0B;">XQuary <a target="_blank" rel="noopener" href="https://www.runoob.com/xquery/xquery-tutorial.html">&#x83DC;&#x9E1F;&#x6559;&#x7A0B;</a></h4>
+<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x5DF2;&#x77E5;&#x7684;XML&#x6587;&#x4EF6;&#xFF0C;<strong>doc()</strong> &#x51FD;&#x6570;&#x7528;&#x4E8E;&#x6253;&#x5F00; &quot;balabala.xml&quot; &#x6587;&#x4EF6;&#x2014;&#x2014;doc(example.xml)</p>
+<p>&#x6211;&#x4EEC;&#x5728;doc()&#x540E;&#x9762;&#x6DFB;&#x52A0;&#x8DEF;&#x5F84;&#x6765;&#x67E5;&#x627E;&#x5143;&#x7D20;&#xFF1A;doc(example.xml) <strong>XPath</strong> &#x4F8B;&#xFF1A;doc(example.xml)/element1/element2</p>
+<p><strong>&#x201C;$&#x201D;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;</strong></p>
+<p>let <strong>variable</strong> := <strong>XQuery</strong> <strong>expression</strong></p>
+<p>&#x5728;&#x5730;&#x5740;&#x524D;&#x52A0;$, &#x76F8;&#x5F53;&#x4E8E;&#x628A;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5F53;&#x4F5C;&#x53D8;&#x91CF;&#xFF0C;&#x4E8E;&#x662F;&#x53EF;&#x4EE5;&#x6BD4;&#x8F83;&#xFF1A;$s/year &gt;= 2</p>
+<p>XQuery &#x6709;<strong>FLWOR</strong>&#xFF0C; &#x662F; &#x201C;<strong>for&#x3001;let&#x3001;where&#x3001;order by&#x3001;return</strong>&#x201D; &#x7684;&#x7F29;&#x5199;&#x3002;</p>
+<p>&#x8FD9;&#x90FD;&#x662F;&#x53EF;&#x7528;&#x4E8E; XQuery &#x8868;&#x8FBE;&#x5F0F;&#x4EE5;&#x4FBF;&#x5F97;&#x5230;&#x66F4;&#x7CBE;&#x786E;&#x7ED3;&#x679C;&#x7684;&#x5B50;&#x53E5;&#x3002;</p>
+<p>XPath/XQuery expressions can be used as conditions, <strong>Interpreted as true if the result is non-empty</strong></p>
+<p>... <strong>where $s/module</strong> return true if s/module exist.</p>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x52A0; some/every $var. &#x4F8B;&#xFF1A;</p>
+<p>let <strong>$uni_doc</strong> := doc(&#x201D;mydoc.xml&quot;) for <strong>$l</strong> in <strong>$uni_doc/university/lecturer</strong> where every <strong>$m</strong> in <strong>$l/teaches</strong> satisfies <strong>$m/year &lt;= 2</strong> return <strong>$l/name</strong></p>
+<h5 id="more-advanced-1">More advanced</h5>
+<p>Goal: return all pairs of title and author, sorted by author name descending (ascending is default)</p>
+<p>let $doc := doc(&quot;mydoc.xml&quot;) for $b in $doc/books/book for $author in $b/author order by $author descending return &lt;pair&gt;{$b/title}, {$author}&lt;/pair&gt;</p>
+<p><img src="/2021/11/22/COMP207/image-20220108052224581.png" alt="image-20220108052224581" style="zoom:50%;"></p>
+<p><img src="/2021/11/22/COMP207/image-20220108052210509.png" alt="image-20220108052210509" style="zoom:50%;"></p>
 <h4 id="data-analysis">Data analysis</h4>
 <p>&#x6211;&#x4EEC;&#x5E73;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x653E;&#x5728;&#x90A3;&#x79CD;&#x73B0;&#x5B9E;&#x4E2D;&#x7684;&#xFF0C;&#x5927;&#x91CF;&#x6570;&#x636E;&#x7684;&#x516C;&#x53F8;&#x7EA7;&#x522B;&#x6570;&#x636E;&#x5E93;&#x5E94;&#x7528;&#x91CC;&#xFF0C;&#x5176;&#x89C4;&#x6A21;&#x6548;&#x5E94;&#x4F1A;&#x9020;&#x6210;&#x5F88;&#x591A;&#x95EE;&#x9898;&#x3002;</p>
 <p>Queries in these applications tend to... &#x25E6; be <strong>complex</strong>: use aggregates &amp; other advanced features &#x25E6; <strong>Examine large parts of the data</strong></p>
@@ -605,8 +680,8 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/11/17/%E7%B4%A2%E5%BC%95/" rel="prev" title="索引">
-                  <i class="fa fa-chevron-left"></i> 索引
+                <a href="/2021/11/22/COMP201/" rel="prev" title="COMP210笔记">
+                  <i class="fa fa-chevron-left"></i> COMP210笔记
                 </a>
             </div>
             <div class="post-nav-item">
@@ -633,7 +708,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
