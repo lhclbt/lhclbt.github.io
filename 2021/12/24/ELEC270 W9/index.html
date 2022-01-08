@@ -224,13 +224,27 @@
     </span>
 
   
-    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+    <span id="/2021/12/24/ELEC270%20W9/" class="post-meta-item leancloud_visitors" data-flag-title="ELEC270 W9" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
       <span class="post-meta-item-text">阅读次数：</span>
-      <span id="busuanzi_value_page_pv"></span>
+      <span class="leancloud-visitors-count"></span>
     </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Valine：</span>
+  
+    <a title="valine" href="/2021/12/24/ELEC270%20W9/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/12/24/ELEC270%20W9/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 </div>
 
             <div class="post-description">拉普拉斯：👴来了</div>
@@ -337,6 +351,7 @@ F(s)=\int^\infty_0f(s)e^{-st}dt
 
 
 
+    <div class="comments" id="valine-comments"></div>
 </div>
   </main>
 
@@ -394,6 +409,8 @@ F(s)=\int^\infty_0f(s)e^{-st}dt
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":null,"app_key":null,"server_url":null,"security":false}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
   
@@ -402,6 +419,21 @@ F(s)=\int^\infty_0f(s)e^{-st}dt
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
+
+
+<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"EBzFyAm9PfVGV30taJR4KOwO-MdYXbMMI","appKey":"gsNzDLmBx2Cx1wQMkW4V3RtN","serverURLs":"https://ebzfyam9.api.lncldglobal.com","placeholder":"wei？zaima？","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":[],"el":"#valine-comments","path":"/2021/12/24/ELEC270%20W9/"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.valine.el)
+    .then(() => NexT.utils.getScript(
+      'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+      { condition: window.Valine }
+    ))
+    .then(() => {
+      new Valine(CONFIG.valine);
+    });
+});
+</script>
 
 </body>
 </html>
