@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="软件工程 笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="COMP201笔记">
+<meta property="og:url" content="http://example.com/2022/01/13/COMP201/index.html">
+<meta property="og:site_name" content="醭log">
+<meta property="og:description" content="软件工程 笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220113063248383.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220113064848073.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220113064914337.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220113065822038.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220113072302081.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114054127350.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114060124360.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114081438439.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114081818374.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114082720781.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114082743033.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114084332051.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114084632655.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114084916149.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114084951773.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220114085418461.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220115091413016.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220115092455937.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220115092657828.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220115093833543.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220115094530059.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220115094712408.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220115103730280.png">
+<meta property="og:image" content="http://example.com/2022/01/13/COMP201/image-20220115103818887.png">
+<meta property="article:published_time" content="2022-01-12T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-15T14:34:34.740Z">
+<meta property="article:author" content="罗醭坦">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/01/13/COMP201/image-20220113063248383.png">
+
+
+<link rel="canonical" href="http://example.com/2022/01/13/COMP201/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/01/13/COMP201/","path":"2022/01/13/COMP201/","title":"COMP201笔记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>COMP201笔记 | 醭log</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="醭log" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">醭log</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">醭言乱语</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#software-process-%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">software process 软件过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#requirements"><span class="nav-number">3.</span> <span class="nav-text">requirements</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#use-case"><span class="nav-number">3.0.1.</span> <span class="nav-text">Use case</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#requirements-engineering-processes"><span class="nav-number">3.0.2.</span> <span class="nav-text">Requirements Engineering Processes</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#system-models"><span class="nav-number">3.1.</span> <span class="nav-text">System Models</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#statechart-diagrams-%E7%8A%B6%E6%80%81%E5%9B%BE"><span class="nav-number">3.1.1.</span> <span class="nav-text">Statechart Diagrams 状态图</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#finite-state-machines-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="nav-number">3.2.</span> <span class="nav-text">Finite State Machines 有限状态机</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#moore-machine"><span class="nav-number">3.2.1.</span> <span class="nav-text">Moore Machine</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#mealy-machine"><span class="nav-number">3.2.2.</span> <span class="nav-text">Mealy Machine</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#petri-net-models"><span class="nav-number">3.3.</span> <span class="nav-text">Petri Net Models</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">罗醭坦</p>
+  <div class="site-description" itemprop="description">欢迎来到醭坦的测试与发布空间</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/13/COMP201/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="罗醭坦">
+      <meta itemprop="description" content="欢迎来到醭坦的测试与发布空间">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醭log">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          COMP201笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-01-13 00:00:00" itemprop="dateCreated datePublished" datetime="2022-01-13T00:00:00+08:00">2022-01-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-01-15 22:34:34" itemprop="dateModified" datetime="2022-01-15T22:34:34+08:00">2022-01-15</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/COMP201/" itemprop="url" rel="index"><span itemprop="name">COMP201</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2022/01/13/COMP201/" class="post-meta-item leancloud_visitors" data-flag-title="COMP201笔记" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Valine：</span>
+  
+    <a title="valine" href="/2022/01/13/COMP201/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/13/COMP201/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+            <div class="post-description"><center>软件工程 笔记</center></div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h3>
+<p><strong>software process &#x8F6F;&#x4EF6;&#x8FC7;&#x7A0B;</strong></p>
+<p><em>A Software <strong>Process is a set of activities</strong> whose goal is the development or evolution of software</em></p>
+<ul>
+<li><strong>Specification</strong> - what the system should do and its development constraints</li>
+<li><strong>Development</strong> - production of the software system (design and implementation)</li>
+<li><strong>Validation</strong> - checking that the software is what the customer wants</li>
+<li><strong>Evolution</strong> - changing the software in response to changing demands</li>
+</ul>
+<p><strong>Attributes of Good Software &#x8F6F;&#x4EF6;&#x5C5E;&#x6027;&#x8981;&#x6C42;</strong></p>
+<ul>
+<li><strong>Maintainability</strong> - Software must (easily) evolvable to meet changing needs</li>
+<li><strong>Dependability</strong> - Software must be trustworthy (work with all data)</li>
+<li><strong>Efficiency</strong> - Software should not make wasteful use of system resources</li>
+<li><strong>Usability</strong> - Software must be usable by the users for which it was designed</li>
+</ul>
+<p><strong>Issues of Professional Responsibility &#x4E13;&#x4E1A;&#x8D23;&#x4EFB;&#x95EE;&#x9898;</strong></p>
+<ul>
+<li><strong>Confidentiality &#x4FDD;&#x5BC6;</strong></li>
+</ul>
+<p>Engineers should normally respect the confidentiality of their employers or clients even without a formal confidentiality agreement.</p>
+<ul>
+<li><strong>Competence &#x4E3A;&#x80FD;&#x529B;&#x62C5;&#x8D23;</strong></li>
+</ul>
+<p>Engineers should not misrepresent their level of competence. They should not knowingly accept work which is beyond their competence.</p>
+<h3 id="software-process-&#x8F6F;&#x4EF6;&#x8FC7;&#x7A0B;">software process &#x8F6F;&#x4EF6;&#x8FC7;&#x7A0B;</h3>
+<p><strong><em>Specification</em></strong> - what the system should do and its development constraints <strong><em>Development</em></strong> - production of the software system (design and implementation) <strong><em>Validation</em></strong> - checking that the software is what the customer wants <strong><em>Evolution</em></strong> - changing the software in response to changing demands</p>
+<p><strong><em>1. Software development process&#xFF1A;software life cycle</em></strong></p>
+<p>Specifying &#x89C4;&#x5B9A; Designing &#x8BBE;&#x8BA1; Implementing &#x5B9E;&#x73B0; Testing &#x6D4B;&#x8BD5;</p>
+<p><strong><em>2. Software Process Models</em></strong></p>
+<ul>
+<li><p><strong>The Waterfall Model &#x7011;&#x5E03;&#x6A21;&#x578B;&#xFF0C;&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;</strong></p>
+<p>Separate and distinct phases of specification and development</p>
+<ul>
+<li><p>Inflexible partitioning of the project into distinct stages, difficult to respond to changing customer requirements.</p></li>
+<li><p>&#x5148;&#x603B;&#x4F53;&#x8003;&#x91CF;&#xFF0C;&#x53EF;&#x9760;&#xFF0C;&#x4F46;&#x7075;&#x6D3B;&#x6027;&#x4F4E;&#xFF0C;&#x5F00;&#x53D1;&#x5468;&#x671F;&#x957F;&#x2014;&#x2014;&#x519B;&#x7528;/&#x822A;&#x5929;/&#x94F6;&#x884C;&#x7B49;</p>
+<p><img src="/2022/01/13/COMP201/image-20220113063248383.png" alt="image-20220113063248383" style="zoom:50%;"></p></li>
+</ul></li>
+<li><p><strong>Evolutionary Development &#x8FDB;&#x5316;&#x5F00;&#x53D1;</strong></p>
+<p>Specification and development are interleaved</p>
+<p>&#x6CA1;&#x5565;&#x4EBA;&#x7528;&#x4E86;</p></li>
+<li><p><strong>Agile and Scrum &#x654F;&#x6377;&#x5F00;&#x53D1;</strong></p>
+<p>Used widely in industry today</p>
+<p>&#x90A3;&#x5565;Test driven&#x5176;&#x5B9E;&#x884C;&#x4E1A;&#x91CC;&#x4E0D;&#x7BA1;&#x7684;</p>
+<p>&#x7075;&#x6D3B;&#xFF0C;&#x6A21;&#x5757;&#x5316;&#xFF0C;&#x5468;&#x671F;&#x77ED;&#xFF0C;&#x4F46;&#x6574;&#x4F53;&#x6027;&#x5DEE;&#xFF0C;&#x5BB9;&#x6613;&#x8FD4;&#x5DE5;</p>
+<p>&#x53D6;&#x51B3;&#x4E8E;&quot;PM&quot;&#x8BC6;&#x522B;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x4F1A;&#x6709;&#x9690;&#x60A3;</p></li>
+<li><p><strong>Incremental Development (Scrum) &#x589E;&#x91CF;&#x5F00;&#x53D1;</strong></p>
+<ul>
+<li><strong>Customer value</strong> can be delivered with each increment so system functionality is available earlier</li>
+</ul>
+<pre><code>- **Early increments** act as a prototype to help elicit requirements for later increments
+- **Lower risk of overall project failure**
+- **The highest priority system services** tend to receive the most testing</code></pre></li>
+</ul>
+<p><strong><em>3. Software Design and Implementation</em></strong></p>
+<p><em>The process of converting the system specification into an executable system</em></p>
+<p>The activities of design and implementation are closely related and may be inter-leaved</p>
+<p>&#x53EF;&#x884C;&#x6027;&#x5206;&#x6790;&#x7B49;</p>
+<p><strong><em>4. Design Process Activities</em></strong></p>
+<p><strong>Architectural design (separate web service modules) &#x67B6;&#x6784;&#x8BBE;&#x8BA1;</strong></p>
+<ul>
+<li>The sub-systems making up the system and their relationships are identified and documented.</li>
+</ul>
+<p><strong>Abstract specification &#x62BD;&#x8C61;&#x89C4;&#x8303;</strong></p>
+<ul>
+<li>For each sub-system, an abstract specification of its operational constraints and services is produced.</li>
+</ul>
+<p><strong>Interface design &#x63A5;&#x53E3;&#x8BBE;&#x8BA1;</strong></p>
+<ul>
+<li>For each sub-system, an unambiguous interface with other sub-systems is designed and documented
+<ul>
+<li>Formal specification may be used in this stage (we study this later)</li>
+</ul></li>
+</ul>
+<p><strong>Component design &#x7EC4;&#x4EF6;&#x8BBE;&#x8BA1; (for &#x63A5;&#x53E3;</strong></p>
+<ul>
+<li>Services are allocated to components and the interfaces of these components are designed</li>
+</ul>
+<p><strong>Data structure design &#x6570;&#x636E;&#x7ED3;&#x6784;&#x8BBE;&#x8BA1;</strong></p>
+<ul>
+<li>The data structures used in the system implementation are designed in detail and specified</li>
+</ul>
+<p><strong>Algorithm design &#x7B97;&#x6CD5;&#x8BBE;&#x8BA1;</strong></p>
+<ul>
+<li>The algorithms used in components to provide services are designed and specified</li>
+</ul>
+<p><strong><em>5. Design Methods</em></strong></p>
+<p>Design (structured) methods are systematic approaches to developing a software design</p>
+<p>The design is usually documented as a set of graphical models</p>
+<p><img src="/2022/01/13/COMP201/image-20220113064848073.png" alt="image-20220113064848073" style="zoom:67%;"></p>
+<p><strong><em>6. Programming and Debugging</em></strong></p>
+<ul>
+<li><p><strong>Programming and Debugging</strong> consist of translating a design into a program and removing errors from that program</p></li>
+<li><p><strong>Programming is usually personal activity</strong> - there is no generic programming process, but there are good programming practices and organisational standards to be followed.</p></li>
+<li><p><strong>Programmers carry out some program testing</strong> to discover faults in the program and remove these faults in the debugging process</p></li>
+</ul>
+<p><strong><em>7. Testing Stages</em></strong></p>
+<p>&#x8BE5;&#x56FE;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x3002;</p>
+<p><img src="/2022/01/13/COMP201/image-20220113064914337.png" alt="image-20220113064914337" style="zoom:67%;"></p>
+<ul>
+<li><p><strong>Unit testing</strong> Individual components are tested</p></li>
+<li><p><strong>Module testing</strong> Related collections of dependent components are tested</p></li>
+<li><p><strong>Sub-system testing (merges with system testing)</strong> Modules are integrated into sub-systems and tested. The focus here should be on interface testing</p></li>
+<li><p><strong>System testing</strong> Testing of the system as a whole. Testing of emergent properties</p></li>
+<li><p><strong>Acceptance testing</strong> Testing with customer data to check that it is acceptable</p></li>
+</ul>
+<h3 id="requirements">requirements</h3>
+<p>&#x4ECE;&#x5BF9;&#x8C61;&#x6765;&#x5206;&#x7C7B;&#xFF1A;</p>
+<p><strong>User requirements</strong> &#xF097; Statements in natural language plus diagrams of the services the system provides and its operational constraints. Written for customers <strong>System requirements</strong> &#xF097; A structured document setting out detailed descriptions of the system services. Written as a contract between client and contractor <strong>Software specification</strong> &#xF097; A detailed software description which can serve as a basis for a design or implementation. Written for developers</p>
+<p><img src="/2022/01/13/COMP201/image-20220113065822038.png" alt="image-20220113065822038" style="zoom:67%;"></p>
+<p>&#x4ECE;&#x6027;&#x8D28;&#x6765;&#x5206;&#x7C7B;</p>
+<p>ppt&#xFF1A;https://liverpool.instructure.com/courses/46117/files/6013903?module_item_id=1189930</p>
+<p><strong>Functional requirements</strong></p>
+<ul>
+<li>Statements of services the system should provide, how the system should react to particular inputs and how the system should behave in particular situations</li>
+<li>&#x5B9A;&#x4E49;&#x4E86;&#x5BF9;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x670D;&#x52A1;&#x6216;&#x529F;&#x80FD;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x5305;&#x62EC;&#x65F6;&#x95F4;&#x7EA6;&#x675F;&#x3001;&#x7A7A;&#x95F4;&#x7EA6;&#x675F;&#x3001;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x7EA6;&#x675F;&#x53CA;&#x5E94;&#x9075;&#x5FAA;&#x7684;&#x6807;&#x51C6;&#x7B49;&#x3002;</li>
+<li>&#x5B9A;&#x4E49;&#x4E86;&#x7CFB;&#x7EDF;&#x6216;&#x7CFB;&#x7EDF;&#x5143;&#x7D20;&#x5FC5;&#x987B;&#x6709;&#x8D44;&#x683C;&#x6267;&#x884C;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x4EE5;&#x4E0D;&#x540C;&#x5F62;&#x5F0F;&#x8BB0;&#x5F55;&#x7684;&#x529F;&#x80FD;&#x3002;&#x63CF;&#x8FF0;&#x4E86;&#x7CFB;&#x7EDF;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4E0E;&#x7CFB;&#x7EDF;&#x7684;&#x529F;&#x80FD;&#x76F8;&#x5173;&#x3002;</li>
+</ul>
+<p><strong>Non-functional requirements</strong></p>
+<ul>
+<li>constraints on the services or functions offered by the system such as timing constraints, constraints on the development process, standards, etc. Usually defined on the system as a whole</li>
+<li><em>Define system properties and constraints e.g.</em> <strong>reliability</strong>, <strong>response time</strong> and <strong>storage requirements</strong>. Constraints are I/O device capability, system representations, etc. <em>They are often emergent properties &#x6D8C;&#x73B0;&#x7279;&#x6027; of the system</em>.</li>
+<li><strong>Process requirements</strong> may also be specified, mandating a particular CASE system, programming language or development method</li>
+<li>&#x4E0E;&#x8F6F;&#x4EF6;&#x7684;&#x529F;&#x80FD;&#x65B9;&#x9762;&#x65E0;&#x5173;&#x3002;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x662F;&#x6307;&#x5B9A;&#x53EF;&#x7528;&#x4E8E;&#x51B3;&#x5B9A;&#x64CD;&#x4F5C;&#x7684;&#x6807;&#x51C6;&#x7684;&#x5FC5;&#x9700;&#x54C1;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7CFB;&#x7EDF;&#x7684;&#x7279;&#x5B9A;&#x884C;&#x4E3A;&#x3002;&#x57FA;&#x672C;&#x7684;&#x975E;&#x529F;&#x80FD;&#x6027;&#x9700;&#x6C42;&#x662F;&#x2014;&#x2014;&#x53EF;&#x7528;&#x6027;&#x3001;&#x53EF;&#x9760;&#x6027;&#x3001;&#x5B89;&#x5168;&#x6027;&#x3001;&#x5B58;&#x50A8;&#x3001;&#x6210;&#x672C;&#x3001;&#x7075;&#x6D3B;&#x6027;&#x3001;&#x914D;&#x7F6E;&#x3001;&#x6027;&#x80FD;&#x3001;&#x6CD5;&#x5F8B;&#x6216;&#x76D1;&#x7BA1;&#x8981;&#x6C42;&#x7B49;&#x3002;</li>
+<li>&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x53EF;&#x89C2;&#x5BDF;&#x5230;&#x7684;&#x6267;&#x884C;&#x8D28;&#x91CF;&#xFF0C;&#x5982;&#x5B89;&#x5168;&#x6027;&#x548C;&#x53EF;&#x7528;&#x6027;&#x3002;</li>
+<li>&#x8F6F;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x9759;&#x6001;&#x7ED3;&#x6784;&#x4E2D;&#x4F53;&#x73B0;&#x7684;&#x53EF;&#x6D4B;&#x8BD5;&#x6027;&#x3001;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#x3001;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x548C;&#x53EF;&#x4F38;&#x7F29;&#x6027;&#x7B49;&#x6F14;&#x5316;&#x7279;&#x6027;&#x3002;</li>
+<li><strong>Product requirements</strong>
+<ul>
+<li>Requirements which specify that the delivered product must behave in a particular way e.g. execution speed, reliability, security etc.</li>
+</ul></li>
+<li><strong>Organisational requirements</strong>
+<ul>
+<li>Requirements which are a consequence of organisational policies and procedures e.g. process standards used, implementation requirements, etc. (Java as programming language)</li>
+</ul></li>
+<li><strong>External requirements</strong>
+<ul>
+<li>Requirements which arise from factors which are external to the system and its development process e.g. interoperability requirements, legislative requirements, etc. (Must conform to FIPS</li>
+</ul></li>
+</ul>
+<p><img src="/2022/01/13/COMP201/image-20220113072302081.png" alt="image-20220113072302081" style="zoom:67%;"></p>
+<p><strong>Domain requirements</strong></p>
+<ul>
+<li><p>Requirements that come from the application domain of the system and that reflect characteristics of that domain</p></li>
+<li><p>&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x5E38;&#x5E38;&#x4F1A;&#x6D89;&#x53CA;&#x4E00;&#x4E9B;&#x672A;&#x77E5;&#x9886;&#x57DF;&#xFF0C;&#x800C;&#x5F00;&#x53D1;&#x7684;&#x8F6F;&#x4EF6;&#x9700;&#x8981;&#x9075;&#x5B88;&#x8FD9;&#x4E9B;&#x9886;&#x57DF;&#x7684;&#x4E00;&#x4E9B;&#x89C4;&#x5219;&#x7B49;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x9886;&#x57DF;&#x9700;&#x6C42;&#x3002;</p></li>
+<li><p>https://ifs.host.cs.st-andrews.ac.uk/Books/SE9/Web/Requirements/DomainReq.html</p></li>
+</ul>
+<p><em>In principle requirements should be both complete and consistent:</em></p>
+<p><strong>Complete &#x5B8C;&#x6574;&#x6027;</strong></p>
+<ul>
+<li>They should include descriptions of all facilities required</li>
+</ul>
+<p><strong>Consistent &#x4E00;&#x81F4;&#x6027;</strong></p>
+<ul>
+<li>There should be no conflicts or contradictions in the descriptions of the system facilities</li>
+</ul>
+<p>In practice, it is <strong>very</strong> <strong>difficult</strong> or <strong>impossible</strong> to produce a complete and consistent requirements document</p>
+<h5 id="use-case">Use case</h5>
+<p>https://liverpool.instructure.com/courses/46117/files/6196312?module_item_id=1189932</p>
+<p>&#x2022; <strong>Use-Cases</strong> are a scenario based technique in the Unified Modeling Language (UML) which <strong>identify the actors in an interaction</strong> and which <strong>describe the interaction itself.</strong> &#x2022; A set of use-cases should describe all possible interactions with the system. &#x2022; <strong>Sequence diagrams</strong> may be used to add detail to use-cases by showing the sequence of event processing in the system (we shall study sequence diagrams later).</p>
+<p>&#x2022; Actor &#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x4EBA;&#xFF0C;Can be non human - Sensor (smoke detector) - Payment service (credit cards) - Geo location - Robotic arm</p>
+<p>&#x6846;&#xFF1A;&#x7CFB;&#x7EDF;&#x8303;&#x56F4;</p>
+<h5 id="requirements-engineering-processes">Requirements Engineering Processes</h5>
+<p>https://liverpool.instructure.com/courses/46117/files/6013910?module_item_id=1189934</p>
+<ol type="1">
+<li>Requirements elicitation &#x9700;&#x6C42;&#x53D1;&#x73B0;(&#x83B7;&#x53D6;) What services do the end-users require of the system?</li>
+<li>Requirements analysis &#x9700;&#x6C42;&#x5206;&#x6790; How do we classify, prioritise and negotiate requirements?</li>
+<li>Requirements validation &#x9700;&#x6C42;&#x9A8C;&#x8BC1; Does the proposed system do what the users require?</li>
+<li>Requirements management &#x9700;&#x6C42;&#x7BA1;&#x7406; How do we manage the (sometimes inevitable) changes to the requirements document?</li>
+</ol>
+<p><strong>Viewpoints</strong></p>
+<p><strong>Viewpoints</strong> are a way of structuring the requirements to represent the perspectives of different stakeholders. Stakeholders may be classified under different viewpoints. This multi-perspective analysis is important as there is no single correct way to analyse system requirements.</p>
+<p><strong>Interviewing</strong></p>
+<p>There are two types of interview</p>
+<ul>
+<li><strong>Closed interviews</strong> where a pre-defined set of questions are answered.</li>
+<li><strong>Open interviews</strong> where there is no pre-defined agenda and a range of issues are explored with stakeholders.</li>
+</ul>
+<p><strong>Ethnography</strong></p>
+<p>In ethnography, a social scientist spends a considerable amount of time observing and analysing how people <strong>actually work</strong>.</p>
+<p>Requirements that are derived from the way that people actually work rather than the way in which process definitions suggest that they ought to work.</p>
+<p><strong>Focused Ethnography</strong></p>
+<p>Developed in a project studying the air traffic control process Combines <strong>ethnography</strong> with <strong>prototyping</strong></p>
+<p>The problem with ethnography is that it studies existing practices which may have some historical basis which is no longer relevant. Ethnography &#x53EF;&#x80FD;&#x4F1A;&#x53BB;&#x7814;&#x7A76;&#x4E00;&#x4E9B;&#x66FE;&#x7ECF;&#x5B58;&#x5728;&#x4F46;&#x4EE5;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x4E1C;&#x897F;</p>
+<p><strong>Security</strong></p>
+<p><em>Confidentiality requirements</em></p>
+<p>Usually two main options Encryption (hard security) Permissions (soft security) Data must be kept secure In storage (final or intermediary) On the wire or wireless link For as long as reasonably possible</p>
+<p><em>Integrity Requirements</em></p>
+<p>Messages or data must not be modifiable without</p>
+<p>Integrity approaches : CRC Checking, Hash&#x2026;&#x2026;</p>
+<p><strong>Authentication/Authorization</strong></p>
+<p><em>Authentication</em> Who are you? <em>Authorization</em> What are you allowed to do? Techniques Usernames, Passwords, hardware (cards, dongles), Biometrics</p>
+<p><strong>Non-repudiation issue</strong> &#x4E0D;&#x53EF;&#x62B5;&#x8D56;&#x6027;</p>
+<p>Non repudiation is built on</p>
+<ul>
+<li>Authentication</li>
+<li>Integrity</li>
+<li>Recording and time stamping</li>
+<li>Broker style services</li>
+</ul>
+<p><strong>Availability requirements</strong></p>
+<p>&#x51FA;&#x6545;&#x969C;&#x7684;&#x6982;&#x7387;</p>
+<p><img src="/2022/01/13/COMP201/image-20220114054127350.png" alt="image-20220114054127350" style="zoom: 67%;"></p>
+<p>9s terminology not always useful</p>
+<p><strong>Security, logs and alerts</strong> Security is very dependent on knowledge of activity (audits and logs) Standard log (records all logins/logouts, database access requests) Failed login log (records all failed logins) Unusual activity log (high volume transactions on account) Alert log (failed logins for top level clearance users) Alerts Unusual activity can be used to alert operators, suspend accounts etc.</p>
+<p><strong>Bell&#x2013;LaPadula model</strong></p>
+<p>https://zh.wikipedia.org/wiki/Bell%E2%80%93LaPadula%E6%A8%A1%E5%9E%8B</p>
+<p><img src="/2022/01/13/COMP201/image-20220114060124360.png" alt="image-20220114060124360" style="zoom: 67%;"></p>
+<p><strong>Requirements Checking</strong> <strong>Validity.</strong> Does the system provide the functions which best support the customer&#x2019;s needs? <strong>Consistency</strong>. Are there any requirements conflicts? <strong>Completeness</strong>. Are all functions required by the customer included? <strong>Realism</strong>. Can the requirements be implemented given available budget and technology? <strong>Verifiability</strong>. Can the requirements be checked? This reduces the potential for disputes between customers and contractors and a set of tests should be possible.</p>
+<h4 id="system-models">System Models</h4>
+<p>Detailed <strong>system requirements</strong> may be expressed in a more technical way however</p>
+<ul>
+<li><p>One widely used technique is to document the system specification as a set of <strong>system models</strong></p></li>
+<li><p>These are <strong>graphical representations</strong> which describe business processes and the system to be developed</p></li>
+<li><p>They are an important bridge between the analysis and design processes</p></li>
+</ul>
+<p>System modelling helps the analyst to <strong>understand the functionality of the system</strong> and models are used to communicate with customers</p>
+<p><strong><em>Advantages</em></strong></p>
+<p>They can be easier to understand than using a verbose natural language description</p>
+<p>System models can leave out unnecessary details of the system so way may focus on what is important</p>
+<ul>
+<li>A system representation should maintain all the information of a system</li>
+<li>An abstraction deliberately simplifies the system and picks out its most salient characteristics</li>
+</ul>
+<p>Different models can focus on different approaches to abstraction</p>
+<p><strong><em>Weaknesses</em></strong></p>
+<p>They do not model non-functional system requirements They do not usually include information about whether a method is appropriate for a given problem They may produce too much documentation System models are sometimes too detailed and difficult for users to understand</p>
+<p><strong><em>Model Types</em></strong></p>
+<p><strong>Data processing model</strong> - showing how the data is processed at different stages <strong>Composition model</strong> - showing how entities are composed of other entities <strong>Architectural model</strong> - showing principal sub-systems <strong>Classification model</strong> - showing how entities have common characteristics <strong>Stimulus/response model</strong> - showing the system&#x2019;s reaction to events</p>
+<p><strong><em>Context Models</em></strong></p>
+<p><strong>Context models</strong> are used to illustrate the boundaries of a system Identifying the boundaries of the system to be developed is not always straightforward <strong>Social and organisational concerns</strong> may affect the decision on where to position system boundaries <strong>Architectural models</strong> show the system and its relationship with other systems</p>
+<p><strong><em>Process Models</em></strong></p>
+<p><strong>Process models</strong> show the overall process and the processes that are supported by the system - In process models it is implicit 1 process is completed before another process begins - Process models are similar to flow charts</p>
+<p><strong>Data flow models</strong> may be used to show the processes and the <strong>flow of information</strong> from one process to another - The data flow models it is implicit that processes will happen in parallel (concurrent processing)</p>
+<p><strong><em>Behavioural Models</em></strong> - Behavioural models are used to describe the overall behaviour of a system</p>
+<p><em><strong>Two types</strong> of behavioural model</em></p>
+<ul>
+<li><strong>Data processing models</strong> that show how data is processed as it moves through the system</li>
+<li><strong>State machine models</strong> that show the systems response to events</li>
+</ul>
+<p>Both of these models are <strong>required for a description</strong> of the system&#x2019;s behaviour</p>
+<p><strong><em>Data-Processing Models</em></strong> Data flow diagrams are used to model the system&#x2019;s data processing These show the processing steps as data flows through a system IMPORTANT part of many analysis methods <strong>Simple and intuitive notation</strong> <strong>Show end-to-end processing of data</strong></p>
+<p><img src="/2022/01/13/COMP201/image-20220114081438439.png" alt="image-20220114081438439" style="zoom:67%;"></p>
+<p><strong><em>Data Flow Diagrams</em></strong> <em>Data Flow Diagrams</em> track and document how the data associated with a process is helpful to develop an overall understanding of the system Data flow diagrams may also be used in <strong>showing the data exchange</strong> between a system and other systems in its environment</p>
+<p><strong><em>Data Flow Diagrams &#x6570;&#x636E;&#x6D41;&#x56FE;</em></strong> Data Flow Diagrams have an advantage in that they are simple and intuitive and can thus be shown to users who can help in <em>validating the analysis</em> Developing data flow diagrams is usually a <em>top-down process</em></p>
+<ul>
+<li>We begin by evaluating the overall process we wish to model before considering sub-processes</li>
+</ul>
+<p>Data flow diagrams show a <strong>functional perspective</strong> where each transformation represents a single function or process which is particularly useful during requirements analysis since it shows end-to-end processing.</p>
+<p><img src="/2022/01/13/COMP201/image-20220114081818374.png" alt="image-20220114081818374" style="zoom:67%;"></p>
+<p><img src="/2022/01/13/COMP201/image-20220114082720781.png" alt="image-20220114082720781" style="zoom:67%;"></p>
+<p><img src="/2022/01/13/COMP201/image-20220114082743033.png" alt="image-20220114082743033" style="zoom:67%;"></p>
+<h5 id="statechart-diagrams-&#x72B6;&#x6001;&#x56FE;"><strong><em>Statechart Diagrams &#x72B6;&#x6001;&#x56FE;</em></strong></h5>
+<p>&#x200B; Statechart Diagrams (or State machine models ) show the behaviour of the system in response to external and internal events &#x200B; They show the system&#x2019;s responses to stimuli (the event-action paradigm) so are often used for modelling <strong>real-time systems</strong> &#x200B; Statechart diagrams show <strong>system states</strong> as nodes and events as arcs between these nodes. When an event occurs, the system moves from one state to another &#x200B; Statecharts are an integral part of the <strong>UML</strong></p>
+<p>&#x200B; An initial state is denoted by a solid circle and is optional (sometimes the system will start in different places and thus the initial state should be omitted). &#x200B; If required, a final state can also be used; this is denoted by a solid circle with a ring around it. &#x200B; We use a level of abstraction so that we can observe the essential behaviour of the system we want to model. &#x200B; Rounded rectangles are used for states. Each state contains two components, the state name and a brief description of the action performed in that state (see next slide).</p>
+<p>&#x521D;&#x59CB;&#x72B6;&#x6001;&#x7531;&#x4E00;&#x4E2A;&#x5B9E;&#x5FC3;&#x5706;&#x8868;&#x793A;&#xFF0C;&#x5E76;&#x4E14;&#x662F;&#x53EF;&#x9009;&#x7684;(&#x6709;&#x65F6;&#x5019;&#x7CFB;&#x7EDF;&#x4F1A;&#x4ECE;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#x5F00;&#x59CB;&#xFF0C;&#x56E0;&#x6B64;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x5E94;&#x8BE5;&#x88AB;&#x7701;&#x7565;)&#x3002; &#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6700;&#x7EC8;&#x72B6;&#x6001;;&#x8FD9;&#x662F;&#x7528;&#x4E00;&#x4E2A;&#x5E26;&#x73AF;&#x7684;&#x5B9E;&#x5FC3;&#x5706;&#x8868;&#x793A;&#x7684;&#x3002; &#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7EA7;&#x522B;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x89C2;&#x5BDF;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5EFA;&#x6A21;&#x7684;&#x7CFB;&#x7EDF;&#x7684;&#x57FA;&#x672C;&#x884C;&#x4E3A;&#x3002; &#x5706;&#x89D2;&#x77E9;&#x5F62;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x72B6;&#x6001;&#x3002;&#x6BCF;&#x4E2A;&#x72B6;&#x6001;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x5DDE;&#x540D;&#x548C;&#x5728;&#x8BE5;&#x72B6;&#x6001;&#x4E0B;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x7684;&#x7B80;&#x8981;&#x63CF;&#x8FF0;(&#x89C1;&#x4E0B;&#x4E00;&#x5F20;&#x5E7B;&#x706F;&#x7247;)&#x3002;</p>
+<p><img src="/2022/01/13/COMP201/image-20220114084332051.png" alt="image-20220114084332051" style="zoom:67%;"></p>
+<p>Statecharts also allow the decomposition of a model into <strong>sub-models</strong> (see figure on next slide). A brief description of the actions is included following the &#x2018;do&#x2019; in each state (the word &#x201C;do&#x201D; is optional). Can be complemented by <strong>tables describing the states and the stimuli</strong>.</p>
+<p><img src="/2022/01/13/COMP201/image-20220114084632655.png" alt="image-20220114084632655" style="zoom: 50%;"></p>
+<p>The <strong>label</strong> on an arc can denote the method called to move from one state to the next (the event). A <strong>guard</strong> is used to ensure that the system only moves from one state to the other if the expression is satisfied. A state can contain a subdiagram within it (also called a <strong>composite state</strong>). This is useful for example when we wish to model a subsystem or substates. On the next slide, we can see all these elements of a UML statechart diagram</p>
+<p><img src="/2022/01/13/COMP201/image-20220114084916149.png" alt="image-20220114084916149" style="zoom:67%;"></p>
+<p><img src="/2022/01/13/COMP201/image-20220114084951773.png" alt="image-20220114084951773" style="zoom:50%;"></p>
+<p><strong>More hints on state charts</strong> Often have an Idle state where the process is not active &#x901A;&#x5E38;&#x5904;&#x4E8E;Idle&#x72B6;&#x6001;&#xFF0C;&#x6B64;&#x65F6;&#x8FDB;&#x7A0B;&#x4E0D;&#x662F;&#x6D3B;&#x52A8;&#x7684; All states need some exit (no deadlock, even in error conditions) &#x6240;&#x6709;&#x72B6;&#x6001;&#x90FD;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x9000;&#x51FA;(&#x6CA1;&#x6709;&#x6B7B;&#x9501;&#xFF0C;&#x5373;&#x4F7F;&#x5728;&#x9519;&#x8BEF;&#x7684;&#x60C5;&#x51B5;&#x4E0B;) Use multiple state charts to keep the design simple &#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x72B6;&#x6001;&#x56FE;&#x6765;&#x4FDD;&#x6301;&#x8BBE;&#x8BA1;&#x7684;&#x7B80;&#x5355;&#x6027; Do NOT need to have a state chart as sub state of other state chart &#x4E0D;&#x9700;&#x8981;&#x5C06;&#x72B6;&#x6001;&#x56FE;&#x4F5C;&#x4E3A;&#x5176;&#x4ED6;&#x72B6;&#x6001;&#x56FE;&#x7684;&#x5B50;&#x72B6;&#x6001;</p>
+<ul>
+<li>System can be described by multiple state machines running concurrently &#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x7531;&#x591A;&#x4E2A;&#x5E76;&#x53D1;&#x8FD0;&#x884C;&#x7684;&#x72B6;&#x6001;&#x673A;&#x6765;&#x63CF;&#x8FF0;</li>
+</ul>
+<h4 id="finite-state-machines-&#x6709;&#x9650;&#x72B6;&#x6001;&#x673A;">Finite State Machines &#x6709;&#x9650;&#x72B6;&#x6001;&#x673A;</h4>
+<p><strong>Finite State Machines</strong> (FSM), also known as <strong>Finite</strong> <strong>State Automata</strong> (FSA) are models of the behaviours of a system or a complex object, with a limited number of defined conditions or modes, where mode transitions change with circumstance.</p>
+<p><img src="/2022/01/13/COMP201/image-20220114085418461.png" alt="image-20220114085418461" style="zoom:80%;"></p>
+<p><strong><em>Definition</em></strong></p>
+<p>A model of computation consisting of - a set of <strong>states</strong> &#x4E00;&#x7EC4;&#x72B6;&#x6001; - a <strong>start (initial) state</strong> &#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x6001; - an <strong>input alphabet</strong> &#x4E00;&#x4EFD;&#x8F93;&#x5165;&#x5B57;&#x7B26; &#x8868;(&#x96C6;&#x5408;) - a <strong>transition function</strong> that maps input symbols and current states to a <strong>next state</strong> &#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x51FD;&#x6570;</p>
+<p>Computation begins in the <em>start state</em> with an input string. It changes to new states depending on the transition function.</p>
+<p>&#x662F;&#x4E00;&#x79CD;&#x53D7;&#x9650;&#x7684;&#x56FE;&#x7075;&#x673A;&#x3002;</p>
+<p><strong>states</strong> define behaviour and may produce actions <strong>state transitions</strong> are movement from one state to another <strong>rules or conditions</strong> must be met to allow a state transition <strong>input events</strong> are either externally or internally generated, which may possibly trigger rules and lead to state transitions.</p>
+<p><strong><em>Variants of FSMs &#x53D8;&#x4F53;</em></strong></p>
+<p>machines having actions (outputs) <em>associated</em> with <em>transitions</em> (<strong>Mealy machine</strong>) or <em>states</em> (<strong>Moore machine</strong>)</p>
+<ul>
+<li>Mealy machine&#xFF1A;&#x8F93;&#x51FA;&#x53D6;&#x51B3;&#x4E8E;(&#x8F93;&#x5165;&#x548C;)&#x72B6;&#x6001;</li>
+<li>Moore machine&#xFF1A;&#x8F93;&#x51FA;&#x4EC5;&#x53D6;&#x51B3;&#x4E8E;&#x72B6;&#x6001;</li>
+</ul>
+<p>multiple start states</p>
+<p>transitions conditioned on no input symbol (a null) or more than one transition for a given symbol and state (<strong>nondeterministic finite state machine &#x975E;&#x786E;&#x5B9A;&#x6027;&#x6709;&#x9650;&#x72B6;&#x6001;&#x673A;</strong> )</p>
+<p>one or more states designated as accepting states (<strong>recognizer &#x8BC6;&#x522B;&#x5668;</strong>)</p>
+<h5 id="moore-machine"><strong><em>Moore Machine</em></strong></h5>
+<p>Basically a Moore machine is just a FSA with two extra attributes.</p>
+<ol type="1">
+<li>It has TWO alphabets, an input and output alphabet.</li>
+<li>It has an <strong>output letter</strong> associated with each state. The machine writes the appropriate output letter as it enters each state.</li>
+</ol>
+<p><img src="/2022/01/13/COMP201/image-20220115091413016.png" alt="image-20220115091413016" style="zoom:80%;"></p>
+<p>&#x200B; a b a b &#x5982;&#x56FE;&#xFF1A;q0 -&gt; q1 -&gt; q1 -&gt; q3 -&gt; q2 &#x200B; 1 0 0 1 0</p>
+<p>&#x5F00;&#x59CB;&#x4F1A;&#x5148;&#x6709;&#x8F93;&#x51FA;&#x3002;&#x56E0;&#x4E3A;Moore&#x6A21;&#x578B;&#x8F93;&#x51FA;&#x4EC5;&#x53D6;&#x51B3;&#x4E8E;&#x72B6;&#x6001;&#xFF0C;&#x800C;&#x5F00;&#x59CB;&#x867D;&#x7136;&#x6CA1;&#x6709;&#x8F93;&#x5165;&#xFF0C;&#x4F46;&#x673A;&#x5668;&#x5FC5;&#x7136;&#x5904;&#x4E8E;&#x67D0;&#x4E00;&#x72B6;&#x6001;&#xFF0C;&#x56E0;&#x6B64;&#x8F93;&#x51FA;&#x6BD4;&#x8F93;&#x5165;&#x591A;&#x4E00;&#x4F4D;&#x3002;</p>
+<p><img src="/2022/01/13/COMP201/image-20220115092455937.png" alt="image-20220115092455937" style="zoom:67%;"></p>
+<h5 id="mealy-machine"><em>Mealy Machine</em></h5>
+<p>Mealy machines are <strong>computationally</strong> equivalent to Moore machines&#xFF0C;we can implement any Mealy machine using a Moore machine, and vice versa</p>
+<p>However, Mealy machines move the output function from the state to the transition. This turns out to be easier to deal with in practice, making Mealy machines <strong>more practical</strong>.</p>
+<p>Transitions are labelled <strong>i</strong>/<strong>o</strong> where:</p>
+<p><strong>i</strong> is a character in the input alphabet <strong>o</strong> is a character in the output alphabet.</p>
+<p><img src="/2022/01/13/COMP201/image-20220115092657828.png" alt="image-20220115092657828" style="zoom:80%;"></p>
+<p>Mealy machines are <strong>complete</strong> in the sense that there is a transition for each character in the input alphabet leaving every state.</p>
+<p>There are no accept states in a Mealy machine because it is not a language recogniser, it is an output producer. Its output will be the same length as its input.</p>
+<h4 id="petri-net-models"><strong><em>Petri Net Models</em></strong></h4>
+<p>A <strong>Petri Net</strong> is a collection of <strong>directed arcs</strong> connecting <strong>places</strong> and <strong>transitions</strong>.</p>
+<p>Places may hold <strong><em>tokens</em></strong> (&#x9ED1;&#x70B9;).</p>
+<p>The <strong>state or marking</strong> of a net is its assignment of tokens to places</p>
+<p><img src="/2022/01/13/COMP201/image-20220115093833543.png" alt="image-20220115093833543" style="zoom:67%;"></p>
+<p><strong><em>Capacity</em></strong></p>
+<p><strong>Arcs</strong> have <strong>capacity 1</strong> by default; if other than 1, the <em>capacity is marked on the arc</em>, or else we use multiple arrows to denote the capacity (i.e. 5 arrows for capacity 5).</p>
+<p><strong>Places</strong> have <strong>infinite capacity</strong> by default.</p>
+<p><strong>Transitions</strong> have <strong>no capacity</strong>, and cannot store tokens at all.</p>
+<p><strong>Arcs</strong> can only connect <strong>places to transitions</strong> and vice versa.</p>
+<p>A few other features and considerations will be added as we need them.</p>
+<p><strong><em>Transitions</em></strong></p>
+<p><strong>A transition is enabled</strong> when the <strong>number of tokens</strong> in <strong>each</strong> of its input places is at least <strong>equal to the arc weight</strong> going from the place to the transition.</p>
+<p>An enabled transition may fire at any time.</p>
+<p><img src="/2022/01/13/COMP201/image-20220115094530059.png" alt="image-20220115094530059" style="zoom:80%;"></p>
+<p>When fired, the tokens in the input places are moved to output places, according to arc weights and place capacities.</p>
+<p>This results in a new marking of the net, a state description of all places.</p>
+<p><img src="/2022/01/13/COMP201/image-20220115094712408.png" alt="image-20220115094712408" style="zoom:80%;"></p>
+<p><strong><em>Inhibition &#x6291;&#x5236;</em></strong></p>
+<p>&#x8BE5;arc&#x7C7B;&#x578B;&#x8868;&#x793A;&#xFF0C;&#x53EA;&#x6709;&#x5F53;P1&#x4E3A;&#x7A7A;&#x65F6;&#xFF0C;transaction&#x624D;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#xFF1A;</p>
+<p><img src="/2022/01/13/COMP201/image-20220115103730280.png" alt="image-20220115103730280" style="zoom:50%;"></p>
+<p><em>A Collection of Primitive Structures that Occur in Real Systems&#xFF1A;</em></p>
+<p><img src="/2022/01/13/COMP201/image-20220115103818887.png" alt="image-20220115103818887" style="zoom:80%;"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/01/09/%E8%AF%84%E8%AE%BA/" rel="prev" title="评论功能已上线！">
+                  <i class="fa fa-chevron-left"></i> 评论功能已上线！
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="valine-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">罗醭坦</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"EBzFyAm9PfVGV30taJR4KOwO-MdYXbMMI","app_key":"gsNzDLmBx2Cx1wQMkW4V3RtN","server_url":"https://luobutan.com/","security":true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+
+<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"EBzFyAm9PfVGV30taJR4KOwO-MdYXbMMI","appKey":"gsNzDLmBx2Cx1wQMkW4V3RtN","serverURLs":"https://ebzfyam9.api.lncldglobal.com","placeholder":"wei？zaima？","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":[],"el":"#valine-comments","path":"/2022/01/13/COMP201/"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.valine.el)
+    .then(() => NexT.utils.getScript(
+      'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+      { condition: window.Valine }
+    ))
+    .then(() => {
+      new Valine(CONFIG.valine);
+    });
+});
+</script>
+
+</body>
+</html>
