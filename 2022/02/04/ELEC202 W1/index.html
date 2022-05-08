@@ -28,8 +28,8 @@
 <meta property="og:description" content="承上启下，信号调制。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2022/02/04/ELEC202%20W1/image-20220205014212708.png">
-<meta property="article:published_time" content="2022-02-03T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-02-06T22:45:09.126Z">
+<meta property="article:published_time" content="2022-02-04T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-04-07T19:01:41.900Z">
 <meta property="article:author" content="罗醭坦">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2022/02/04/ELEC202%20W1/image-20220205014212708.png">
@@ -123,7 +123,9 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#elec202-week1"><span class="nav-number">1.</span> <span class="nav-text">ELEC202 WEEK1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#communication-system-%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F-%E7%AE%80%E4%BB%8B"><span class="nav-number">1.0.1.</span> <span class="nav-text">communication system 通信系统 简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#signal-to-noise-ratio-snr-%E4%BF%A1%E5%99%AA%E6%AF%94"><span class="nav-number">1.0.2.</span> <span class="nav-text">Signal to Noise Ratio (SNR) 信噪比</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#channel-%E4%BF%A1%E9%81%93"><span class="nav-number">1.0.3.</span> <span class="nav-text">channel 信道</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#elec202-week1"><span class="nav-number">1.</span> <span class="nav-text">ELEC202 WEEK1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#communication-system-%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F-%E7%AE%80%E4%BB%8B"><span class="nav-number">1.0.1.</span> <span class="nav-text">communication system
+通信系统 简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#signal-to-noise-ratio-snr-%E4%BF%A1%E5%99%AA%E6%AF%94"><span class="nav-number">1.0.2.</span> <span class="nav-text">Signal to Noise Ratio (SNR)
+信噪比</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#channel-%E4%BF%A1%E9%81%93"><span class="nav-number">1.0.3.</span> <span class="nav-text">channel 信道</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -136,7 +138,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -204,14 +206,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2022-02-04 00:00:00" itemprop="dateCreated datePublished" datetime="2022-02-04T00:00:00+08:00">2022-02-04</time>
+      <time title="创建时间：2022-02-04 00:00:00" itemprop="dateCreated datePublished" datetime="2022-02-04T00:00:00+00:00">2022-02-04</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-02-07 06:45:09" itemprop="dateModified" datetime="2022-02-07T06:45:09+08:00">2022-02-07</time>
+        <time title="修改时间：2022-04-07 20:01:41" itemprop="dateModified" datetime="2022-04-07T20:01:41+01:00">2022-04-07</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -256,32 +258,51 @@
     
     <div class="post-body" itemprop="articleBody">
         <h2 id="elec202-week1">ELEC202 WEEK1</h2>
-<p>ELEC202 COMMUNICATION SYSTEMS &#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x5C31;&#x662F;&#x4FE1;&#x53F7;&#x5728;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x4F20;&#x8F93;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x4E0A;&#x5B66;&#x671F;&#x90A3;&#x6837;&#x7684;&#x4FE1;&#x53F7;&#x5206;&#x6790;&#xFF0C;&#x66F4;&#x6709;&#x5404;&#x79CD;&#x57FA;&#x4E8E;&#x5E94;&#x7528;&#x7684;&#x6982;&#x5FF5;/&#x7406;&#x8BBA;/&#x64CD;&#x4F5C;&#x4E9F;&#x5F85;&#x5B66;&#x4E60;&#x3002;</p>
-<h4 id="communication-system-&#x901A;&#x4FE1;&#x7CFB;&#x7EDF;-&#x7B80;&#x4ECB;">communication system &#x901A;&#x4FE1;&#x7CFB;&#x7EDF; &#x7B80;&#x4ECB;</h4>
+<p>ELEC202 COMMUNICATION SYSTEMS
+&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x5C31;&#x662F;&#x4FE1;&#x53F7;&#x5728;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x4F20;&#x8F93;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x4E0A;&#x5B66;&#x671F;&#x90A3;&#x6837;&#x7684;&#x4FE1;&#x53F7;&#x5206;&#x6790;&#xFF0C;&#x66F4;&#x6709;&#x5404;&#x79CD;&#x57FA;&#x4E8E;&#x5E94;&#x7528;&#x7684;&#x6982;&#x5FF5;/&#x7406;&#x8BBA;/&#x64CD;&#x4F5C;&#x4E9F;&#x5F85;&#x5B66;&#x4E60;&#x3002;</p>
+<h4 id="communication-system-&#x901A;&#x4FE1;&#x7CFB;&#x7EDF;-&#x7B80;&#x4ECB;">communication system
+&#x901A;&#x4FE1;&#x7CFB;&#x7EDF; &#x7B80;&#x4ECB;</h4>
 <figure>
-<img src="/2022/02/04/ELEC202%20W1/image-20220205014212708.png" alt="image-20220205014212708"><figcaption aria-hidden="true">image-20220205014212708</figcaption>
+<img src="/2022/02/04/ELEC202%20W1/image-20220205014212708.png" alt="image-20220205014212708">
+<figcaption aria-hidden="true">image-20220205014212708</figcaption>
 </figure>
-<p><strong>Source encoder/input transducer (&#x7F16;&#x7801;&#x6E90;) </strong> converts message into message signal.</p>
-<p><strong>Transmitter (&#x53D1;&#x5C04;&#x5668;)</strong> converts message signal or bits into format appropriate for channel transmission (analog/digital signal).</p>
-<p><strong>Channel (&#x4FE1;&#x9053;)</strong> introduces distortion, noise, and interference.</p>
-<p><strong>Receiver (&#x63A5;&#x6536;&#x5668;)</strong> decodes received signal back to message signal.</p>
-<p><strong>Source decoder (&#x89E3;&#x7801;&#x5668;)</strong> decodes message signal back into original message.</p>
+<p><strong>Source encoder/input transducer (&#x7F16;&#x7801;&#x6E90;) </strong> converts
+message into message signal.</p>
+<p><strong>Transmitter (&#x53D1;&#x5C04;&#x5668;)</strong> converts message signal or bits
+into format appropriate for channel transmission (analog/digital
+signal).</p>
+<p><strong>Channel (&#x4FE1;&#x9053;)</strong> introduces distortion, noise, and
+interference.</p>
+<p><strong>Receiver (&#x63A5;&#x6536;&#x5668;)</strong> decodes received signal back to
+message signal.</p>
+<p><strong>Source decoder (&#x89E3;&#x7801;&#x5668;)</strong> decodes message signal back
+into original message.</p>
 <p>&#x4E00;&#x4E9B;&#x6982;&#x5FF5;&#xFF1A;</p>
-<p>&#x2022;<strong>Information source</strong> device producing information to be communicated</p>
-<p>&#x2022;<strong>Binary digit (bit)</strong> fundamental information unit for all digital systems; unit of information content</p>
+<p>&#x2022;<strong>Information source</strong> device producing information to
+be communicated</p>
+<p>&#x2022;<strong>Binary digit (bit)</strong> fundamental information unit for
+all digital systems; unit of information content</p>
 <p>&#x2022;<strong>Bit stream</strong> sequence of binary digits, baseband</p>
-<p>&#x2022;<strong>Digital symbol</strong> group of bits considered as a unit or character</p>
-<p>&#x2022;<strong>Digital waveform</strong> analogue signal representing a digital symbol</p>
-<h4 id="signal-to-noise-ratio-snr-&#x4FE1;&#x566A;&#x6BD4;">Signal to Noise Ratio (SNR) &#x4FE1;&#x566A;&#x6BD4;</h4>
+<p>&#x2022;<strong>Digital symbol</strong> group of bits considered as a unit
+or character</p>
+<p>&#x2022;<strong>Digital waveform</strong> analogue signal representing a
+digital symbol</p>
+<h4 id="signal-to-noise-ratio-snr-&#x4FE1;&#x566A;&#x6BD4;">Signal to Noise Ratio (SNR)
+&#x4FE1;&#x566A;&#x6BD4;</h4>
 <p>&#x4FE1;&#x53F7;&#x4E0E;&#x566A;&#x58F0;&#x529F;&#x7387;&#x4E4B;&#x6BD4; <span class="math display">\[
 SNR=\frac{P_{signal}}{P_{noise}}=\frac{\overline{A_{signal}}^2}{\overline{A_{noise}}^2}
 \]</span></p>
 <h4 id="channel-&#x4FE1;&#x9053;">channel &#x4FE1;&#x9053;</h4>
-<p><strong>Baseband &#x57FA;&#x5E26;</strong> describesthe band of frequencies representing the original signal as delivered by the input transducer.</p>
+<p><strong>Baseband &#x57FA;&#x5E26;</strong> describesthe band of frequencies
+representing the original signal as delivered by the input
+transducer.</p>
 <ul>
-<li>Eg. the voice signal from a microphone is a baseband signal, and contains frequencies in the range of 0-3000 Hz</li>
+<li>Eg. the voice signal from a microphone is a baseband signal, and
+contains frequencies in the range of 0-3000 Hz</li>
 </ul>
-<p><strong>Bandpass</strong> describesthe band of frequencies significantly higher than that of the original signal, i.e. after modulation, usually wireless.</p>
+<p><strong>Bandpass</strong> describesthe band of frequencies
+significantly higher than that of the original signal, i.e. after
+modulation, usually wireless.</p>
 <ul>
 <li>Eg. FM radio signals centred at 96.7 MHz</li>
 </ul>
@@ -303,8 +324,8 @@ SNR=\frac{P_{signal}}{P_{noise}}=\frac{\overline{A_{signal}}^2}{\overline{A_{noi
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/02/07/ELEC211%20W1/" rel="next" title="ELEC211 W1">
-                  ELEC211 W1 <i class="fa fa-chevron-right"></i>
+                <a href="/2022/02/07/ELEC211/" rel="next" title="ELEC211 notes">
+                  ELEC211 notes <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
