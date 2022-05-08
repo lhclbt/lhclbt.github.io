@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="Feedback：从放大到控制">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ELEC271 W7-8">
+<meta property="og:url" content="http://example.com/2022/05/08/ELEC271%20W7-8/index.html">
+<meta property="og:site_name" content="醭log">
+<meta property="og:description" content="Feedback：从放大到控制">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/2825a24c118865733fed378243464f4a.jpg">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508202442061.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508202932747.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508211604737.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508212057338.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508212122838.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508212217680.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508212251944.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508213911460.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508214024783.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508214138222.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508214406685.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508214919467.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508215857051.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508215807421.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508220415062.png">
+<meta property="og:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/image-20220508221751410.png">
+<meta property="article:published_time" content="2022-05-07T23:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-08T21:21:08.660Z">
+<meta property="article:author" content="罗醭坦">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/05/08/ELEC271%20W7-8/2825a24c118865733fed378243464f4a.jpg">
+
+
+<link rel="canonical" href="http://example.com/2022/05/08/ELEC271%20W7-8/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/05/08/ELEC271%20W7-8/","path":"2022/05/08/ELEC271 W7-8/","title":"ELEC271 W7-8"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>ELEC271 W7-8 | 醭log</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="醭log" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">醭log</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">醭言乱语</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#week7-intro-to-feedback"><span class="nav-number">1.</span> <span class="nav-text">WEEK7: Intro to Feedback</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#different-types-of-amplifier"><span class="nav-number">1.0.1.</span> <span class="nav-text">Different types of amplifier</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#output-sensing-input-summing"><span class="nav-number">1.1.</span> <span class="nav-text">Output sensing &amp; Input
+summing</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#output-sensing"><span class="nav-number">1.1.1.</span> <span class="nav-text">Output sensing:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#input-summing"><span class="nav-number">1.1.2.</span> <span class="nav-text">Input summing</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#week8-feedback-theory"><span class="nav-number">2.</span> <span class="nav-text">WEEK8: Feedback Theory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#apply"><span class="nav-number">2.0.1.</span> <span class="nav-text">apply</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">罗醭坦</p>
+  <div class="site-description" itemprop="description">欢迎来到醭坦的测试与发布空间</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/ELEC271%20W7-8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="罗醭坦">
+      <meta itemprop="description" content="欢迎来到醭坦的测试与发布空间">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醭log">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ELEC271 W7-8
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-05-08 00:00:00 / 修改时间：22:21:08" itemprop="dateCreated datePublished" datetime="2022-05-08T00:00:00+01:00">2022-05-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ELEC271/" itemprop="url" rel="index"><span itemprop="name">ELEC271</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2022/05/08/ELEC271%20W7-8/" class="post-meta-item leancloud_visitors" data-flag-title="ELEC271 W7-8" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Valine：</span>
+  
+    <a title="valine" href="/2022/05/08/ELEC271%20W7-8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/05/08/ELEC271%20W7-8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+            <div class="post-description">Feedback：从放大到控制</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>&#x672C;&#x535A;&#x5BA2;&#x8349;&#x8349;&#x521B;&#x5EFA;&#xFF0C;&#x7B80;&#x964B;&#x4E0D;&#x582A;&#x3002;&#x672C;&#x4EBA;&#x624D;&#x758F;&#x5B66;&#x6D45;&#xFF0C;&#x7B14;&#x8BB0;&#x4E5F;&#x4E0D;&#x8FC7;&#x7ED9;&#x8BF8;&#x541B;&#x4F5C;&#x4E00;&#x53C2;&#x8003;&#x3002;<strong><em>&#x5982;&#x6709;&#x7591;&#x60D1;/&#x9519;&#x6F0F;/&#x5EFA;&#x8BAE;
+&#x8FD8;&#x8BF7;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x533F;&#x540D;&#x63D0;&#x95EE;&#x7BB1;&#xFF0C;&#x6211;&#x4F1A;&#x4E00;&#x4E00;&#x56DE;&#x590D;&#x3002;</em></strong>
+&#x4E0D;&#x8FC7;&#x73B0;&#x5728;&#x672C;&#x535A;&#x5BA2;&#x4E5F;&#x589E;&#x52A0;&#x4E86;&#x8BC4;&#x8BBA;&#x529F;&#x80FD;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x5E95;&#x4E0B;&#x8BF4;&#x3002;&#x4E0D;&#x8FC7;&#x8FD9;&#x4E2A;&#x8BC4;&#x8BBA;&#x529F;&#x80FD;&#x6CA1;&#x6709;&#x63D0;&#x9192;&#x2026;&#x2026;&#x56DE;&#x590D;&#x53EF;&#x80FD;&#x4F1A;&#x4E0D;&#x591F;&#x53CA;&#x65F6;&#x3002;</p>
+<p>https://www.tapechat.net/uu/5r0pL8/ZV9H0543</p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/2825a24c118865733fed378243464f4a.jpg" alt="2825a24c118865733fed378243464f4a" style="zoom:30%;"></p>
+<h2 id="week7-intro-to-feedback">WEEK7: Intro to Feedback</h2>
+<p>feedback&#x8FD9;&#x5C31;&#x6709;&#x70B9;&#x63A7;&#x5236;&#x7684;&#x5473;&#x9053;&#x4E86;&#xFF08;<span class="citation" data-cites="ELEC207">@ELEC207</span>&#xFF09;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x770B;&#x770B;&#x6CA1;&#x6709;feedback&#x7684;&#x653E;&#x5927;&#x5668;&#xFF1A;</p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508202442061.png" alt="image-20220508202442061" style="zoom:67%;"></p>
+<p>&#x53EF;&#x89C1;&#xFF0C;&#x4E09;&#x6781;&#x7BA1;&#x7684; <span class="math inline">\(\beta\)</span> ,
+&#x7535;&#x6E90;&#x7535;&#x963B;&#x751A;&#x81F3;&#x8D1F;&#x8F7D;&#x7535;&#x963B;&#x90FD;&#x4F1A;&#x8F83;&#x4E3A;&#x660E;&#x663E;&#x5730;&#x5F71;&#x54CD;&#x653E;&#x5927;&#x500D;&#x6570;&#x3002;&#x8FD9;&#x53EF;&#x4E0D;&#x884C;&#xFF0C;&#x522B;&#x7684;&#x4E0D;&#x8BF4;&#xFF0C;&#x8D1F;&#x8F7D;&#x7535;&#x963B;&#x53D8;&#x4E86;<span class="math inline">\(A_V\)</span> &#x8DDF;&#x7740;&#x53D8;&#x8FD9;&#x662F;&#x5426;&#x592A;&#x4E0D;&#x7A33;&#x5B9A;&#x4E86;&#x70B9;&#x2026;&#x2026;&#xFF1F;</p>
+<p>&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;feedback&#x7ED3;&#x6784;&#xFF1A;</p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508202932747.png" alt="image-20220508202932747" style="zoom:67%;"></p>
+<p>oh&#xFF0C;much better. &#x867D;&#x7136;&#x727A;&#x7272;&#x4E86;&#x653E;&#x5927;&#x500D;&#x6570;(&#x4E0A;&#x767E; -&gt;
+20)&#xFF0C;&#x4F46;&#x7A33;&#x5B9A;&#x592A;&#x591A;&#x4E86;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x901A;&#x8FC7;&#x6539;&#x53D8;feedback&#x7ED3;&#x6784;&#x7684;&#x7535;&#x963B;&#x503C;&#xFF08;R11 and
+R12&#xFF09;&#x5C31;&#x80FD;&#x6539;&#x53D8;<span class="math inline">\(A_V\)</span>&#xFF0C;&#x597D;&#x4E0D;&#x65B9;&#x4FBF;&#xFF01;</p>
+<p>Advantages of Negative Feedback</p>
+<ul>
+<li>Negative feedback reduces the sensitivity of the gain on parameters
+of amplifier such as transistor current gain.
+&#x964D;&#x4F4E;&#x4E86;&#x5BF9;&#x6676;&#x4F53;&#x7BA1;&#x53C2;&#x6570;&#x7684;&#x654F;&#x611F;&#x6027;</li>
+<li>Negative feedback allows us to set gain to any value we want.
+&#x53EF;&#x4EE5;&#x63A7;&#x5236;gain&#x7684;&#x503C;</li>
+<li>Negative feedback increases the bandwidth of the amplifier.
+&#x589E;&#x5927;&#x4E86;&#x653E;&#x5927;&#x5668;&#x5E26;&#x5BBD;</li>
+<li>Negative feedback reduces distortion. &#x51CF;&#x5C11;&#x4E86;&#x5931;&#x771F;</li>
+<li>Negative feedback allows us to adjust the input and output
+impedances of an amplifier. &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x963B;&#x6297;&#x53EF;&#x6539;&#x5566;</li>
+</ul>
+<p>Disadvantages of Negative Feedback</p>
+<ul>
+<li>Negative feedback always reduces the gain of an amplifier.
+&#x901A;&#x5E38;&#x4F1A;&#x964D;&#x4F4E;gain</li>
+<li>Over certain frequency ranges, it can be that negative feedback
+changes from negative to positive with catastrophic results. Positive
+feedback increases gain of the amplifier and amplifier may be converted
+to an oscillator &#x2013;no longer any use as an amplifier.
+&#x5728;&#x67D0;&#x4E9B;&#x9891;&#x7387;&#xFF0C;&#x8D1F;&#x53CD;&#x9988;&#x53EF;&#x80FD;&#x4F1A;&#x53D8;&#x6210;&#x6B63;&#x53CD;&#x9988;&#xFF0C;&#x8BA9;&#x653E;&#x5927;&#x5668;&#x53D8;&#x6210;&#x632F;&#x8361;&#x5668;&#x3002;</li>
+</ul>
+<h4 id="different-types-of-amplifier">Different types of amplifier</h4>
+<p>&#x52A0;&#x5165;feedback&#xFF0C;&#x8981;&#x641E;&#x6E05;&#x695A;&#x653E;&#x5927;&#x5668;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x3002;</p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508211604737.png" alt="image-20220508211604737" style="zoom: 50%;"></p>
+<p><strong>&#x5BF9;&#x4E8E;&#x7406;&#x60F3;&#x7684;voltage amplifier&#xFF0C;<span class="math inline">\(R_{in}=\infty,R_{out}=0\)</span></strong></p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508212057338.png" alt="image-20220508212057338" style="zoom:50%;"></p>
+<p><strong>&#x5BF9;&#x4E8E;&#x7406;&#x60F3;&#x7684;current amplifier&#xFF0C;<span class="math inline">\(R_{in}=0,R_{out}=\infty\)</span></strong></p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508212122838.png" alt="image-20220508212122838" style="zoom:50%;"></p>
+<p><strong>&#x5BF9;&#x4E8E;&#x7406;&#x60F3;&#x7684;transresistance amplifier&#xFF0C;<span class="math inline">\(R_{in}=0,R_{out}=0\)</span></strong></p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508212217680.png" alt="image-20220508212217680" style="zoom:50%;"></p>
+<p><strong>&#x5BF9;&#x4E8E;&#x7406;&#x60F3;&#x7684;transconductance amplifier&#xFF0C;<span class="math inline">\(R_{in}=\infty,R_{out}=\infty\)</span></strong></p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508212251944.png" alt="image-20220508212251944" style="zoom:50%;"></p>
+<h3 id="output-sensing-input-summing">Output sensing &amp; Input
+summing</h3>
+<h4 id="output-sensing">Output sensing:</h4>
+<ol type="1">
+<li>&#x63A5;&#x5165;&#x70B9;&#x548C;&#x8F93;&#x51FA;<strong>&#x76F4;&#x8FDE;</strong>&#xFF0C;&#x662F;&#x4E3A; <strong>voltage
+sensing</strong>&#xFF0C;&#x4EE4;<span class="math inline">\(R_0 \rightarrow
+0\)</span></li>
+</ol>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508213911460.png" alt="image-20220508213911460" style="zoom:50%;"></p>
+<ol start="2" type="1">
+<li>&#x63A5;&#x5165;&#x70B9;<strong>&#x4E0D;</strong>&#x548C;&#x8F93;&#x51FA;<strong>&#x76F4;&#x8FDE;</strong>&#xFF0C;&#x662F;&#x4E3A;
+<strong>current sensing</strong>&#xFF0C;&#x4EE4;<span class="math inline">\(R_0
+\rightarrow \infty\)</span></li>
+</ol>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508214024783.png" alt="image-20220508214024783" style="zoom:50%;"></p>
+<h4 id="input-summing">Input summing</h4>
+<ol type="1">
+<li>&#x63A5;&#x5165;&#x70B9;&#x548C;&#x8F93;&#x5165;<strong>&#x76F4;&#x8FDE;</strong>&#xFF0C;&#x662F;&#x4E3A; <strong>current
+summing</strong>&#xFF0C;&#x4EE4;<span class="math inline">\(R_0 \rightarrow
+0\)</span></li>
+</ol>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508214138222.png" alt="image-20220508214138222" style="zoom:50%;"></p>
+<ol start="2" type="1">
+<li>&#x63A5;&#x5165;&#x70B9;<strong>&#x4E0D;</strong>&#x548C;&#x8F93;&#x5165;<strong>&#x76F4;&#x8FDE;</strong>&#xFF0C;&#x662F;&#x4E3A;
+<strong>voltage summing</strong>&#xFF0C;&#x4EE4;<span class="math inline">\(R_0
+\rightarrow \infty\)</span></li>
+</ol>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508214406685.png" alt="image-20220508214406685" style="zoom:50%;"></p>
+<p><strong>sensing &#x548C; summing 4&#x79CD;&#x7EC4;&#x5408;&#xFF0C;&#x5BF9;&#x5E94;4&#x79CD;&#x653E;&#x5927;&#x5668;&#x3002;</strong></p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508214919467.png" alt="image-20220508214919467" style="zoom:50%;"></p>
+<h2 id="week8-feedback-theory">WEEK8: Feedback Theory</h2>
+<p>&#x4E00;&#x65E6;&#x7CFB;&#x7EDF;&#x5730;&#x7814;&#x7A76;feedback&#xFF0C;&#x5F00;&#x73AF;&#x95ED;&#x73AF;&#x662F;&#x8EB2;&#x4E0D;&#x5F00;&#x7684;&#x3002;&#x548C;ELEC207&#x4E00;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x7406;&#x8BBA;&#x3002;</p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508215857051.png" alt="image-20220508215857051" style="zoom: 67%;"></p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508215807421.png" alt="image-20220508215807421" style="zoom: 67%;"></p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6709;&#x5F00;&#x73AF;&#x589E;&#x76CA; <span class="math inline">\(A_{ol},\)</span>
+feedback&#x7CFB;&#x6570; <span class="math inline">\(\beta,\)</span> &#x5219;&#x95ED;&#x73AF;&#x589E;&#x76CA;<span class="math inline">\(A_f\)</span>&#x4E3A;&#xFF1A; <span class="math display">\[
+A_{f}=\frac{A_{o l}}{1+A_{o l} \beta}
+\]</span> &#x82E5;<span class="math inline">\(A_{ol}\)</span> &#x503C;&#x6709;&#x53D8;&#xFF1A;</p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508220415062.png" alt="image-20220508220415062" style="zoom:50%;"></p>
+<p>&#x53EF;&#x5F97;: <span class="math display">\[
+\frac{\Delta A_{f}}{A_{f}}=\left(\frac{1}{1+\beta A_{o l}}\right)
+\frac{\Delta A_{o l}}{A_{o l}}
+\]</span> &#x8FD9;&#x4E5F;&#x5C31;&#x5B9A;&#x91CF;&#x8BC1;&#x660E;&#x4E86;&#x4E3A;&#x4EC0;&#x4E48;&#x52A0;&#x4E0A;feedback&#x540E;<span class="math inline">\(A_f\)</span>&#x4F1A;&#x6BD4;<span class="math inline">\(A_{ol}\)</span>&#x7A33;&#x5B9A;&#x90A3;&#x4E48;&#x591A;&#x3002;</p>
+<p>&#x66F4;&#x8FDB;&#x4E00;&#x6B65;&#xFF0C;&#x5982;&#x679C; <span class="math inline">\(\beta A_{o l}\)</span>
+&#x5F88;&#x5927;&#xFF0C;&#x6BD4;&#x5982;<span class="math inline">\(\beta A_{o l}&gt;100\)</span>
+,&#x5219;&#x6709;&#xFF1A;<span class="math inline">\(\frac{A_{o l} \beta}{1+A_{o l} \beta}
+\approx 1,\)</span> &#x4E8E;&#x662F;&#xFF1A; <span class="math display">\[
+A_{f}=\frac{A_{o l}}{1+A_{o l} \beta}=\frac{1}{\beta} \frac{A_{o
+l}\beta}{1+A_{o l} \beta}\approx \frac{1}{\beta}
+\]</span> &#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x60CA;&#x8BB6;&#x5730;&#x53D1;&#x73B0;&#xFF1A;<span class="math inline">\(A_f\)</span>
+&#x548C; <span class="math inline">\(A_{ol}\)</span> &#x65E0;&#x5173;&#x4E86;&#xFF0C;&#x5F97; <span class="math inline">\(\beta\)</span> &#x8005;&#x5F97; <span class="math inline">\(A_f\)</span>&#xFF01;</p>
+<h4 id="apply">apply</h4>
+<p>&#x5C06;&#x8FD9;&#x79CD;&#x7406;&#x8BBA;&#x7528;&#x4E8E;&#x5206;&#x6790;&#x653E;&#x5927;&#x5668;&#x7535;&#x8DEF;&#x57FA;&#x672C;&#x6D41;&#x7A0B;&#xFF1A;</p>
+<ol type="1">
+<li>&#x6839;&#x636E;sensing &#x548C; summing &#x7EC4;&#x5408;&#x5224;&#x65AD;&#x653E;&#x5927;&#x5668;&#x7C7B;&#x578B;</li>
+<li>&#x5316;&#x7B80;&#x6210;feedback loop &#x6A21;&#x578B;</li>
+<li>&#x5206;&#x6790;&#x7535;&#x8DEF;&#xFF0C;&#x7B97;&#x51FA;<span class="math inline">\(\beta\)</span></li>
+<li>&#x5F97; <span class="math inline">\(\beta\)</span> &#x8005;&#x5F97; <span class="math inline">\(A_f\)</span> , &#x7B97;&#x51FA;&#x5F00;&#x73AF;&#x589E;&#x76CA;&#xFF0C;&#x7ED3;&#x675F;&#x3002;</li>
+</ol>
+<p>&#x6BD4;&#x5982;&#xFF1A;</p>
+<p><img src="/2022/05/08/ELEC271%20W7-8/image-20220508221751410.png" alt="image-20220508221751410" style="zoom: 67%;"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/04/26/ELEC207%20semester1/" rel="prev" title="ELEC207 semester1">
+                  <i class="fa fa-chevron-left"></i> ELEC207 semester1
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/05/08/ELEC271%20W5-6/" rel="next" title="ELEC271 W5-6">
+                  ELEC271 W5-6 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="valine-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">罗醭坦</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"EBzFyAm9PfVGV30taJR4KOwO-MdYXbMMI","app_key":"gsNzDLmBx2Cx1wQMkW4V3RtN","server_url":"https://luobutan.com/","security":true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+
+<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"EBzFyAm9PfVGV30taJR4KOwO-MdYXbMMI","appKey":"gsNzDLmBx2Cx1wQMkW4V3RtN","serverURLs":"https://ebzfyam9.api.lncldglobal.com","placeholder":"wei？zaima？","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":[],"el":"#valine-comments","path":"/2022/05/08/ELEC271%20W7-8/"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.valine.el)
+    .then(() => NexT.utils.getScript(
+      'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+      { condition: window.Valine }
+    ))
+    .then(() => {
+      new Valine(CONFIG.valine);
+    });
+});
+</script>
+
+</body>
+</html>
