@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2022/05/10/ELEC271%20W9-11/</loc>
+    
+    <lastmod>2022-05-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2022/05/08/ELEC271%20W7-8/</loc>
+    
+    <lastmod>2022-05-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2022/02/07/ELEC202%20L7-12/</loc>
+    
+    <lastmod>2022-05-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2022/04/26/ELEC207%20semester1/</loc>
     
     <lastmod>2022-05-08</lastmod>
@@ -24,20 +45,6 @@
   
   <url>
     <loc>http://example.com/2022/05/07/ELEC271%20W5-6/</loc>
-    
-    <lastmod>2022-05-08</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/05/08/ELEC271%20W7-8/</loc>
-    
-    <lastmod>2022-05-08</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/02/07/ELEC202%20L7-12/</loc>
     
     <lastmod>2022-05-08</lastmod>
     
@@ -200,7 +207,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -210,77 +217,77 @@
   
   <url>
     <loc>http://example.com/categories/COMP207/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/EEE109/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/EEE112/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/ELEC211/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/ELEC202/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/ELEC207/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/COMP201/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/ELEC270/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/ELEC271/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/MP/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/minds/</loc>
-    <lastmod>2022-05-08</lastmod>
+    <lastmod>2022-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
