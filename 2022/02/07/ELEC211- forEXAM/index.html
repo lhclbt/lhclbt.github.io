@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="EEE104:这是犬子">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ELEC211 notes">
+<meta property="og:url" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/index.html">
+<meta property="og:site_name" content="醭log">
+<meta property="og:description" content="EEE104:这是犬子">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207052528400.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207052856561.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207052641452.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207060955527.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207062035564.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207061940969.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207062343812.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207062622460.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207062652392.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207062805667.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516235100607.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516235254924.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516235125445.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516235232020.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516235315544.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516235330556.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516235445540.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207064301412.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220501234937317.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207064417877.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502002235553.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502182756729.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502181533422.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502183507258.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516175142570.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516175440936.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502004418648.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502004444900.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502004652794.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502004806012.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502005858583.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502005913436.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516175827237.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516175910307.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516175947445.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502165855612.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220502173400439.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516211255051.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516211117350.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516230147833.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220516201113088.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220503041021715.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220503041143195.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220503040616459.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220503042402206.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220503042148390.png">
+<meta property="og:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/mistake/image-20220503041927711.png">
+<meta property="article:published_time" content="2022-02-07T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-16T22:55:06.131Z">
+<meta property="article:author" content="罗醭坦">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/02/07/ELEC211-%20forEXAM/image-20220207052528400.png">
+
+
+<link rel="canonical" href="http://example.com/2022/02/07/ELEC211-%20forEXAM/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/02/07/ELEC211-%20forEXAM/","path":"2022/02/07/ELEC211- forEXAM/","title":"ELEC211 notes"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>ELEC211 notes | 醭log</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="醭log" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">醭log</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">醭言乱语</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#elec211-notes"><span class="nav-number">1.</span> <span class="nav-text">ELEC211 notes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#logic-gates-and-combinational-logic"><span class="nav-number">1.1.</span> <span class="nav-text">Logic gates and
+combinational logic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mintermsmaxterms-and-implementing-functions"><span class="nav-number">1.2.</span> <span class="nav-text">Minterms&#x2F;Maxterms
+and implementing functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#karnaugh-maps"><span class="nav-number">1.3.</span> <span class="nav-text">Karnaugh maps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#multiplexer-%E6%95%B0%E6%8D%AE%E9%80%89%E6%8B%A9%E5%99%A8%E5%A4%9A%E8%B7%AF%E5%BC%80%E5%85%B3"><span class="nav-number">1.4.</span> <span class="nav-text">Multiplexer
+数据选择器&#x2F;多路开关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#adder"><span class="nav-number">1.5.</span> <span class="nav-text">Adder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tristate-gates-%E4%B8%89%E6%80%81%E9%97%A8three-state-buffers"><span class="nav-number">1.6.</span> <span class="nav-text">Tristate gates
+三态门(three state buffers)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shannons-expansion"><span class="nav-number">1.7.</span> <span class="nav-text">Shannon’s Expansion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mealy-moore-machines"><span class="nav-number">1.8.</span> <span class="nav-text">Mealy &#x2F; Moore machines</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#asm"><span class="nav-number">1.9.</span> <span class="nav-text">ASM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#quine-mccluskey"><span class="nav-number">1.10.</span> <span class="nav-text">Quine-McCluskey</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A0-d"><span class="nav-number">1.10.1.</span> <span class="nav-text">无 d</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%89-dincompletely-specified-functions"><span class="nav-number">1.10.2.</span> <span class="nav-text">有 d，Incompletely
+Specified Functions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%BE%E5%88%B0%E6%89%80%E6%9C%89%E7%9A%84pi-%E5%90%8E%E6%89%BEepi"><span class="nav-number">1.10.3.</span> <span class="nav-text">找到所有的PI 后，找EPI</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%84%B6%E5%90%8E%E6%89%BEsop"><span class="nav-number">1.10.4.</span> <span class="nav-text">然后找SOP</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#registers"><span class="nav-number">1.11.</span> <span class="nav-text">Registers</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#d-flip-flop"><span class="nav-number">1.11.1.</span> <span class="nav-text">D Flip-Flop</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#microprocessor-systems------------------------"><span class="nav-number">1.12.</span> <span class="nav-text">------------------------Microprocessor
+Systems------------------------</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shift-register"><span class="nav-number">1.13.</span> <span class="nav-text">Shift-register</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#addressing"><span class="nav-number">1.14.</span> <span class="nav-text">addressing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#instructions"><span class="nav-number">1.15.</span> <span class="nav-text">instructions:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#branch"><span class="nav-number">1.16.</span> <span class="nav-text">Branch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flags"><span class="nav-number">1.17.</span> <span class="nav-text">Flags</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pc-vs-lr-vs-sr"><span class="nav-number">1.18.</span> <span class="nav-text">PC vs LR vs SR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ieee754-standard"><span class="nav-number">1.19.</span> <span class="nav-text">IEEE754 standard</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#carry-vs-overflow"><span class="nav-number">1.20.</span> <span class="nav-text">Carry vs Overflow</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">罗醭坦</p>
+  <div class="site-description" itemprop="description">欢迎来到醭坦的测试与发布空间</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/07/ELEC211-%20forEXAM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="罗醭坦">
+      <meta itemprop="description" content="欢迎来到醭坦的测试与发布空间">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醭log">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ELEC211 notes
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-02-07 00:00:00" itemprop="dateCreated datePublished" datetime="2022-02-07T00:00:00+00:00">2022-02-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-05-16 23:55:06" itemprop="dateModified" datetime="2022-05-16T23:55:06+01:00">2022-05-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ELEC211/" itemprop="url" rel="index"><span itemprop="name">ELEC211</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2022/02/07/ELEC211-%20forEXAM/" class="post-meta-item leancloud_visitors" data-flag-title="ELEC211 notes" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Valine：</span>
+  
+    <a title="valine" href="/2022/02/07/ELEC211-%20forEXAM/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/02/07/ELEC211-%20forEXAM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+            <div class="post-description">EEE104:这是犬子</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="elec211-notes">ELEC211 notes</h2>
+<h3 id="logic-gates-and-combinational-logic">Logic gates and
+combinational logic</h3>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207052528400.png" alt="image-20220207052528400" style="zoom: 50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207052856561.png" alt="image-20220207052856561" style="zoom:50%;"></p>
+<p>&#x5176;&#x4E2D;&#xFF0C;NAND &#x548C; NOR &#x4E5F;&#x88AB;&#x79F0;&#x4E3A;Universal
+gates&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4EC5;&#x4F7F;&#x7528;&#x4ED6;&#x4EEC;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x79CD;&#x6765;&#x5B9E;&#x73B0;&#x6240;&#x6709;&#x7684;&#x5E03;&#x5C14;&#x903B;&#x8F91;</p>
+<figure>
+<img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207052641452.png" alt="image-20220207052641452">
+<figcaption aria-hidden="true">image-20220207052641452</figcaption>
+</figure>
+<p>&#x6B64;&#x5904;XOR&#x903B;&#x8F91;=&#x201C;&#x53D6;&#x5947;&#x6570;&#x8F93;&#x5165;&#x201D;&#xFF0C;&#x5C11;&#x89C1;&#x3002;X = ((A XOR B) XOR C)</p>
+<p><strong>Combinational circuits &#x7EC4;&#x5408;&#x7535;&#x8DEF;</strong> &#x2022;Present output
+depends only on present input &#x2022;Combinational logic uses Boolean
+algebra&#xFF1A;</p>
+<p>*&#x4F7F;&#x7528;&#x5361;&#x8BFA;&#x56FE;&#x5316;&#x7B80;&#x901A;&#x5E38;&#x6BD4;&#x770B;&#x8FD9;&#x79CD;&#x8868;&#x683C;&#x6765;&#x5F97;&#x66F4;&#x5FEB;&#x3002;</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207060955527.png" alt="image-20220207060955527" style="zoom:33%;"></p>
+<p><strong>Sequential circuits &#x65F6;&#x5E8F;&#x7535;&#x8DEF;</strong> &#x2022;Present output values
+depend on present and past values &#x2022;Circuit &#x2018;remembers&#x2019; its own state</p>
+<h3 id="mintermsmaxterms-and-implementing-functions">Minterms/Maxterms
+and implementing functions</h3>
+<p><strong>Minterms</strong>: Sum of Products (SOP)</p>
+<p><strong>Maxterms</strong>: Product of Sums (POS)`</p>
+<p>implementing
+functions&#xFF1A;<img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207062035564.png" alt="image-20220207062035564" style="zoom:33%;">&#x5927;&#x6982;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x610F;&#x601D;&#xFF0C;&#x4E0D;&#x5982;&#x5361;&#x8BFA;&#x56FE;&#x3002;</p>
+<h3 id="karnaugh-maps">Karnaugh maps</h3>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207061940969.png" alt="image-20220207061940969" style="zoom:50%;"></p>
+<h3 id="multiplexer-&#x6570;&#x636E;&#x9009;&#x62E9;&#x5668;&#x591A;&#x8DEF;&#x5F00;&#x5173;">Multiplexer
+&#x6570;&#x636E;&#x9009;&#x62E9;&#x5668;/&#x591A;&#x8DEF;&#x5F00;&#x5173;</h3>
+<p>A multiplexer&#x5728;&#x591A;&#x4E2A;&#x8F93;&#x5165;&#x4E2D;&#xFF0C;&#x4F9D;&#x636E;&#x6570;&#x4E2A;&#x63A7;&#x5236;&#x7528;&#x8F93;&#x5165;(control
+inputs)&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;&#x3002;(&#x4E0B;&#x56FE;&#x53F3;)</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207062343812.png" alt="image-20220207062343812" style="zoom: 50%;"></p>
+<p>A multiplexer has: &#x2022;At least two inputs &#x2022;One or more control (select)
+inputs &#x2022;One output</p>
+<p>&#x5B9E;&#x73B0;&#xFF1A;</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207062622460.png" alt="image-20220207062622460" style="zoom:33%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207062652392.png" alt="image-20220207062652392" style="zoom:33%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207062805667.png" alt="image-20220207062805667" style="zoom:33%;"></p>
+<h3 id="adder">Adder</h3>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516235100607.png" alt="image-20220516235100607" style="zoom: 50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516235254924.png" alt="image-20220516235254924" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516235125445.png" alt="image-20220516235125445" style="zoom: 50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516235232020.png" alt="image-20220516235232020" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516235315544.png" alt="image-20220516235315544" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516235330556.png" alt="image-20220516235330556" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516235445540.png" alt="image-20220516235445540" style="zoom:67%;"></p>
+<h3 id="tristate-gates-&#x4E09;&#x6001;&#x95E8;three-state-buffers">Tristate gates
+&#x4E09;&#x6001;&#x95E8;(three state buffers)</h3>
+<p>States of Tristate gates:</p>
+<p>1,0, high impedance (Hi-Z) &#x9AD8;&#x963B;&#x6297; (&#x65AD;&#x8DEF;</p>
+<p><strong>why&#xFF1F;</strong></p>
+<p>&#x5F53;&#x591A;&#x4E2A;&#x903B;&#x8F91;&#x7535;&#x8DEF;&#x7684;&#x8F93;&#x51FA;&#x5408;&#x5E76;&#x5230;&#x4E00;&#x6761;&#x7EBF;&#x4E0A;&#xFF0C;&#x4ED6;&#x4EEC;&#x7684;&#x8F93;&#x51FA;&#x4F1A;&#x4EA7;&#x751F;&#x51B2;&#x7A81;&#xFF1A;<strong>&#x540C;&#x65F6;&#x77ED;&#x63A5;&#x9AD8;&#x4F4E;&#x7535;&#x5E73;&#xFF0C;&#x4F60;&#x5230;&#x5E95;&#x7B97;&#x54EA;&#x4E2A;&#x5462;&#xFF1F;</strong></p>
+<p>&#x6B64;&#x65F6;&#xFF0C;Hi-Z&#x63D0;&#x4F9B;&#x4E86;&#x89E3;&#x51B3;&#x51B2;&#x7A81;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;<strong>&#x591A;&#x4E86;&#x4E00;&#x79CD;&#x8F93;&#x51FA;&#x2014;&#x2014;&#x65AD;&#x8DEF;</strong>&#x3002;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5728;&#x591A;&#x4E2A;&#x8F93;&#x51FA;&#x91CC;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5177;&#x6709;0/1&#x8F93;&#x51FA;&#x800C;&#x5176;&#x5B83;&#x90FD;&#x65AD;&#x8DEF;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x603B;&#x8F93;&#x51FA;&#x5C31;&#x5FC5;&#x7136;&#x4E0E;0/1&#x8F93;&#x51FA;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x5B9E;&#x73B0;&#xFF1A;</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207064301412.png" alt="image-20220207064301412" style="zoom: 50%;"></p>
+<p>&#x5178;&#x4E2D;&#x5178;4&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220501234937317.png" alt="image-20220501234937317" style="zoom: 50%;"></p>
+<p>&#x67D0;&#x79CD;&#x610F;&#x4E49;&#x4E0A;&#x8D77;&#x5230;&#x4E86; multiplexer &#x7684;&#x4F5C;&#x7528;&#x3002;</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220207064417877.png" alt="image-20220207064417877" style="zoom:33%;"></p>
+<h3 id="shannons-expansion">Shannon&#x2019;s Expansion</h3>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502002235553.png" alt="image-20220502002235553" style="zoom: 50%;"></p>
+<h3 id="mealy-moore-machines">Mealy / Moore machines</h3>
+<p>In Moore machines, <strong>output=f(current state)</strong></p>
+<p>In Mealy machines, <strong>output=f(current state,
+input)</strong></p>
+<h3 id="asm">ASM</h3>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502182756729.png" alt="image-20220502182756729" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502181533422.png" alt="image-20220502181533422" style="zoom: 50%;"></p>
+<p>one hot &#x548C; state transition &#x662F;&#x540C;&#x4E00;&#x79CD;&#x8868;&#x683C;</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502183507258.png" alt="image-20220502183507258" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516175142570.png" alt="image-20220516175142570" style="zoom: 67%;"></p>
+<p>PLA table: &#x5176;&#x5B9E;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x4F46;&#x662F;&#x7528;&#x4E8E;&#x8BBE;&#x8BA1;PLA&#xFF1A;</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516175440936.png" alt="image-20220516175440936" style="zoom: 67%;"></p>
+<h3 id="quine-mccluskey">Quine-McCluskey</h3>
+<h4 id="&#x65E0;-d">&#x65E0; d</h4>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502004418648.png" alt="image-20220502004418648" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502004444900.png" alt="image-20220502004444900" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502004652794.png" alt="image-20220502004652794" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502004806012.png" alt="image-20220502004806012" style="zoom:50%;"></p>
+<h4 id="&#x6709;-dincompletely-specified-functions">&#x6709; d&#xFF0C;Incompletely
+Specified Functions</h4>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502005858583.png" alt="image-20220502005858583" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502005913436.png" alt="image-20220502005913436" style="zoom:50%;"></p>
+<h4 id="&#x627E;&#x5230;&#x6240;&#x6709;&#x7684;pi-&#x540E;&#x627E;epi">&#x627E;&#x5230;&#x6240;&#x6709;&#x7684;PI &#x540E;&#xFF0C;&#x627E;EPI</h4>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516175827237.png" alt="image-20220516175827237" style="zoom: 50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516175910307.png" alt="image-20220516175910307" style="zoom:50%;"></p>
+<h4 id="&#x7136;&#x540E;&#x627E;sop">&#x7136;&#x540E;&#x627E;SOP</h4>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516175947445.png" alt="image-20220516175947445" style="zoom:50%;"></p>
+<h3 id="registers">Registers</h3>
+<p>use D Flip-Flops with Clock Enable</p>
+<p>When Load is 1 the clock is enabled (CE) and the data applied to the
+D inputs will be loaded into the flip-flops.</p>
+<p>When Load is 0 the register holds its data (memory).</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502165855612.png" alt="image-20220502165855612" style="zoom:50%;"></p>
+<h4 id="d-flip-flop">D Flip-Flop</h4>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220502173400439.png" alt="image-20220502173400439" style="zoom:50%;"></p>
+<p>Minimum Clock Period = flip-flop propagation delay + setup time +
+propagation delay of other components in circuit</p>
+<h3 id="microprocessor-systems------------------------">------------------------Microprocessor
+Systems------------------------</h3>
+<h3 id="shift-register">Shift-register</h3>
+<p><strong>LSLS - logical shift left:</strong> abcdefghijkl =&gt;
+defghijkl<strong>000</strong></p>
+<p><strong>LSRS - logical shift right:</strong> abcdefghijkl =&gt;
+<strong>000</strong>abcdefghi</p>
+<p><strong>ASRS - Arithmetic shift right:</strong> abcdefghijkl =&gt;
+<strong>aaa</strong>abcdefghi *a&#x662F;&#x7B26;&#x53F7;&#x4F4D;</p>
+<p><strong>PORS - Rotate right: </strong>abcdefghijkl =&gt;
+<strong>jkl</strong>abcdefghi</p>
+<h3 id="addressing">addressing</h3>
+<p>after <strong>LDR rd, [rn]</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>registers</th>
+<th>value in registers</th>
+<th>memory</th>
+<th>value in memory</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>rd(initial)</td>
+<td>0xABCDEFGH</td>
+<td>0x00008000</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>rn</td>
+<td>0x00008000</td>
+<td>0x00008001</td>
+<td>34</td>
+</tr>
+<tr class="odd">
+<td>rd</td>
+<td>0x12345678</td>
+<td>0x00008002</td>
+<td>56</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>0x00008003</td>
+<td>78</td>
+</tr>
+</tbody>
+</table>
+<p>after <strong>STR rd, [rn]</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 30%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>registers</th>
+<th>value in registers</th>
+<th>memory</th>
+<th>Big endian</th>
+<th>Little endian</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>rd</td>
+<td>0xABCDEFGH</td>
+<td>0x00008000</td>
+<td>AB</td>
+<td>GH</td>
+</tr>
+<tr class="even">
+<td>rn</td>
+<td>0x00008000</td>
+<td>0x00008001</td>
+<td>CD</td>
+<td>EF</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>0x00008002</td>
+<td>EF</td>
+<td>CD</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>0x00008003</td>
+<td>GH</td>
+<td>AB</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516211255051.png" alt="image-20220516211255051" style="zoom: 20%;"><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516211117350.png" alt="image-20220516211117350" style="zoom: 20%;"></p>
+<p>REV ry, rx // Little endian &lt;-&gt; Big endian, y &lt;-- x</p>
+<p>LDR: load full word (32 bits)</p>
+<p>LDRH: load half word (16 bits)(0000XXXX)</p>
+<p>LDRB: load byte (8 bits)(000000XX)</p>
+<p>LDRSH/LDRSB: load with the sign (S...SX...X)</p>
+<p>STRH: Store half word</p>
+<p>#&#x7684;&#x504F;&#x79FB;&#x4E5F;&#x4F1A;&#x968F;&#x7740;&#x5B58;&#x5165;&#x6570;&#x636E;&#x7684;&#x5927;&#x5C0F;&#x6539;&#x53D8;&#xFF1A;</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516230147833.png" alt="image-20220516230147833" style="zoom:25%;"></p>
+<h3 id="instructions">instructions:</h3>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/image-20220516201113088.png" alt="image-20220516201113088" style="zoom:67%;"></p>
+<h3 id="branch">Branch</h3>
+<p>B <target_address></target_address></p>
+<p>B&lt;cond&gt;<target_address></target_address></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220503041021715.png" alt="image-20220503041021715" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220503041143195.png" alt="image-20220503041143195" style="zoom:50%;"></p>
+<h3 id="flags">Flags</h3>
+<p>&#x6CE8;&#x610F;&#xFF0C;
+&#x5F53;&#x8FD0;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x4EA7;&#x751F;&#x8FDB;&#x4F4D;&#x6216;&#x8005;&#x51CF;&#x6CD5;&#x8FD0;&#x7B97;&#x6CA1;&#x6709;&#x501F;&#x4F4D;&#x7684;&#x8BDD;C=1&#xFF0C;&#x5176;&#x4ED6;&#x60C5;&#x51B5;C=0</p>
+<figure>
+<img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220503040616459.png" alt="image-20220503040616459">
+<figcaption aria-hidden="true">image-20220503040616459</figcaption>
+</figure>
+<h3 id="pc-vs-lr-vs-sr">PC vs LR vs SR</h3>
+<p>PC: program counter, R15</p>
+<p>&#x5B58;&#x653E;&#x4E0B;&#x4E00;&#x6B21;&#x8BBF;&#x5B58;&#x7684;&#x5730;&#x5740;&#x3002;</p>
+<p>SR: stack pointer</p>
+<p>&#x6808;&#x9876;</p>
+<p>LR: link register, R14</p>
+<p>&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x5730;&#x5740;</p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220503042402206.png" alt="image-20220503042402206" style="zoom:50%;"></p>
+<p><img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220503042148390.png" alt="image-20220503042148390" style="zoom:50%;"></p>
+<h3 id="ieee754-standard">IEEE754 standard</h3>
+<figure>
+<img src="/2022/02/07/ELEC211-%20forEXAM/mistake\image-20220503041927711.png" alt="image-20220503041927711">
+<figcaption aria-hidden="true">image-20220503041927711</figcaption>
+</figure>
+<h3 id="carry-vs-overflow">Carry vs Overflow</h3>
+<p>carry: &#x65E0;&#x7B26;&#x53F7;&#x6EA2;&#x51FA;</p>
+<p>Overflow&#xFF1A;&#x6709;&#x7B26;&#x53F7;&#x6EA2;&#x51FA;</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/02/04/ELEC202%20W1/" rel="prev" title="ELEC202 W1">
+                  <i class="fa fa-chevron-left"></i> ELEC202 W1
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/02/07/ELEC211/" rel="next" title="ELEC211 notes">
+                  ELEC211 notes <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="valine-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">罗醭坦</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"EBzFyAm9PfVGV30taJR4KOwO-MdYXbMMI","app_key":"gsNzDLmBx2Cx1wQMkW4V3RtN","server_url":"https://luobutan.com/","security":true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+
+<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"EBzFyAm9PfVGV30taJR4KOwO-MdYXbMMI","appKey":"gsNzDLmBx2Cx1wQMkW4V3RtN","serverURLs":"https://ebzfyam9.api.lncldglobal.com","placeholder":"wei？zaima？","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":[],"el":"#valine-comments","path":"/2022/02/07/ELEC211-%20forEXAM/"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.valine.el)
+    .then(() => NexT.utils.getScript(
+      'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+      { condition: window.Valine }
+    ))
+    .then(() => {
+      new Valine(CONFIG.valine);
+    });
+});
+</script>
+
+</body>
+</html>
