@@ -46,7 +46,7 @@
 <meta property="og:image" content="http://example.com/2022/04/07/ELEC271%20W1-2/image-20220210093223055.png">
 <meta property="og:image" content="http://example.com/2022/04/07/ELEC271%20W1-2/image-20220407013136194.png">
 <meta property="article:published_time" content="2022-04-06T23:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-08T22:35:24.337Z">
+<meta property="article:modified_time" content="2022-05-23T17:23:37.052Z">
 <meta property="article:author" content="罗醭坦">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2022/04/07/ELEC271%20W1-2/image-20211031231127949.png">
@@ -232,7 +232,7 @@ Collector (CC) &#x2F; Emitter Follower (EF) 共集电极&#x2F;射极跟随器</s
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-05-08 23:35:24" itemprop="dateModified" datetime="2022-05-08T23:35:24+01:00">2022-05-08</time>
+        <time title="修改时间：2022-05-23 18:23:37" itemprop="dateModified" datetime="2022-05-23T18:23:37+01:00">2022-05-23</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -358,13 +358,67 @@ pn&#x7ED3;&#x5728;&#x4EA4;&#x6D41;&#x7535;&#x4E0B;&#x7684;&#x52A8;&#x6001;&#x753
 &#x9000;&#x5316;&#x5171;&#x53D1;&#x5C04;&#x6781;</li>
 <li><strong>Common collector (CC) also known as emitter follower
 (EF)</strong> &#x5171;&#x96C6;&#x7535;&#x6781;/&#x5C04;&#x6781;&#x8DDF;&#x968F;&#x5668;</li>
-<li><strong>Common base (CB)</strong> &#x5171;&#x57FA;&#x6781; | <strong>Property</strong>
-| A v | A i | R in | R out | | ------------ | ----------- | --------- |
------- | ----- | | <strong>CE</strong> | high | high | Medium | high | |
-<strong>CE-ED</strong> | Low | high | high | low | |
-<strong>CC(EF)</strong> | Low (&lt; 1) | high | high | low | |
-<strong>CB</strong> | high | low (&lt;1) | low | high |</li>
+<li><strong>Common base (CB)</strong> &#x5171;&#x57FA;&#x6781;</li>
 </ol>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th><strong>AV</strong></th>
+<th><strong>AI</strong></th>
+<th><strong>Rin</strong></th>
+<th><strong>Rout</strong></th>
+<th><strong>Usage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CE</strong></td>
+<td>high</td>
+<td>high</td>
+<td>Medium</td>
+<td>high</td>
+<td>Most useful, general purpose</td>
+</tr>
+<tr class="even">
+<td><strong>CE-ED</strong></td>
+<td>Low</td>
+<td>high</td>
+<td>high</td>
+<td>high</td>
+<td><span class="math inline">\(R_E\)</span> constitutes feedback &#x2013;
+sacrifice <span class="math inline">\(A_V\)</span> for increased
+stability: less dependent on <span class="math inline">\(\beta_0\)</span> (also temperature), increase
+Rin</td>
+</tr>
+<tr class="odd">
+<td><strong>CC</strong>(EF)</td>
+<td>Low (&lt; 1)</td>
+<td>high</td>
+<td>high</td>
+<td>low</td>
+<td>Impedance matching &#x2013; high R-source to low-R load (also very linear &#x2013;
+used in power amp. Output stages)</td>
+</tr>
+<tr class="even">
+<td><strong>CB</strong></td>
+<td>high</td>
+<td>low (&lt;1)</td>
+<td>low</td>
+<td>high</td>
+<td>Impedance matching &#x2013; low R-source to high-R load (also features in
+Diff.Amp. &#x2013; see later notes)</td>
+</tr>
+</tbody>
+</table>
 <figure>
 <img src="/2022/04/07/ELEC271%20W1-2/image-20220210093248523.png" alt="image-20220210093248523">
 <figcaption aria-hidden="true">image-20220210093248523</figcaption>
