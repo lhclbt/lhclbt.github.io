@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2022/05/17/ELEC271%20%E8%A6%81%E8%83%8C/</loc>
+    
+    <lastmod>2022-09-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2022/02/07/ELEC202%20L7-12/</loc>
+    
+    <lastmod>2022-09-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2022/05/18/ELEC211-%20forEXAM/</loc>
+    
+    <lastmod>2022-09-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2022/02/07/ELEC211/</loc>
+    
+    <lastmod>2022-09-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2022/05/10/ELEC271%20W9-10/</loc>
     
     <lastmod>2022-09-17</lastmod>
@@ -30,20 +58,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/05/18/ELEC211-%20forEXAM/</loc>
-    
-    <lastmod>2022-05-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/05/17/ELEC271%20%E8%A6%81%E8%83%8C/</loc>
-    
-    <lastmod>2022-05-17</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2022/05/08/ELEC271%20W7-8/</loc>
     
     <lastmod>2022-05-11</lastmod>
@@ -51,21 +65,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/02/07/ELEC202%20L7-12/</loc>
-    
-    <lastmod>2022-05-10</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2022/04/08/ELEC271%20W3-4/</loc>
-    
-    <lastmod>2022-05-08</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/02/07/ELEC211/</loc>
     
     <lastmod>2022-05-08</lastmod>
     
