@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="review">
+<meta property="og:type" content="article">
+<meta property="og:title" content="COMP305">
+<meta property="og:url" content="http://example.com/2022/11/06/COMP305%20W1-6/index.html">
+<meta property="og:site_name" content="醭log">
+<meta property="og:description" content="review">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221106224201672.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221107144523716.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221107152737679.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221107154325801.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221107154401304.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221108023603635.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20230112161143111.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221108224855367.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221206233720284.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221207000813678.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221207002611930.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221207002959442.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221207040813590.png">
+<meta property="og:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221207044254535.png">
+<meta property="article:published_time" content="2022-11-06T00:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-12T16:11:45.984Z">
+<meta property="article:author" content="罗醭坦">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/11/06/COMP305%20W1-6/image-20221106224201672.png">
+
+
+<link rel="canonical" href="http://example.com/2022/11/06/COMP305%20W1-6/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/11/06/COMP305%20W1-6/","path":"2022/11/06/COMP305 W1-6/","title":"COMP305"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>COMP305 | 醭log</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="醭log" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">醭log</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">醭言乱语</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#comp305-w1-6"><span class="nav-number">1.</span> <span class="nav-text">COMP305 W1-6</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.1.</span> <span class="nav-text">introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ann"><span class="nav-number">1.2.</span> <span class="nav-text">ANN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mcculloch-pitts-neuron"><span class="nav-number">1.3.</span> <span class="nav-text">McCulloch-Pitts Neuron</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hebbs-rule"><span class="nav-number">1.4.</span> <span class="nav-text">Hebb’s Rule</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#normalized-hebbs-rule-ojas-rule"><span class="nav-number">1.5.</span> <span class="nav-text">Normalized Hebb’s Rule (Oja’s
+Rule)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kohonens-rule-competitive-learning"><span class="nav-number">1.6.</span> <span class="nav-text">Kohonen’s Rule (Competitive
+Learning)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#perceptron"><span class="nav-number">1.7.</span> <span class="nav-text">Perceptron</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#l16"><span class="nav-number">1.7.1.</span> <span class="nav-text">L16</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#l18"><span class="nav-number">1.7.2.</span> <span class="nav-text">L18</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#genetic-algorithms"><span class="nav-number">1.8.</span> <span class="nav-text">Genetic Algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#l21"><span class="nav-number">1.8.1.</span> <span class="nav-text">L21</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#l22"><span class="nav-number">1.8.2.</span> <span class="nav-text">L22</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#l23"><span class="nav-number">1.8.3.</span> <span class="nav-text">L23</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#gas-by-john-holland."><span class="nav-number">1.8.3.1.</span> <span class="nav-text">GAs by John Holland.</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#l24"><span class="nav-number">1.8.4.</span> <span class="nav-text">L24</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#basic-structure-of-a-genetic-algorithm"><span class="nav-number">1.8.4.1.</span> <span class="nav-text">Basic Structure of a
+Genetic Algorithm</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#l25"><span class="nav-number">1.8.5.</span> <span class="nav-text">L25</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#schema"><span class="nav-number">1.8.5.1.</span> <span class="nav-text">Schema</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#schema-theorem"><span class="nav-number">1.8.5.2.</span> <span class="nav-text">Schema Theorem</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#l26"><span class="nav-number">1.8.6.</span> <span class="nav-text">L26</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#schema-theorem-1"><span class="nav-number">1.8.6.1.</span> <span class="nav-text">Schema Theorem</span></a></li></ol></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">罗醭坦</p>
+  <div class="site-description" itemprop="description">欢迎来到醭坦的测试与发布空间</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/06/COMP305%20W1-6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="罗醭坦">
+      <meta itemprop="description" content="欢迎来到醭坦的测试与发布空间">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醭log">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          COMP305
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-11-06 00:00:00" itemprop="dateCreated datePublished" datetime="2022-11-06T00:00:00+00:00">2022-11-06</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2023-01-12 16:11:45" itemprop="dateModified" datetime="2023-01-12T16:11:45+00:00">2023-01-12</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/COMP305/" itemprop="url" rel="index"><span itemprop="name">COMP305</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2022/11/06/COMP305%20W1-6/" class="post-meta-item leancloud_visitors" data-flag-title="COMP305" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Valine：</span>
+  
+    <a title="valine" href="/2022/11/06/COMP305%20W1-6/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/11/06/COMP305%20W1-6/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+            <div class="post-description"><center>review</center></div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="comp305-w1-6">COMP305 W1-6</h1>
+<h2 id="introduction">introduction</h2>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221106224201672.png" alt="image-20221106224201672" style="zoom: 50%;"></p>
+<ol type="1">
+<li>Lawfulness, fairness, transparency &#x900F;&#x660E;&#x5EA6;</li>
+<li>Integrity &amp; Confidentiality</li>
+<li>Accuracy</li>
+<li>Purpose limitation</li>
+<li>Data minimization</li>
+<li>Storage time limitation</li>
+<li>Requirement</li>
+</ol>
+<h2 id="ann">ANN</h2>
+<p>propagation &#x4F20;&#x64AD;</p>
+<p>spikes &#x5CF0;&#x503C;</p>
+<p>threshold &#x9608;&#x503C;</p>
+<p>intensity &#x5F3A;&#x5EA6;</p>
+<p>duration &#x6301;&#x7EED;&#x65F6;&#x95F4;</p>
+<p>&#x2026;&#x2026;</p>
+<p>Discrete Time + Binary Input</p>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221107144523716.png" alt="image-20221107144523716" style="zoom:80%;"></p>
+<p>&#x5BC6;&#x5EA6;&#x591F;&#x9AD8;&#xFF1A;temporal summation &gt; excitation threshold</p>
+<p>&#x8F93;&#x5165;&#x591F;&#x591A;&#xFF1A;spatial summation &gt; excitation threshold</p>
+<p>refractory period&#xFF1A;&#x4E0D;&#x5E94;&#x671F; ---&gt; Discrete Time</p>
+<p>in/output unified</p>
+<h2 id="mcculloch-pitts-neuron">McCulloch-Pitts Neuron</h2>
+<p>excitatory connection&#xFF1A;+1 &#x5174;&#x594B;/&#x6FC0;&#x6D3B;&#x8FDE;&#x63A5;</p>
+<p>inhibitory connection&#xFF1A; -1 &#x6291;&#x5236;&#x8FDE;&#x63A5;</p>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221107152737679.png" alt="image-20221107152737679" style="zoom:67%;">
+<span class="math display">\[
+X^t=1 \text { if and only if } S^{t-1}=\sum w_i a_i^{t-1} \geq \theta
+\text {, and } w_i&gt;0, \forall a_i^{t-1}&gt;0
+\]</span> &#x8BF4;&#x767D;&#x4E86;&#x5C31;&#x662F; <strong>no inhibitory connection</strong> is
+activited and sum is larger than threshold.</p>
+<figure>
+<img src="/2022/11/06/COMP305%20W1-6/image-20221107154325801.png" alt="image-20221107154325801">
+<figcaption aria-hidden="true">image-20221107154325801</figcaption>
+</figure>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221107154401304.png" alt="image-20221107154401304" style="zoom:80%;"></p>
+<p>What can we do with a MP neuron?</p>
+<p><strong>Simple</strong> logical functions: AND, OR and NOT</p>
+<p>&#x5FC5;&#x987B;&#x662F; <strong>Linear separable</strong> &#x7684;</p>
+<p>&#x5B8C;&#x5907;&#x6027;&#xFF1F;&#xFF1A;</p>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221108023603635.png" alt="image-20221108023603635" style="zoom:50%;"></p>
+<p>&#x5F62;&#x5F0F;&#x5316;&#xFF0C;&#x7B49;&#x4EF7;&#x56FE;&#x7075;&#x673A;</p>
+<p>An MP neural <strong>network</strong> can implement <strong>any
+multivariable propositional logic function</strong>, with the thresholds
+and weights being appropriately selected.</p>
+<p>Furthermore, the <strong>discrete time</strong>, or unity
+<strong>delay</strong> property of the model makes it even
+<strong>possible to build a sequential digital circuitry</strong>.</p>
+<h2 id="hebbs-rule">Hebb&#x2019;s Rule</h2>
+<p>The simplest formulation of Hebb&#x2019;s rule is to increase weight of
+connection at every next instant in the way</p>
+<p><span class="math display">\[
+w_i^{t+1}=w_i^t+\Delta w_i^t,
+\]</span> Where <span class="math display">\[
+\Delta w_i^t=C a_i^t X^{t+1}
+\]</span> | | | | -------------- |
+----------------------------------------------------------- | | <span class="math inline">\(w_i^{t}\)</span> | the weight of connection at
+instant <span class="math inline">\(t\)</span> | | <span class="math inline">\(w_i^{t+1}\)</span> | the weight of connection at
+the next instant <span class="math inline">\(t+1\)</span> | | <span class="math inline">\(\Delta w_i^t\)</span> | the increment by which the
+weight of connection is enlarged | | <span class="math inline">\(C\)</span> | positive coefficient which determines
+learning rate | | <span class="math inline">\(a_i^t\)</span> | input
+value from the presynaptic neuron at instant | | <span class="math inline">\(X^{t+1}\)</span> | output of the postsynaptic
+neuron at the instant <span class="math inline">\(t+1\)</span> |</p>
+<p>Algorithm of Hebb&#x2019;s Rule for a <strong>Single</strong> Neuron (NOT
+MP)</p>
+<ol type="1">
+<li>Set the neuron threshold value <span class="math inline">\(\theta\)</span> and the learning rate <span class="math inline">\(C\)</span>.</li>
+<li>Set random initial values for the weights of connections <span class="math inline">\(w_i^t\)</span>.</li>
+<li>Give instant input values <span class="math inline">\(a_i^t\)</span>
+by the input units.</li>
+<li>Compute the instant state of the neuron <span class="math inline">\(S^t=\sum_i w_i^t a_i^t\)</span></li>
+<li>Compute the instant output of the neuron <span class="math inline">\(X^{t+1}\)</span> <span class="math display">\[
+X^{t+1}=g\left(S^t\right)=H\left(S^t-\theta\right)= \begin{cases}1,
+&amp; S^t \geq \theta \\ 0, &amp; S^t&lt;\theta\end{cases}
+\]</span></li>
+<li>Compute the instant corrections to the weights of connections <span class="math inline">\(\Delta w_i^t=\)</span> <span class="math inline">\(C a_i^t X^{t+1}\)</span></li>
+<li>Update the weights of connections <span class="math inline">\(w_i^{t+1}=w_i^t+\Delta w_i^t\)</span></li>
+<li>Go to the step 3.</li>
+</ol>
+<h2 id="normalized-hebbs-rule-ojas-rule">Normalized Hebb&#x2019;s Rule (Oja&#x2019;s
+Rule)</h2>
+<p>Formulation of <strong>Normalized</strong> Hebb&#x2019;s Rule (<strong>Oja&#x2019;s
+rule</strong>)</p>
+<ol type="1">
+<li>Set the neuron threshold value <span class="math inline">\(\theta\)</span> and the learning rate <span class="math inline">\(C\)</span>.</li>
+<li>Set random initial values for the weights of connections <span class="math inline">\(w_i^t\)</span>.</li>
+<li><strong>Normalization.</strong></li>
+<li>Give instant input values <span class="math inline">\(a_i^t\)</span>
+by the input units.</li>
+<li>Compute the instant state of the neuron <span class="math inline">\(S^t=\sum_i w_i^t a_i^t\)</span></li>
+<li>Compute the instant output of the neuron <span class="math inline">\(X^{t+1}\)</span></li>
+</ol>
+<p><span class="math display">\[
+X^{t+1}=g\left(S^t\right)=H\left(S^t-\theta\right)= \begin{cases}1,
+&amp; S^t \geq \theta \\ 0, &amp; S^t&lt;\theta\end{cases}
+\]</span></p>
+<ol start="6" type="1">
+<li>Compute the instant corrections to the weights of connections <span class="math inline">\(\Delta w_i^t=\)</span> <span class="math inline">\(C a_i^t X^{t+1}\)</span></li>
+<li>Update the weights of connections <span class="math inline">\(w_i^{t+1}=w_i^t+\Delta w_i^t\)</span></li>
+<li>Go to the step 3.</li>
+</ol>
+<h2 id="kohonens-rule-competitive-learning">Kohonen&#x2019;s Rule (Competitive
+Learning)</h2>
+<p>Hebb&#x2019;s Rule+ <strong>winner takes it all</strong></p>
+<p><strong>Unsupervised Learning</strong> Unsupervised learning is a
+type of machine learning in which the algorithm is not provided with any
+pre-assigned labels or scores for the training data. As a result,
+unsupervised learning algorithms must first self-discover any naturally
+occurring patterns in that training data set.</p>
+<p>A common example is clustering (&#x805A;&#x7C7B;), that is, an unsupervised
+network can group similar sets of input patterns into clusters
+predicated upon a predetermined set of criteria relating the components
+of the data.</p>
+<p>Clustering can be achieved when we extend the single neuron to the
+network with multiple outputs.</p>
+<figure>
+<img src="/2022/11/06/COMP305%20W1-6/image-20230112161143111.png" alt="image-20230112161143111">
+<figcaption aria-hidden="true">image-20230112161143111</figcaption>
+</figure>
+<figure>
+<img src="/2022/11/06/COMP305%20W1-6/image-20221108224855367.png" alt="image-20221108224855367">
+<figcaption aria-hidden="true">image-20221108224855367</figcaption>
+</figure>
+<h2 id="perceptron">Perceptron</h2>
+<p>A Perceptron is a neural network that changes with &#x201C;experience&#x201D; using
+an <strong>error-correction rule</strong></p>
+<p>&#x2022; Training set: a set of input patterns repeatedly presented to the
+network during training; &#x2022; Target output (label): the predefined correct
+output of an input pattern in the training set.</p>
+<p>According to the rule, weight of a response unit changes when it
+makes error response to the input presented to the network.</p>
+<p>The network outputs &#x1D47F;&#x1D48B; are then compared to the desired outputs
+specified in the training set and obtain the error.</p>
+<p><strong>SUM OF INPUT * WEIGHT</strong> <span class="math display">\[
+S_j=\sum_{i=0}^n w_{j i} a_i
+\]</span> <span class="math display">\[
+X_j=f(S_j)
+\]</span> <span class="math display">\[
+e_j=(t_j-X_j)
+\]</span></p>
+<p><span class="math display">\[
+\begin{gathered}
+\Delta w_{j i}^k=C e_j^k a_i^k\\
+\\
+w_{j i}^k=w_{j i}^k+\Delta w_{j i}^k
+\end{gathered}
+\]</span></p>
+<p>&#x5BF9;&#x4E8E;&#x591A;&#x8F93;&#x51FA;, The network performance during training session is
+measured by a <strong>root-mean-square (RMS)</strong> error value :
+<span class="math display">\[
+\mathrm{RMS}=\sqrt{\frac{\sum_{k=1}^r
+\sum_{j=1}^m\left(e_j^k\right)^2}{r m}}
+\]</span></p>
+<p>&#x5BF9;&#x4E8E;<span class="math inline">\(w^k_{ji}\)</span>
+k&#x662F;&#x6240;&#x5728;&#x5143;&#x5C42;&#x6570;&#xFF0C;j&#x662F;&#x6307;&#x5411;&#x5143;&#x7F16;&#x53F7;&#xFF0C;i&#x662F;&#x672C;&#x5143;&#x7F16;&#x53F7;&#x3002;</p>
+<p>The process of <strong>weights adjustment</strong> is called
+perceptron &#x201C;learning&#x201D; or &#x201C;training&#x201D;.</p>
+<p><strong>fully interconnected</strong>&#xFF1A;every input neuron is
+connected to every output neuron.</p>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221206233720284.png" alt="image-20221206233720284" style="zoom: 67%;"></p>
+<p><strong>Single</strong> Perceptron&apos;s output is
+<strong>binary</strong></p>
+<p>L15 2p &#x8FC7;&#x7A0B;</p>
+<h3 id="l16">L16</h3>
+<p>Convergence of Perceptron Learning Algorithm</p>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221207000813678.png" alt="image-20221207000813678" style="zoom:50%;"></p>
+<p>Hidden Neurons</p>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221207002611930.png" alt="image-20221207002611930" style="zoom: 50%;"></p>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221207002959442.png" alt="image-20221207002959442" style="zoom: 67%;"></p>
+<p>&#x2022; The input is processed and propagated from one layer to the next,
+until the final result is computed. &#x2022; This process represents the
+forward propagation.</p>
+<h3 id="l18">L18</h3>
+<p>The <strong>output error</strong> of a multilayer perceptron for the
+<strong>&#x1D458;-th input pattern</strong> is a half of the squared error:
+<span class="math display">\[
+E^k=\frac{1}{2} \sum_{j=1}^m\left(e_j^k\right)^2=\frac{1}{2}
+\sum_{j=1}^m\left(t_j^k-X_j^k\right)^2
+\]</span> error backpropagation &#x8981;&#x7528;&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x6CD5;Gradient descent</p>
+<p>&#x5BF9;&#x4E8E;&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;generic sigmoidal activation
+function&#x4EE5;&#x4F5C;&#x6FC0;&#x6D3B;&#x51FD;&#x6570; activation function&#xFF1A; <span class="math display">\[
+f(S)=\frac{\alpha}{1+e^{-\beta S+\gamma}}+\lambda
+\]</span> &#x90A3;&#x4E48;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x6709;&#x5BFC;&#x6570;&#xFF1A; <span class="math display">\[
+f^{\prime}(S)=\frac{d f}{d S}=\frac{\beta}{\alpha}
+\cdot(f(S)+\lambda)(\alpha+\lambda-f(S))
+\]</span></p>
+<p>&#x7136;&#x540E;change weight <span class="math display">\[
+w_{j i}^k=w_{j i}^k+\Delta w_{j i}^k\\
+\Delta w_{j i}^k =-C \frac{\partial E}{\partial w_{j i}^k}
+\]</span></p>
+<h2 id="genetic-algorithms">Genetic Algorithms</h2>
+<h3 id="l21">L21</h3>
+<p>&#x751F;&#x7269;</p>
+<p><strong>crossing-over</strong></p>
+<p><strong>Mutation</strong> is a random change of a &#x201C;letter&#x201D;, single
+nucleotide in a chromosome.</p>
+<p>Different possible settings for a trait, e.g. blue, brown, black eye
+colour, are called <strong>alleles</strong>.</p>
+<p>The <strong>complete collection</strong> of all genetic material,
+that is <strong>all chromosomes taken together</strong>, is called the
+organism&#x2019;s <strong>genome</strong> or <strong>genotype</strong>.</p>
+<h3 id="l22">L22</h3>
+<p>&#x81EA;&#x7136;&#x6F14;&#x5316;&#xFF1A;</p>
+<p><strong>Parallelism</strong>&#xFF1A;Every individual in the population is
+<strong>tested independently in parallel with the others</strong>, and
+that speeds up evolution of the population.</p>
+<p><strong>Adaptation</strong>&#xFF1A;Due to the natural selection, only those
+individuals best <strong>fitted for the current environment</strong> do
+survive. The selection results in the population as a whole best adapted
+to the environment.</p>
+<p><strong>Optimization</strong>&#xFF1A;Due to the natural selection,
+<strong>only individuals best fitted or &#x201C;optimal&#x201D; for the current
+environment</strong> do survive and reproduce. Thus, the selection also
+performs optimization on an individual level.</p>
+<h3 id="l23">L23</h3>
+<h4 id="gas-by-john-holland.">GAs by John Holland.</h4>
+<p>Holland introduced &#x2022; a &#x201C;<strong>population</strong>&#x201D; of
+<strong>binary strings </strong> (a string of characters) which he
+called &#x201C;<strong>chromosomes</strong>&#x201D;. &#x2022; The &#x201C;population&#x201D; evolves using
+kind of &#x201C;natural selection&#x201D; together with the genetics-inspired
+operators of <strong>crossover</strong>, <strong>mutation</strong>, and
+<strong>inversion</strong>. &#x2022; <strong>Bits</strong> in a &#x201C;chromosome&#x201D;
+represent <strong>genes</strong>, and each &#x201C;gene&#x201D; is an instance of a
+particular &#x201C;<strong>allele</strong>&#x201D;, 0 or 1.</p>
+<p>&#x2022; The <strong>selection operator</strong> chooses those chromosomes
+in the population that will be allowed to reproduce, and on average the
+fitter chromosomes produce more offspring than the less fit ones. &#x2022;
+<strong>Crossover</strong> exchange <strong>subparts</strong> of two
+chromosomes &#x2022; <strong>Mutation</strong> randomly changes the
+<strong>allele values</strong> at some locations in the chromosome. &#x2022;
+<strong>Inversion</strong> reverses the order of <strong>a continuous
+section</strong> of the chromosome rearranging the genes order.</p>
+<p>&#x2022; *<strong>Translocation</strong> is a mutation when part of a
+chromosome is cut out and moved to a different location in the
+chromosome.</p>
+<p><strong>Population</strong> of chromosomes is the <strong>evolving
+unit</strong> &#x8FDB;&#x5316;&#x7684;&#x5355;&#x4F4D;</p>
+<p><strong><em>Fitness Function</em></strong></p>
+<p>To evaluate how good the candidate solution solves the problem</p>
+<p>&#x2022; Takes a chromosome as an input; &#x2022; Produces its quantitative fitness
+evaluation as an output.</p>
+<p>Two important requirements: &#x2022; Should <strong>correlate closely with
+the designer&apos;s goal</strong> &#x2022; Should be <strong>computationally
+efficient</strong></p>
+<p><strong><em>Search Space</em></strong>&#xFF1A;Set of all possible solutions
+to a problem in consideration is called a Genetic Algorithm search
+space.</p>
+<p><strong><em>Fitness Landscape</em></strong>&#xFF1A;representation of all
+possible solutions along with their fitness.</p>
+<h3 id="l24">L24</h3>
+<h4 id="basic-structure-of-a-genetic-algorithm">Basic Structure of a
+Genetic Algorithm</h4>
+<ol type="1">
+<li>Randomly generate initial population of n bit strings
+(&#x201C;chromosomes&#x201D;).</li>
+<li>Evaluate the fitness of each string in the population.</li>
+<li>Repeat the following steps until next generation of n individual
+produced.
+<ol type="a">
+<li>Select pair of parent chromosomes from current population according
+to their fitness, i.e. chromosomes with higher fitness are selected more
+often.</li>
+<li>Apply crossover (with probability).</li>
+<li>Apply mutation (with probability of occurrence) .</li>
+</ol></li>
+<li>Apply generational replacement.</li>
+<li>Go to 2 or terminate if termination condition is met.</li>
+</ol>
+<p><img src="/2022/11/06/COMP305%20W1-6/image-20221207040813590.png" alt="image-20221207040813590" style="zoom:67%;"></p>
+<h3 id="l25">L25</h3>
+<h4 id="schema">Schema</h4>
+<p>A schema is a <strong>similarity template</strong> describing a
+<strong>subset</strong> of strings with <strong>similarities</strong> at
+<strong>certain</strong> string <strong>positions</strong>.</p>
+<ul>
+<li>Other name for a schema is a <strong>building block</strong> of a
+chromosome.</li>
+</ul>
+<p>The <strong>Order</strong> of a <strong>schema &#x1D43B;</strong> is
+represented as <strong>&#x1D442;(&#x1D43B;)</strong> , denoting the <strong>number of
+defining symbols</strong> (non-* symbols) it contains.</p>
+<p>The <strong>defining length</strong> of a <strong>schema &#x1D43B;</strong>
+is represented as <strong>&#x1D6FF;(&#x1D43B;)</strong> , denoting the <strong>maximum
+distance between two defining symbols</strong>.</p>
+<h4 id="schema-theorem">Schema Theorem</h4>
+<p><strong>Highly fit</strong>, <strong>short defining length</strong>,
+<strong>low order</strong> <strong>schemas</strong> increase
+<strong>exponentially</strong> in <strong>frequency</strong> in
+<strong>successive</strong> generations.</p>
+<figure>
+<img src="/2022/11/06/COMP305%20W1-6/image-20221207044254535.png" alt="image-20221207044254535">
+<figcaption aria-hidden="true">image-20221207044254535</figcaption>
+</figure>
+<h3 id="l26">L26</h3>
+<h4 id="schema-theorem-1">Schema Theorem</h4>
+<p>Consider a specific schema &#x1D43B;. If we use a classical GA with Roulette
+Wheel Selection, crossover (pc) and mutation (pm). We have: <span class="math display">\[
+m(H, t+1) \geq m(H, t) \cdot \frac{f(H, t)}{\bar{f}}\left(1-p_c
+\frac{\delta(H)}{l-1}-O(H) \frac{p_m}{l}\right)
+\]</span> &#x2022; <strong>&#x1D45A;(&#x1D43B;,&#x1D461;)</strong> represents the number of chromosomes
+matching schema <strong>&#x1D43B;</strong> at generation <strong>&#x1D461;</strong>, &#x2022;
+<strong>&#x1D453;(&#x1D43B;,&#x1D461;)</strong> represents the mean fitness of chromosomes
+matching schema <strong>&#x1D43B;</strong> at generation <strong>&#x1D461;</strong>, &#x2022;
+<span class="math inline">\(\bar{f}\)</span> represents the mean fitness
+of individuals in the population at generation <strong>&#x1D461;</strong>, &#x2022;
+<span class="math inline">\(p_c\)</span> <span class="math inline">\(p_m\)</span> represent the probability of
+crossover and mutation, respectively, &#x2022; &#x1D459; is the length of each
+chromosome.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/05/18/ELEC211-%20forEXAM/" rel="prev" title="ELEC211-FOR EXAM">
+                  <i class="fa fa-chevron-left"></i> ELEC211-FOR EXAM
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="valine-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">罗醭坦</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"EBzFyAm9PfVGV30taJR4KOwO-MdYXbMMI","app_key":"gsNzDLmBx2Cx1wQMkW4V3RtN","server_url":"https://luobutan.com/","security":true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+
+<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"EBzFyAm9PfVGV30taJR4KOwO-MdYXbMMI","appKey":"gsNzDLmBx2Cx1wQMkW4V3RtN","serverURLs":"https://ebzfyam9.api.lncldglobal.com","placeholder":"wei？zaima？","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":[],"el":"#valine-comments","path":"/2022/11/06/COMP305%20W1-6/"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.valine.el)
+    .then(() => NexT.utils.getScript(
+      'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+      { condition: window.Valine }
+    ))
+    .then(() => {
+      new Valine(CONFIG.valine);
+    });
+});
+</script>
+
+</body>
+</html>
